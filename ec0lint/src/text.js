@@ -24,5 +24,12 @@ export const ec0lintIsSection = {
 };
 
 export const impactSection = {
-    title: "Impact"
+    title: "Impact",
+    cards: [
+        [
+            "Thanks to code optimization we can help in ",
+            "reducing CO2 emissions ",
+            "per one click from 4.6 g to ~0.2 g so to only 24 kg CO2 annually, saving 528 kg CO2 (-96%!)."
+        ]
+    ]
 };

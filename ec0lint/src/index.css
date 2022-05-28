@@ -67,7 +67,7 @@ h6 {
   margin-right: auto;
   text-align: justify;
   text-justify: inter-word;
-  padding: 10px;
+  padding-bottom: 20px;
 }
 
 .prototype {
@@ -79,7 +79,7 @@ h6 {
   color: black;
   font-family: 'Fira Code', monospace;
   font-size: 25px;
-  padding: 10px 80px;
+  padding: 10px 100px;
   margin: 10px 0px;
   cursor: pointer;
   margin: 30px;
@@ -88,4 +88,17 @@ h6 {
 
 .downloadButton:hover {
   background-color: #C571FF;
+}
+
+.blueSection {
+  background-color: #8ECCEA;
+  color: black;
+  padding: 20px;
+}
+
+.blueSectionText {
+  max-width: min(700px, 60%);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
 }

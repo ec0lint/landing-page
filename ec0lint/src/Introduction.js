@@ -1,5 +1,6 @@
-import { whySection, ec0lintIsSection, gitHubUrl, impactSection } from './text';
+import { whySection, ec0lintIsSection, gitHubUrl } from './text';
 import prototype from './prototype.webp';
+import ImpactSection from './ImpactSection';
 
 function Introduction() {
 
@@ -15,7 +16,6 @@ function Introduction() {
             <button className="downloadButton">DOWNLOAD</button>
           </a>
         </div>
-        <h3>{impactSection.title}</h3>
         <ImpactSection/>
     </div>
   );
