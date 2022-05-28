@@ -4,7 +4,9 @@ export const banner = {
     name: "ec0lint"
 }
 
-export const why_section = {
+export const gitHubUrl = "https://github.com/ec0lint/ec0lint";
+
+export const whySection = {
     title: "Why?",
     text: [
         "Did you know that more than 250 000 web pages are published every day? " +
@@ -15,8 +17,12 @@ export const why_section = {
     ]
 };
 
-export const ec0lint_is_section = {
+export const ec0lintIsSection = {
     title: "ec0lint is...",
     text: "...a tool for frontend developers that mitigates the " +
     "carbon footprint of websites. It shows tips used to create a more eco-friendly web page code."
+};
+
+export const impactSection = {
+    title: "Impact"
 };

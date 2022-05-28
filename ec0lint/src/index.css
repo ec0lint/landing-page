@@ -4,9 +4,9 @@ body {
   margin: 0;
 }
 
-.main-container {
+.mainContainer {
   text-align: center;
-  background-color: #000000;
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@ body {
   margin-left: 80px;
 }
 
-.intro-ec0lint {
+.introEc0lint {
   margin-top: 0;
 }
 
@@ -36,7 +36,7 @@ h2 {
 }
 
 h3 {
-  font-size: 4.5em;
+  font-size: 4em;
 }
 
 h4 {
@@ -52,7 +52,7 @@ h6 {
   margin: 0;
 }
 
-.section-header {
+.firstHeader {
   margin-top: 0;
   /* float: left; */
   /* overflow: auto; */
@@ -67,10 +67,25 @@ h6 {
   margin-right: auto;
   text-align: justify;
   text-justify: inter-word;
-  margin-top: -2%;
   padding: 10px;
 }
 
 .prototype {
   margin-top: 3%;
+}
+
+.downloadButton {
+  background-color: #8ECCEA;
+  color: black;
+  font-family: 'Fira Code', monospace;
+  font-size: 25px;
+  padding: 10px 80px;
+  margin: 10px 0px;
+  cursor: pointer;
+  margin: 30px;
+  border-radius: 5px;
+}
+
+.downloadButton:hover {
+  background-color: #C571FF;
 }

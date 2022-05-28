@@ -1,15 +1,22 @@
-import { why_section, ec0lint_is_section } from './text';
+import { whySection, ec0lintIsSection, gitHubUrl, impactSection } from './text';
 import prototype from './prototype.webp';
 
 function Introduction() {
+
   return (
     <div>
-        <h3 className="section-header">{why_section.title}</h3>
-        <h6 className="section">{why_section.text[0]}<u>{why_section.text[1]}</u>{why_section.text[2]}</h6>
-        <h3>{ec0lint_is_section.title}</h3>
-        <h6 className="section">{ec0lint_is_section.text}</h6>
+        <h3 className="firstHeader">{whySection.title}</h3>
+        <h6 className="section">{whySection.text[0]}<u>{whySection.text[1]}</u>{whySection.text[2]}</h6>
+        <h3>{ec0lintIsSection.title}</h3>
+        <h6 className="section">{ec0lintIsSection.text}</h6>
         <img src={prototype} alt="prototype" className="prototype" />
-        {/* <button onClick={goToGitHub} className="" */}
+        <div>
+          <a href={gitHubUrl} target="_blank" rel="noreferrer">
+            <button className="downloadButton">DOWNLOAD</button>
+          </a>
+        </div>
+        <h3>{impactSection.title}</h3>
+        <ImpactSection/>
     </div>
   );
 }
