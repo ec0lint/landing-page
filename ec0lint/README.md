@@ -1,4 +1,6 @@
-# ec0lint landing page
+[![npm version](https://img.shields.io/npm/v/ec0lint.svg)](https://www.npmjs.com/package/ec0lint)
+
+# ec0lint
 
 [Website](TBD) |
 [Configuring](TBD) |
