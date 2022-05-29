@@ -1,6 +1,8 @@
-import { whySection, ec0lintIsSection, gitHubUrl, donateSection, donateUrl } from './text';
-import prototype from './prototype.webp';
-import ImpactSection from './ImpactSection';
+import { whySection, ec0lintIsSection, gitHubUrl, donateSection, donateUrl,
+references } from './text';
+import prototype from './images/prototype.webp';
+import ImpactSection from './sections/ImpactSection';
+import SupportSection from './sections/SupportSection';
 
 function MainPage() {
 
@@ -17,11 +19,23 @@ function MainPage() {
           </a>
         </div>
         <ImpactSection/>
-        <h6 className="sectionText">{donateSection}</h6>
+        <h6 className="sectionText" style={{ paddingTop: '70px' }}>{donateSection}</h6>
         <div>
           <a href={donateUrl} target="_blank" rel="noreferrer">
             <button className="mainButton">DONATE</button>
           </a>
+        </div>
+        <SupportSection/>
+        <h4>Used by</h4>
+        <div className="circle"><h3>You?</h3></div>
+        <h5 className="sectionText">References</h5>
+        <div style={{ paddingBottom: '100px' }}>
+          {references.map((x, i) => {
+            return (<div>
+              <h6 className="sectionText" key={i}>{`[${i+1}]`} <a href={x.url} target="_blank" rel="noreferrer">
+              {x.name}</a> Accessed {x.date}</h6>
+            </div>);
+          })}
         </div>
     </div>
   );

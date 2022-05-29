@@ -1,5 +1,5 @@
 import React from 'react';
-import { impactSection } from './text';
+import { impactSection } from '../text';
 
 function ImpactSection() {
   const [cardDisplayed, setCardDisplayed] = React.useState("0");
@@ -11,7 +11,7 @@ function ImpactSection() {
   
   return (
       <span>
-        <h3>{impactSection.title}</h3>
+        <h3 className="sectionTitle" style={{ color: '#8ECCEA' }}>{impactSection.title}</h3>
         <div className="blueSection">
           <div className="blueSwitchText">
             <h6 className="blueSectionText">{impactSection.cards[cardDisplayed][0]}
@@ -20,7 +20,7 @@ function ImpactSection() {
           </div>
           {["0", "1", "2"].map((i) => {
             return <button className={cardDisplayed === i ? "switchButtonClicked" : "switchButton"}
-              value={i} onClick={onButtonClick}>
+              value={i} key={i} onClick={onButtonClick}>
             </button>
           })}
         </div>

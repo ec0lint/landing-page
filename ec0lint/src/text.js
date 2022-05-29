@@ -40,3 +40,31 @@ export const donateSection = "We'd be thankful if you would like to support our 
 "button. We truly care about the environment and want to keep on developing ec0lint. Thanks!";
 
 export const donateUrl = "";
+
+export const references = [
+    {
+        name: "Siteefy",
+        url: "https://siteefy.com/how-many-websites-are-there/",
+        date: "28.02.2022"
+    },
+    {
+        name: "Website Carbon Calculator",
+        url: "https://www.websitecarbon.com/",
+        date: "28.02.2022"
+    },
+    {
+        name: "Thanks in Advance",
+        url: "https://thanks-in-advance.com/",
+        date: "28.02.2022"
+    },
+    {
+        name: "EPA",
+        url: "https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator",
+        date: "28.02.2022"
+    },
+    {
+        name: "RESET Digital for good",
+        url: "https://en.reset.org/whats-carbon-footprint-your-website/",
+        date: "28.02.2022"
+    }
+]
