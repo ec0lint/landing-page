@@ -96,6 +96,10 @@ h6 {
   padding: 20px;
 }
 
+.blueSwitchText {
+  min-height: 16vh;
+}
+
 .blueSectionText {
   max-width: min(700px, 60%);
   margin-left: auto;
