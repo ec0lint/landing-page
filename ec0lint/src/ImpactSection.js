@@ -8,11 +8,7 @@ function ImpactSection() {
     const index = event.target.value;
     setCardDisplayed(index);
   };
-
-  const onArrowClick = (direction) => {
-
-  };
-
+  
   return (
       <span>
         <h3>{impactSection.title}</h3>

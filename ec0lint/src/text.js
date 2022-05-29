@@ -35,3 +35,8 @@ export const impactSection = {
         [ "The community can help in scaling up the tool and deciding on the most emerging features." ]
     ]
 };
+
+export const donateSection = "We'd be thankful if you would like to support our work by pressing the donate " +
+"button. We truly care about the environment and want to keep on developing ec0lint. Thanks!";
+
+export const donateUrl = "";

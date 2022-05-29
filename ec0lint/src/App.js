@@ -1,4 +1,4 @@
-import Introduction from './Introduction';
+import MainPage from './MainPage';
 import { banner } from './text';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
           <h2 className="introEc0lint">{banner.name}</h2>
         </span>
       </div>
-      <Introduction/>
+      <MainPage/>
     </span>
   );
 }

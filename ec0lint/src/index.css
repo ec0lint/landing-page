@@ -61,20 +61,21 @@ h6 {
   /* min-width: 50%; */
 }
 
-.section {
+.sectionText {
   max-width: min(900px, 85%);
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
   text-justify: inter-word;
   padding-bottom: 20px;
+  margin-top: 60px;
 }
 
 .prototype {
   margin-top: 3%;
 }
 
-.downloadButton {
+.mainButton {
   background-color: #8ECCEA;
   color: black;
   font-family: 'Fira Code', monospace;
@@ -86,7 +87,7 @@ h6 {
   border-radius: 5px;
 }
 
-.downloadButton:hover {
+.mainButton:hover {
   background-color: #C571FF;
 }
 
@@ -105,6 +106,7 @@ h6 {
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
+  display: inline-block;
 }
 
 .switchButtonClicked {
