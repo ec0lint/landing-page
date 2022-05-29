@@ -102,3 +102,20 @@ h6 {
   margin-right: auto;
   padding: 40px;
 }
+
+.switchButtonClicked {
+  background-color: #8ECCEA;
+  border: 3px solid black;
+  border-radius: 50%;
+  padding: 3px 3px;
+  cursor: pointer;
+  margin: 7px;
+}
+
+.switchButton {
+  background-color: black;
+  border-radius: 50%;
+  padding: 2px 2px;
+  cursor: pointer;
+  margin: 7px;
+}

@@ -4,8 +4,9 @@ import { impactSection } from './text';
 function ImpactSection() {
   const [cardDisplayed, setCardDisplayed] = React.useState(0);
 
-  const onButtonClick = (index) => {
-
+  const onButtonClick = (event) => {
+    const index = event.target.value;
+    setCardDisplayed(index);
   };
 
   const onArrowClick = (direction) => {
@@ -19,6 +20,10 @@ function ImpactSection() {
             <h6 className="blueSectionText">{impactSection.cards[0]}
                 <u>{impactSection.cards[1]}</u>
             {impactSection.cards[2]}</h6>
+            {["0", "1", "2"].map((i) => {
+              return <button className={cardDisplayed === i ? "switchButtonClicked" : "switchButton"}
+                value={i} onClick={onButtonClick}></button>
+            })}
         </div>
     </span>
   );
