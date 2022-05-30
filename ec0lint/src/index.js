@@ -18,8 +18,10 @@ root.render(
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="features" element={<FeaturesPage />} />
-        </Routes>
+        <Route path="privacy-policy" element={<FeaturesPage />} />
+        <Route path="terms-of-conditions" element={<FeaturesPage />} />
+      </Routes>
+      <Footer/>
     </BrowserRouter>
-    <Footer/>
   </span>
 );

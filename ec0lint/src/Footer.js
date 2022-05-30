@@ -1,4 +1,5 @@
 import { banner } from './text';
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -11,9 +12,13 @@ function Footer() {
           </span>
         </div>
         <div>
-          <h5 style={{  }}>&copy; ec0lint 2022</h5>
-          <h5 className="footerLink" onClick={() => console.log("a")}>Privacy Policy</h5>
-          <h5 className="footerLink" onClick={() => console.log("a")}>Terms of Conditions</h5>
+          <h5>&copy; ec0lint 2022</h5>
+          <Link to="/privacy-policy" style={{ textDecoration: 'none' }}>
+            <h5 className="footerLink">Privacy Policy</h5>
+          </Link>
+          <Link to="/terms-of-conditions" style={{ textDecoration: 'none' }}>
+            <h5 className="footerLink">Terms of Conditions</h5>
+          </Link>
         </div>
     </div>
   );
