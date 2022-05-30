@@ -18,7 +18,7 @@ function MainPage() {
         </div>
         <h3 className="firstHeader">{whySection.title}</h3>
         <h6 className="sectionText">{whySection.text[0]}<u>{whySection.text[1]}</u>{whySection.text[2]}</h6>
-        <h3>{ec0lintIsSection.title}</h3>
+        <h3 className="sectionTitle" style={{ marginTop: '80px' }}>{ec0lintIsSection.title}</h3>
         <h6 className="sectionText">{ec0lintIsSection.text}</h6>
         <img src={prototype} alt="prototype" className="prototype" />
         <div>

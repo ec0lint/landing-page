@@ -8,7 +8,7 @@ function SupportSection() {
   
   return (
     <div className="blueSection">
-      <h4 className="sectionTitle">Supported by</h4>
+      <h4 style={{ margin: '20px 0' }}>Supported by</h4>
       <div>
         <span className="supportCompany">
           <img src={iec} alt="iec"/>

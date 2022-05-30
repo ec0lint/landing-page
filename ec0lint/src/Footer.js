@@ -1,9 +1,11 @@
 import { banner } from './text';
 import { Link } from "react-router-dom";
+// import github from './images/github.svg';
+// import linkedin from './images/linkedin.svg';
 
 function Footer() {
   return (
-    <div>
+    <div className="footer">
         <div className="sectionText">
           <h2 className="logo">{banner.logo}</h2>
           <span className="logo">
@@ -11,14 +13,19 @@ function Footer() {
             <h5 className="footerContact">Contact: {banner.email}</h5>
           </span>
         </div>
-        <div>
-          <h5>&copy; ec0lint 2022</h5>
-          <Link to="/privacy-policy" style={{ textDecoration: 'none' }}>
-            <h5 className="footerLink">Privacy Policy</h5>
-          </Link>
-          <Link to="/terms-of-conditions" style={{ textDecoration: 'none' }}>
-            <h5 className="footerLink">Terms of Conditions</h5>
-          </Link>
+        <div className="footerLinks">
+          <h5 className="footerElement">&copy; ec0lint 2022</h5>
+          <h5 className="footerElement"><Link to="/privacy-policy"className="footerLink">
+            Privacy Policy</Link>
+          </h5>
+          <h5 className="footerElement">
+            <Link to="/terms-of-conditions" className="footerLink">
+            Terms of Conditions</Link>
+          </h5>
+          {/* <span> */}
+            {/* <img src={github} alt="github"/> */}
+            {/* <img src={linkedin} alt="linkedin"/> */}
+          {/* </span> */}
         </div>
     </div>
   );
