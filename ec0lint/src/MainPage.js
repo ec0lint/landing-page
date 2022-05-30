@@ -3,11 +3,19 @@ references } from './text';
 import prototype from './images/prototype.webp';
 import ImpactSection from './sections/ImpactSection';
 import SupportSection from './sections/SupportSection';
+import { banner } from './text';
 
 function MainPage() {
 
   return (
     <div>
+        <div>
+          <h1 className="logo">{banner.logo}</h1>
+          <span className="logo">
+            <h6 className="intro">{banner.goal}</h6>
+            <h2 className="introEc0lint">{banner.name}</h2>
+          </span>
+        </div>
         <h3 className="firstHeader">{whySection.title}</h3>
         <h6 className="sectionText">{whySection.text[0]}<u>{whySection.text[1]}</u>{whySection.text[2]}</h6>
         <h3>{ec0lintIsSection.title}</h3>

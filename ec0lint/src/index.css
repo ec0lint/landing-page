@@ -35,6 +35,7 @@ h1 {
 
 h2 {
   font-size: 5em;
+  color: black;
 }
 
 h3 {
@@ -66,8 +67,6 @@ h6 {
   margin-right: auto;
   text-align: justify;
   text-justify: inter-word;
-  /* margin-bottom: 20px; */
-  /* margin-top: 60px; */
 }
 
 .sectionTitle {
@@ -144,4 +143,22 @@ h6 {
   height: 200px;
   margin: auto;
   margin-bottom: 100px;
+}
+
+.footerContact {
+  margin-left: 20px;
+}
+
+.footerName {
+  margin: 0 20px;
+}
+
+.footerLink {
+  text-decoration: none;
+  color: #C571FF;
+}
+
+.footerLink:hover {
+  color: #8ECCEA;
+  cursor: pointer;
 }

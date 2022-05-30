@@ -1,7 +1,8 @@
 export const banner = {
     logo: "{e}",
     goal: "Create sustainable digital environment with",
-    name: "ec0lint"
+    name: "ec0lint",
+    email: "ec0lint@tutanota.com"
 }
 
 export const gitHubUrl = "https://github.com/ec0lint/ec0lint";

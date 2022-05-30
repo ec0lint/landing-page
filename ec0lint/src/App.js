@@ -1,19 +1,52 @@
 import MainPage from './MainPage';
-import { banner } from './text';
+import Footer from './Footer';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
-    <span className="mainContainer">
       <div>
-        <h1 className="logo">{banner.logo}</h1>
-        <span className="logo">
-          <h6 className="intro">{banner.goal}</h6>
-          <h2 className="introEc0lint">{banner.name}</h2>
-        </span>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/users">Users</Link>
+            </li>
+          </ul>
+        </nav>
+
+        {/* A <Routes> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        {/* <Routes>
+          <Route path="/about" component={<h2>Home2</h2>}>
+          </Route>
+          <Route path="/users" component={<h2>Home</h2>}>
+          </Route>
+          <Route path="/" component={<h2>Home3</h2>}>
+          </Route>
+        </Routes> */}
       </div>
-      <MainPage/>
-    </span>
   );
 }
 
-export default App;
+
+
+// function App() {
+//   return (
+//     <span className="mainContainer">
+//       {/* <NavBar/> */}
+//       <MainPage/>
+//       <Footer/>
+//     </span>
+//   );
+// }
