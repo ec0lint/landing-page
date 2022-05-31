@@ -1,9 +1,12 @@
 import { banner } from './text';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 // import github from './images/github.svg';
 // import linkedin from './images/linkedin.svg';
 
 export default function Footer() {
+  const location = useLocation();
+  const currentPath = location.pathname;
+
   return (
     <div className="footer">
         <div className="sectionText">
@@ -16,12 +19,12 @@ export default function Footer() {
         <div className="footerLinks">
           <h6 className="footerElement">&copy; ec0lint 2022</h6>
           <h6 className="footerElement">
-            <Link to="/privacy-policy"className="navLink">
+            <Link to="/privacy-policy" className={currentPath === "/privacy-policy" ? "navLinkBlue" : "navLinkPurple"}>
               Privacy Policy
             </Link>
           </h6>
           <h6 className="footerElement">
-            <Link to="/terms-of-conditions" className="navLink">
+            <Link to="/terms-of-conditions" className={currentPath === "/terms-of-conditions" ? "navLinkBlue" : "navLinkPurple"}>
               Terms of Conditions
             </Link>
           </h6>

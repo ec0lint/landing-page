@@ -175,13 +175,23 @@ h6 {
   }
 }
 
-.navLink {
+.navLinkPurple {
   text-decoration: none;
   color: #C571FF;
 }
 
-.navLink:hover {
+.navLinkPurple:hover {
   color: #8ECCEA;
+  cursor: pointer;
+}
+
+.navLinkBlue {
+  text-decoration: none;
+  color: #8ECCEA;
+}
+
+.navLinkBlue:hover {
+  color: #C571FF;
   cursor: pointer;
 }
 
