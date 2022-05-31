@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
 
 body {
   margin: 0;
@@ -109,7 +110,7 @@ h6 {
 }
 
 .blueSwitchText {
-  min-height: 65vh;
+  min-height: 20vh;
 }
 
 @media only screen and (min-width: 700px) {
@@ -259,5 +260,31 @@ h6 {
     padding: 20px;
     /* float: right; */
   }
+}
+
+.link {
+  color: #8ECCEA;
+}
+
+.blueSectionButton {
+  background-color: black;
+  color: #C571FF;
+  font-family: 'Fira Code', monospace;
+  font-size: 25px;
+  padding: 12px 100px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  border-width: 0;;
+}
+
+.blueSectionButton:hover {
+  background-color: #C571FF;
+  color: black;
+}
+
+.getStartedPage {
+  margin-top: 50px;
 }
 

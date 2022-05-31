@@ -68,4 +68,16 @@ export const references = [
         url: "https://en.reset.org/whats-carbon-footprint-your-website/",
         date: "28.02.2022"
     }
-]
+];
+
+export const getStartedForUsers = "Have you ever heard of ESLint? You use it daily? Great! ec0lint is " + 
+    "pretty much ESLint, but it helps you to mitigate the carbon footprint of a web page. \n" + 
+    "That's why we won't write long poems as ESLint did, once was enough. We'll forward you to their site.";
+
+export const getStartedInANutshell = "In a nutshell: \n\n" +
+    "1) Make sure you have Node installed\n" + 
+    "2) Download ec0lint: npm i @ec0lint \n" +
+    "3) Configure your project: npm init @ec0lint/config" +
+    "4) Let's go and build a web page!";
+
+
