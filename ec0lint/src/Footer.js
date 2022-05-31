@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 // import github from './images/github.svg';
 // import linkedin from './images/linkedin.svg';
 
-function Footer() {
+export default function Footer() {
   return (
     <div className="footer">
         <div className="sectionText">
@@ -14,14 +14,17 @@ function Footer() {
           </span>
         </div>
         <div className="footerLinks">
-          <h5 className="footerElement">&copy; ec0lint 2022</h5>
-          <h5 className="footerElement"><Link to="/privacy-policy"className="footerLink">
-            Privacy Policy</Link>
-          </h5>
-          <h5 className="footerElement">
-            <Link to="/terms-of-conditions" className="footerLink">
-            Terms of Conditions</Link>
-          </h5>
+          <h6 className="footerElement">&copy; ec0lint 2022</h6>
+          <h6 className="footerElement">
+            <Link to="/privacy-policy"className="navLink">
+              Privacy Policy
+            </Link>
+          </h6>
+          <h6 className="footerElement">
+            <Link to="/terms-of-conditions" className="navLink">
+              Terms of Conditions
+            </Link>
+          </h6>
           {/* <span> */}
             {/* <img src={github} alt="github"/> */}
             {/* <img src={linkedin} alt="linkedin"/> */}
@@ -30,5 +33,3 @@ function Footer() {
     </div>
   );
 }
-
-export default Footer;

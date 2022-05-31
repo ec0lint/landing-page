@@ -175,12 +175,12 @@ h6 {
   }
 }
 
-.footerLink {
+.navLink {
   text-decoration: none;
   color: #C571FF;
 }
 
-.footerLink:hover {
+.navLink:hover {
   color: #8ECCEA;
   cursor: pointer;
 }
@@ -193,7 +193,7 @@ h6 {
 @media only screen and (min-width: 700px) {
   .footerElement {
     display: inline-block;
-    padding: 10px 40px;
+    padding: 10px 60px;
   }
 }
 
@@ -217,4 +217,25 @@ h6 {
   }
 }
 
+.header {
+  /* max-width: 75%; */
+}
+
+/* .headerElement {
+  display: inline-block;
+  padding-left: 30px;
+  margin-top: 40px;
+} */
+
+.headerElement {
+  /* padding: 5px 40px; */
+  margin-top: 0px;
+}
+
+@media only screen and (min-width: 700px) {
+  .headerElement {
+    display: inline-block;
+    padding: 10px 60px;
+  }
+}
 
