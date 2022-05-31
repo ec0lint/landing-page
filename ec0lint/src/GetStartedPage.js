@@ -4,7 +4,7 @@ import { getStartedForUsers, getStartedInANutshell, gitHubUrl,
 export default function GetStartedPage() {
 
   return (
-    <div className="getStartedPage">
+    <div className="secondPage">
       <div>
         <h4 className="sectionTitle">
           For users
