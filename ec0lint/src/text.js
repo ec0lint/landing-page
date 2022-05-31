@@ -186,7 +186,7 @@ export const useCases = {
         },
         { 
             title: "Fonts", 
-            text: "We used only one font hosted online, namely Libre Baskerville, and saved " +
+            text: "We used only one font hosted online, namely Fibra Code, and saved " +
                 "all texts in WOFF. All website visitors can access the same hosted font file " +
                 "rather than multiple versions being uploaded across the internet. Also, less variety of fonts helps."
         },
