@@ -1,6 +1,6 @@
 import React from 'react';
-import { featuresPage } from "./text";
-import CO2Section from './sections/CO2Section';
+import { featuresPage } from "../text";
+import CO2Section from '../sections/CO2Section';
 
 export default function FeaturesPage() {
   const [cardDisplayed, setCardDisplayed] = React.useState("0");

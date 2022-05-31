@@ -165,3 +165,13 @@ export const CO2Calculation = {
         }
     ]
 };
+
+export const privacyPolicy = {
+    title: "Privacy Policy",
+    text: "lorem impsum bla bla bla"
+}
+
+export const termsOfConditions = {
+    title: "Terms of Conditions",
+    text: "lorem impsum bla bla bla"
+}

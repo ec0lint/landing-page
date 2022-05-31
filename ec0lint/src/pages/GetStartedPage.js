@@ -1,5 +1,5 @@
 import { getStartedForUsers, getStartedInANutshell, gitHubUrl,
-  donateSection, donateUrl } from "./text";
+  donateSection, donateUrl } from "../text";
 
 export default function GetStartedPage() {
 
