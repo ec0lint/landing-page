@@ -9,6 +9,7 @@ import FeaturesPage from './pages/FeaturesPage';
 import Footer from './Footer';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfConditionsPage from './pages/TermsOfConditionsPage';
+import UseCasesPage from './pages/UseCasesPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,7 +22,7 @@ root.render(
         <Route path="terms-of-conditions" element={<TermsOfConditionsPage />} />
         <Route path="get-started" element={<GetStartedPage />} />
         <Route path="features" element={<FeaturesPage />} />
-        <Route path="use-cases" element={<GetStartedPage />} />
+        <Route path="use-cases" element={<UseCasesPage />} />
         <Route path="blog" element={<GetStartedPage />} />
         <Route path="team" element={<GetStartedPage />} />
       </Routes>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { CO2Calculation } from "../text";
+import References from './References';
 
 export default function CO2Section() {
 
@@ -27,14 +28,7 @@ export default function CO2Section() {
 
       <h4 className="sectionTitle">{CO2Calculation.finalRemarks.title}</h4>
       <h6 className="sectionText">{CO2Calculation.finalRemarks.text}</h6>
-
-      <h4 className="sectionTitle">References</h4>
-      <div style={{ marginBottom: '100px' }}>
-        {CO2Calculation.references.map((x, i) => {
-          return <ul><h6 className="sectionText">{`[${i}]`} <a target="_blank" rel="noreferrer"
-          href={x.url} className="link">{x.text}</a>{` [Accessed on the ${x.accessed}]`}</h6></ul>
-        })}
-      </div>
+      <References data={CO2Calculation.references} />
     </div>
   );
 }

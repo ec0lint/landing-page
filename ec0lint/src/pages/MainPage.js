@@ -4,6 +4,7 @@ import prototype from '../images/prototype.webp';
 import ImpactSection from '../sections/ImpactSection';
 import SupportSection from '../sections/SupportSection';
 import { banner } from '../text';
+import References from '../sections/References';
 
 function MainPage() {
 
@@ -36,15 +37,7 @@ function MainPage() {
         <SupportSection/>
         <h4>Used by</h4>
         <div className="circle"><h3>You?</h3></div>
-        <h5 className="sectionText">References</h5>
-        <div style={{ paddingBottom: '100px' }}>
-          {references.map((x, i) => {
-            return (<div>
-              <h6 className="sectionText" key={i}>{`[${i+1}]`} <a href={x.url} target="_blank" rel="noreferrer">
-              {x.name}</a> Accessed {x.date}</h6>
-            </div>);
-          })}
-        </div>
+        <References data={references} />
     </div>
   );
 }

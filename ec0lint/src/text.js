@@ -44,29 +44,29 @@ export const donateUrl = "";
 
 export const references = [
     {
-        name: "Siteefy",
+        text: "Siteefy",
         url: "https://siteefy.com/how-many-websites-are-there/",
-        date: "28.02.2022"
+        accessed: "28.02.2022"
     },
     {
-        name: "Website Carbon Calculator",
+        text: "Website Carbon Calculator",
         url: "https://www.websitecarbon.com/",
-        date: "28.02.2022"
+        accessed: "28.02.2022"
     },
     {
-        name: "Thanks in Advance",
+        text: "Thanks in Advance",
         url: "https://thanks-in-advance.com/",
-        date: "28.02.2022"
+        accessed: "28.02.2022"
     },
     {
-        name: "EPA",
+        text: "EPA",
         url: "https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator",
-        date: "28.02.2022"
+        accessed: "28.02.2022"
     },
     {
-        name: "RESET Digital for good",
+        text: "RESET Digital for good",
         url: "https://en.reset.org/whats-carbon-footprint-your-website/",
-        date: "28.02.2022"
+        accessed: "28.02.2022"
     }
 ];
 
@@ -174,4 +174,72 @@ export const privacyPolicy = {
 export const termsOfConditions = {
     title: "Terms of Conditions",
     text: "lorem impsum bla bla bla"
+}
+
+export const useCases = {
+    title: "But hey, for now, you can learn why we designed our website the way we did.",
+    bulletPoints: [
+        { 
+            title: "Colors", 
+            text: "You don't have to increase the screen brightness wasting your battery " +
+                "and computing energy as we used high contrasting colors."
+        },
+        { 
+            title: "Fonts", 
+            text: "We used only one font hosted online, namely Libre Baskerville, and saved " +
+                "all texts in WOFF. All website visitors can access the same hosted font file " +
+                "rather than multiple versions being uploaded across the internet. Also, less variety of fonts helps."
+        },
+        { 
+            title: "Hosting", 
+            text: "The hosting provider we chose, Krystal, uses renewable energy to power its servers and " +
+                "specialized in energy-efficient architecture."
+        },
+        { 
+            title: "Illustration formats", 
+            text: "All images are saved in SVG which makes them lighter than PNGs and JPGs."
+        },
+        { 
+            title: "Static", 
+            text: "We hand-coded this site which results in less energy being used by the servers."
+        }
+    ],
+    footer: "...and, obviously, we implemented all ec0lint rules. ",
+    references: [
+        {
+            text: "Thanks in Advance",
+            url: "https://thanks-in-advance.com/",
+            accessed: "14.04.2022"
+        },
+        {
+            text: "Colorable",
+            url: "https://colorable.jxnblk.com/c571ff/000000",
+            accessed: "14.04.2022"
+        },
+        {
+            text: "Krystal",
+            url: "https://krystal.uk/",
+            accessed: "14.04.2022"
+        },
+        {
+            text: "WHOLEGRAINdigital",
+            url: "https://www.wholegraindigital.com/blog/website-energy-efficiency/",
+            accessed: "14.04.2022"
+        },
+        {
+            text: "Kinsta",
+            url: "https://kinsta.com/blog/optimize-images-for-web/",
+            accessed: "14.04.2022"
+        },
+        {
+            text: "XDA Developers",
+            url: "https://www.xda-developers.com/google-wants-developers-to-add-dark-themes-to-save-battery-life/",
+            accessed: "14.04.2022"
+        },
+        {
+            text: "AppleInsider",
+            url: "https://appleinsider.com/articles/19/01/05/how-to-extend-the-battery-life-of-your-iphone-xr-or-iphone-xs-to-all-day-and-beyond",
+            accessed: "14.04.2022"
+        }
+    ]
 }
