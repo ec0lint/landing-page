@@ -13,7 +13,7 @@ function ImpactSection() {
       <span>
         <h3 className="sectionTitle" style={{ color: '#8ECCEA' }}>{impactSection.title}</h3>
         <div className="blueSection">
-          <div className="blueSwitchText">
+          <div className="blueSwitchTextImpact">
             <h6 className="blueSectionText">{impactSection.cards[cardDisplayed][0]}
               <u>{impactSection.cards[cardDisplayed][1]}</u>
             {impactSection.cards[cardDisplayed][2]}</h6>

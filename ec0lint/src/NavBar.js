@@ -23,7 +23,7 @@ export default function NavBar() {
         <Link to="/get-started" className={currentPath === "/get-started" ? "navLinkPurple" : "navLinkBlue"}>Get Started</Link>
       </h6>
       <h6 className="headerElement">
-        <Link to="/"className={currentPath === "/" ? "navLinkPurple" : "navLinkBlue"}>Home</Link>
+        <Link to="/"className={(currentPath === "" || currentPath === "/") ? "navLinkPurple" : "navLinkBlue"}>Home</Link>
       </h6>
   </div>
   );
