@@ -11,7 +11,7 @@ export default function GetStartedPage() {
         </h4>
         <div className="getStarted">
           <h6 className="sectionText">{getStartedForUsers}</h6>
-          <h6 className="sectionText">{getStartedInANutshell}</h6>
+          <h6 className="sectionText" style={{ whiteSpace: 'pre-wrap' }}>{getStartedInANutshell}</h6>
         </div>
       </div>
       <div>
@@ -30,13 +30,13 @@ export default function GetStartedPage() {
           <h6 className="sectionText">You'll find the documentation <a target="_blank" rel="noreferrer"
             href="https://www.npmjs.com/package/ec0lint" className="link">here.</a>
           </h6>
-          <h6 className="sectionText">Rules:
-            {"2) Clone ec0lint "}<a target="_blank" rel="noreferrer"
+          <h6 className="sectionText" style={{ whiteSpace: 'pre-wrap' }}>Rules:
+            {"\n2) Clone ec0lint "}<a target="_blank" rel="noreferrer"
             href="https://github.com/ec0lint/ec0lint" className="link">repository</a>
-            {"3) Install dependencies"}
-            cd ec0lint
-            npm installe
-            {"4) Fork our repository and start contributing!"}</h6>
+            {"\n3) Install dependencies"}
+            {"\ncd ec0lint"}
+            {"\nnpm install"}
+            {"\n4) Fork our repository and start contributing!"}</h6>
         </div>
         <div>
           <a href={gitHubUrl} target="_blank" rel="noreferrer">
