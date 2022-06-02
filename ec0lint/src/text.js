@@ -242,4 +242,72 @@ export const useCases = {
             accessed: "14.04.2022"
         }
     ]
-}
+};
+
+export const blog = {
+    title: "Blog",
+    posts: [
+        {
+            title: "Introduction to digital ecology",
+            url: "introduction-to-digital-ecology",
+            text: [
+                <h5 style={{ color: '#8ECCEA' }}>Have you ever wondered how much carbon dioxide emissions your online habits generate? Till last year we haven't.</h5>,
+                <h6>{"Every email you send, every movie you watch on Netflix, every music video you view on YouTube, every photograph you add on " +
+                    "Instagram, and every website you design creates an invisible carbon footprint. Mainly, it's the energy needed to power your " +
+                    "electronic devices and to power servers in data centers that defines someone's impact, but the whole story takes a little longer."}</h6>,
+                <h5 style={{ color: '#8ECCEA' }}>What is a digital ecology?</h5>,
+                <h6>{"Digital ecology is a branch of ecology that promotes green practices to fight digital pollution. And digital pollution refers to a few grams of the emitted carbon dioxide. How much is it really? The total carbon footprint of the internet, our electronic devices, and supporting elements add up to about 3.7% of global greenhouse gas emissions. It is as much as for the airline industry and the number keeps on rising. Unfortunately, the definition of digital pollution isn't well defined, there are also emissions that come from manufacturing the hardware and more."}</h6>,
+                <h6>{"Let's take a closer look at how much a single activity pollutes the environment. By 2023, over 347 billion emails will be sent globally every day and each of them generates about 4 g of CO2. Another study showed that extending the lifespan of a single computer from 4 to 6 years would cut down the carbon emissions by 190 kg. NFTs bought on the Ethereum blockchain platform require as much energy as Libya every year. YouTube? It was calculated that by listening to music without watching a video emissions would be reduced by 5%. These 5% equals 11 million tonnes of carbon dioxide emissions every year. One Tweet sharing this news would cost us 0.2 g of CO2."}</h6>,                
+                <h6>{"Luckily, more and more people and companies are trying to reduce their ecological impact. Microsoft and Fortum announced that they are going to heat homes and businesses with waste heat from a data center. Green web-hosting providers use renewable energy to sustain their servers. And Google pledged to operate carbon-free by 2030."}</h6>,                
+                <h5 style={{ color: '#8ECCEA' }}>So, what are you going to do?</h5>       
+            ],
+            references: [
+                {
+                    text: "BBC",
+                    url: "https://www.bbc.com/future/article/20200305-why-your-internet-habits-are-not-as-clean-as-you-think",
+                    accessed: "18.04.2022"
+                },
+                {
+                    text: "Forbes",
+                    url: "https://www.forbes.com/sites/cognizant/2021/09/21/how-to-be-both-digital-and-green-at-the-same-time/?sh=1fe990525b5f",
+                    accessed: "18.04.2022"
+                },
+                {
+                    text: "Energuide",
+                    url: "https://www.energuide.be/en/questions-answers/do-i-emit-co2-when-i-surf-the-internet/69/",
+                    accessed: "18.04.2022"
+                },
+                {
+                    text: "Eni",
+                    url: "https://www.eni.com/en-IT/digital-transformation/digital-pollution.html",
+                    accessed: "18.04.2022"
+                },
+                {
+                    text: "Greenmatters",
+                    url: "https://www.greenmatters.com/p/do-emails-leave-carbon-footprint",
+                    accessed: "18.04.2022"
+                },
+                {
+                    text: "Fortum",
+                    url: "https://www.fortum.com/media/2022/03/fortum-and-microsoft-announce-worlds-largest-collaboration-heat-homes-services-and-businesses-sustainable-waste-heat-new-data-centre-region",
+                    accessed: "18.04.2022"
+                },
+                {
+                    text: "The Green Web Foundation",
+                    url: "https://www.thegreenwebfoundation.org/",
+                    accessed: "18.04.2022"
+                }               
+            ]
+        },
+        {
+            title: "ec0 + lint = ec0lint",
+            url: "ec0lint",
+            text: ""
+        },
+        {
+            title: "Change your online habits",
+            url: "change-your-online-habits",
+            text: ""
+        },
+    ]
+};

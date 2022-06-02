@@ -115,7 +115,7 @@ h6 {
 
 @media only screen and (min-width: 700px) {
   .blueSwitchTextImpact {
-    min-height: 17vh;
+    min-height: 8vh;
   }
 }
 
@@ -125,7 +125,7 @@ h6 {
 
 @media only screen and (min-width: 700px) {
   .blueSwitchTextCO2 {
-    min-height: 21vh;
+    min-height: 10vh;
   }
 }
 
@@ -171,6 +171,27 @@ h6 {
   margin-bottom: 100px;
 }
 
+.circleLink {
+  border-radius: 50%;
+  background-color: #C571FF;
+  color: black;
+  padding: 2px 0;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.circleLink:hover {
+  background-color: #8ECCEA;
+  cursor: pointer;
+}
+
+.circleBlog {
+  display: inline-block;
+  padding: 0 40px;
+}
+
 .footerContact {
   margin-left: 20px;
 }
@@ -204,6 +225,11 @@ h6 {
 .navLinkBlue:hover {
   color: #C571FF;
   cursor: pointer;
+}
+
+.navLinkBlack {
+  text-decoration: none;
+  color: black;
 }
 
 .footerElement {
