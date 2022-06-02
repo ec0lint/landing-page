@@ -103,8 +103,8 @@ export const featuresPage = {
                 "removed from the code, the axios module can be deleted, saving 400 kB of space. "
         },
         {
-            title: "TBD",
-            text: "tbd"
+            title: "Lighter image files",
+            text: "Image files inside web application should be in WebP and SVG format. These formats can crunch large images down into more manageable file sizes. We can achieve almost 99% reduction of file size using JPEG format over PPM, PS, RGB or PNG file. "
         }
     ]
 };
