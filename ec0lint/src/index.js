@@ -30,8 +30,8 @@ root.render(
         <Route path="team" element={<GetStartedPage />} />
       
         <Route path="blog/introduction-to-digital-ecology" element={<BlogPostPage data={blog.posts[0]}/>} />
-        <Route path="blog/ec0lint" element={<BlogPostPage data={blog.posts[0]}/>} />
-        <Route path="blog/change-your-online-habits" element={<BlogPostPage data={blog.posts[0]}/>} />
+        <Route path="blog/ec0lint" element={<BlogPostPage data={blog.posts[1]}/>} />
+        <Route path="blog/change-your-online-habits" element={<BlogPostPage data={blog.posts[2]}/>} />
       </Routes>
       <Footer/>
     </BrowserRouter>

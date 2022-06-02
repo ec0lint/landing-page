@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function BlogPage() {
   return (
     <div className="secondPage">
-        <h3 className="sectionTitle" style={{ textAlign: 'left' }}>
+        <h3 className="sectionTitle" style={{ textAlign: 'left', marginBottom: '40px' }}>
           {blog.title}
         </h3>
         {blog.posts.map((x) => {

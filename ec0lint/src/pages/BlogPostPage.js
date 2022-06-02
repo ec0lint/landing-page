@@ -12,7 +12,7 @@ export default function BlogPostPage(data) {
           return <h6 className="sectionText" style={{ marginBottom: '20px' }}>{x}</h6>;
         })}
       </div>
-      <References data={data.data.references} />
+      {data.data.references && <References data={data.data.references} />}
     </div>
   );
 }
