@@ -317,7 +317,92 @@ export const blog = {
         {
             title: "Change your online habits",
             url: "change-your-online-habits",
-            text: ""
-        },
+            text: [
+                <h6>We always knew that my online activities impact climate change, but as their consequences are invisible, I kept on ignoring the topic. Exactly one year ago, we started learning more about digital pollution and discovered the term digital ecology. In this article, we want to share with you tips and tricks on how to act against internet pollution on a day-to-day basis.</h6>,
+                <h6><h5 style={{ color: '#8ECCEA' }}>1. Deceitful videos</h5>
+                    <ul>Videos account for 1% of global emissions consuming the same amount of energy as Spain. If it's possible, block the automatic playing of videos. </ul>
+                    <ul>According to the International Energy Agency (IEA), watching Netflix for an hour entails 36 g of CO2. Watching films in lower definition reduces data traffic significantly and thus, lowers the amount of energy needed to power the platform. This works for other platforms like YouTube. Alternatively, you can opt for downloading a video. </ul>
+                    <ul>Video conferencing can be more eco-friendly if you switch off your camera.</ul>
+                </h6>,
+                <h6><h5 style={{ color: '#8ECCEA' }}>2. Email, a snake in the grass  </h5>
+                    <ul>An email stored in an email account emits 19 g of CO2 annually. So, open up your mailbox and delete unnecessary emails.</ul>
+                    <ul>Whenever possible, avoid sending emails. Use an internal messaging tool that consumes less energy. Slack, for example. You can also switch to SMS - sending one email generates on average 4 g of CO2 whereas an old-fashioned SMS only 0.014 g.</ul>
+                    <ul>Try using an anti-spam tool. For instance, download Cleanfox to unsubscribe from all newsletters you don't read.</ul>
+                    <ul>When sending an attachment, compress the file first or send it as a download link. You can try WeTransfer or Google Drive. Alternatively, think about using a USB. </ul>
+                    <ul>Remove images from your email signature.</ul>
+                </h6>,
+                <h6><h5 style={{ color: '#8ECCEA' }}>3. Vicious cycle of browsing</h5>
+                    <ul>Close unused tabs as each web page that remains open is continuously connected to its server.  </ul>
+                    <ul>When you want to visit a page which address you know by heart, write its address directly in the bar of a browser instead of in the search engine.  </ul>
+                    <ul>Avoid repeating identical searches by using bookmarks.</ul>
+                    <ul>Utilize an eco-responsible web search engine like Ecosia or Lilo.  </ul>
+                    <ul>Rethink your keywords. The more precise you are, the more energy you save. </ul>
+                    <ul>Remember to erase old media on your social platforms from time to time.  </ul>
+                </h6>,
+                <h6><h5 style={{ color: '#8ECCEA' }}>4. Casting a cloud on the cloud </h5>
+                    <ul>One hundred zettabytes of data will be stored in the cloud by 2025 and such online storage solutions consume a lot of energy. Try periodically deleting data from your cloud or favor storing them on an external hard drive instead.  </ul>
+                    <ul>Before choosing a cloud service, get familiar with the company's mission and opt for the most environmental-friendly choice.  </ul>
+                </h6>,
+                <h6><h5 style={{ color: '#8ECCEA' }}>5. Criminal cryptocurrency</h5> 
+                    <ul>According to researchers from the University of Cambridge, bitcoin uses 0.21% of the world's energy supply according. Have you ever heard of Cardano which claims to be 37,500 times more energy-efficient than Bitcoin? How about Solarcoin?  </ul>
+                </h6>,
+                <h6><h5 style={{ color: '#8ECCEA' }}>6. Your devices, perennial comrade</h5>
+                    <ul>Changing smartphones or computers less often has a positive impact on the planet. Replacing computers every 6 years instead of 4 saves 190 kg of CO2 emissions per person.  </ul>
+                </h6>,
+                <h6><h5 style={{ color: '#8ECCEA' }}>7. Heavenly disconnecting</h5>
+                    <ul>Disconnect whenever your hectic life allows you to.  </ul>
+                    <ul>Delete mobile apps you barely use.  </ul>
+                    <ul>Disable mobile notifications.  </ul>
+                    <ul>Unplug your router at night to save some energy.  </ul>
+                </h6>
+            ],
+            references: [
+                {
+                    text: "World Economic Forum",
+                    url: "https://www.weforum.org/agenda/2021/12/digital-carbon-footprint-how-to-lower-electronics/",
+                    accessed: "08.05.2022"
+                },  
+                {
+                    text: "ELLE",
+                    url: "https://elle.in/article/the-rising-impact-of-digital-pollution-and-how-we-can-reduce-it/",
+                    accessed: "08.05.2022"
+                },  
+                {
+                    text: "Welcome to the Jungle",
+                    url: "https://www.welcometothejungle.com/en/articles/how-to-reduce-digital-pollution",
+                    accessed: "08.05.2022"
+                },  
+                {
+                    text: "eni",
+                    url: "https://www.eni.com/en-IT/digital-transformation/digital-pollution.html",
+                    accessed: "08.05.2022"
+                },       
+                {
+                    text: "youmatter",
+                    url: "https://youmatter.world/en/reduce-environmental-impact-internet/",
+                    accessed: "08.05.2022"
+                },  
+                {
+                    text: "earthday",
+                    url: "https://earthday.ca/2020/04/07/why-and-how-to-reduce-digital-pollution-in-the-office/",
+                    accessed: "08.05.2022"
+                },  
+                {
+                    text: "Climate Consulting by Selectra",
+                    url: "https://climate.selectra.com/en/environment/internet-pollution",
+                    accessed: "08.05.2022"
+                },  
+                {
+                    text: "Cardano Feed",
+                    url: "https://cardanofeed.com/6-most-eco-friendly-cryptocurrencies-in-2021-7016.html",
+                    accessed: "11.05.2022"
+                },     
+                {
+                    text: "The Times",
+                    url: "https://www.thetimes.co.uk/money-mentor/article/eco-friendly-cryptocurrencies/",
+                    accessed: "11.05.2022"
+                }
+            ]
+        }
     ]
 };
