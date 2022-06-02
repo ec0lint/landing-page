@@ -7,7 +7,7 @@ export default function TermsOfConditionsPage() {
         <h3 className="sectionTitle" style={{ textAlign: 'left' }}>
           {termsOfConditions.title}
         </h3>
-        <h6 className="sectionText" style={{ marginBottom: '40px' }}>{termsOfConditions.text}</h6>
+        <h6 className="sectionText" style={{ marginBottom: '40px', whiteSpace: 'pre-wrap' }}>{termsOfConditions.text}</h6>
     </div>
   );
 }

@@ -7,7 +7,7 @@ export default function PrivacyPolicyPage() {
         <h3 className="sectionTitle">
           {privacyPolicy.title}
         </h3>
-        <h6 className="sectionText" style={{ marginBottom: '40px' }}>{privacyPolicy.text}</h6>
+        <h6 className="sectionText" style={{ marginBottom: '40px', whiteSpace: 'pre-wrap' }}>{privacyPolicy.text}</h6>
     </div>
   );
 }
