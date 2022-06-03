@@ -1,7 +1,7 @@
-import Kasia from './resources/Kasia.jpg';
-import Malwina from './resources/Malwina.jpg';
-import Ania from './resources/Ania.jpg';
-import Julia from './resources/Julia.jpeg';
+import Kasia from './resources/Kasia.webp';
+import Malwina from './resources/Malwina.webp';
+import Ania from './resources/Ania.webp';
+import Julia from './resources/Julia.webp';
 
 export const banner = {
     logo: "{e}",
