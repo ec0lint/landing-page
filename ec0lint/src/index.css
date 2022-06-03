@@ -1,0 +1,366 @@
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: firaCode;
+  src: url(resources/FiraCode-Light.woff2);
+}
+
+.mainContainer {
+  text-align: center;
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #C571FF;
+  font-family: firaCode, monospace;
+}
+
+.logo {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 700px) {
+  .intro {
+    margin-left: 80px;
+  }
+}
+
+.introEc0lint {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 6.5em;
+}
+
+h2 {
+  font-size: 5em;
+}
+
+h3 {
+  font-size: 4em;
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-size: 2.5em;
+}
+
+h5 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+h6 {
+  font-size: 1em;
+  margin: 0;
+}
+
+.firstHeader {
+  margin-top: 0;
+  max-width: min(900px, 85%);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.sectionText {
+  max-width: min(900px, 85%);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.sectionTitle {
+  margin: 20px;
+  max-width: min(900px, 85%);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.prototype {
+  margin-top: 3%;
+}
+
+.mainButton {
+  background-color: #C571FF;
+  color: black;
+  font-family: 'Fira Code', monospace;
+  font-size: 25px;
+  padding: 10px 100px;
+  cursor: pointer;
+  margin: 30px;
+  border-radius: 5px;
+  margin-bottom: 70px;
+}
+
+.mainButton:hover {
+  background-color: #8ECCEA;
+}
+
+.blueSection {
+  background-color: #8ECCEA;
+  color: black;
+  padding: 20px;
+}
+
+.blueSwitchTextImpact {
+  min-height: 200px;
+}
+
+@media only screen and (min-width: 700px) {
+  .blueSwitchTextImpact {
+    min-height: 150px;
+  }
+}
+
+.blueSwitchTextCO2 {
+  min-height: 275px;
+}
+
+@media only screen and (min-width: 700px) {
+  .blueSwitchTextCO2 {
+    min-height: 190px;
+  }
+}
+
+.blueSectionText {
+  max-width: min(700px, 80%);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  display: inline-block;
+}
+
+.switchButtonClicked {
+  background-color: #8ECCEA;
+  border: 3px solid black;
+  border-radius: 50%;
+  padding: 3px 3px;
+  cursor: pointer;
+  margin: 7px;
+}
+
+.switchButton {
+  background-color: black;
+  border-radius: 50%;
+  padding: 4px 4px;
+  cursor: pointer;
+  margin: 7px;
+}
+
+.supportCompany {
+  display: inline-block;
+  padding: 20px 50px;
+  vertical-align: text-top;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: #C571FF;
+  color: black;
+  padding: 1px;
+  width: 220px;
+  height: 220px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.circleLink {
+  border-radius: 50%;
+  background-color: #C571FF;
+  color: black;
+  padding: 20px 20px;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.circleLink:hover {
+  background-color: #8ECCEA;
+  cursor: pointer;
+}
+
+.circleBlog {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.footerContact {
+  margin-left: 20px;
+}
+
+.footerName {
+  margin: 0 20px;
+  margin-top: -100px;
+}
+
+@media only screen and (min-width: 700px) {
+  .footerName {
+    margin: 0 20px;
+  }
+}
+
+.navLinkPurple {
+  text-decoration: none;
+  color: #C571FF;
+}
+
+.navLinkPurple:hover {
+  color: #8ECCEA;
+  cursor: pointer;
+}
+
+.navLinkBlue {
+  text-decoration: none;
+  color: #8ECCEA;
+}
+
+.navLinkBlue:hover {
+  color: #C571FF;
+  cursor: pointer;
+}
+
+.navLinkBlack {
+  text-decoration: none;
+  color: black;
+}
+
+.footerElement {
+  padding: 5px 40px;
+  margin-top: 0px;
+}
+
+@media only screen and (min-width: 700px) {
+  .footerElement {
+    display: inline-block;
+    padding: 10px 60px;
+  }
+}
+
+.footerLinks {
+  margin: 20px 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .footerLinks {
+    margin-top: -50px;
+  }
+}
+
+.footer {
+  margin: 20px 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .footer {
+    margin-top: -50px;
+  }
+}
+
+.header {
+  margin-right: 5%;
+}
+
+@media only screen and (min-width: 1500px) {
+  .header {
+    margin-right: max(10%, 300px);
+  }
+}
+
+.headerElement {
+  padding: 6px;
+  margin-top: 30px;
+  float: right;
+}
+
+@media only screen and (min-width: 700px) {
+  .headerElement {
+    padding: 20px;
+  }
+}
+
+.link {
+  color: #8ECCEA;
+}
+
+.blueSectionButton {
+  background-color: black;
+  color: #C571FF;
+  font-family: 'Fira Code', monospace;
+  font-size: 25px;
+  padding: 12px 100px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  border-width: 0;;
+}
+
+.blueSectionButton:hover {
+  background-color: #C571FF;
+  color: black;
+}
+
+.secondPage {
+  margin-top: 50px;
+}
+
+.CO2Formula {
+  color: #8ECCEA;
+  margin-bottom: 30px;
+}
+
+.circlePhoto {
+  border-radius: 50%;
+  display: inline-block;
+  max-height: 180px;
+  width: auto;
+  margin: 20px 40px;
+}
+
+.photo {
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.emptyPhoto {
+  border-radius: 50%;
+  background-color: #8ECCEA;
+  color: black;
+  padding: 1px;
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  margin-bottom: 45px;
+}
+
+.getStarted {
+  column-count: 2;
+  column-gap: 150px;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  filter: invert(54%) sepia(89%) saturate(2452%) hue-rotate(233deg) brightness(100%) contrast(101%);
+  padding-left: 10px;
+}
+
+.icon:hover {
+  filter: invert(88%) sepia(3%) saturate(6004%) hue-rotate(175deg) brightness(97%) contrast(88%);
+  cursor: pointer;
+}
+
+.headerDropdown {
+  position: absolute;
+  top: 20px;
+}
