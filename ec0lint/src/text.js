@@ -90,16 +90,16 @@ export const featuresPage = {
     mainFeatures: [
         {
             title: "Woff Woff! Font format validation",
-            text: "If a font format isn't WOFF, up to 75% more space for the font will be taken. Let's change them all to WOFF!"
+            text: "If a font format isn't WOFF or WOFF2, the font takes up to 75% more disk space. Let's change them all to WOFF!"
         },
         {
             title: "Replacement of heavy libraries functions",
             text: "Heavy library calls can be replaced by plain JS code. In the case of axios - when all axios functions will be " +
-                "removed from the code, the axios module can be deleted, saving 400 kB of space. "
+                "removed from the code, the module can be deleted, saving 400 kB of space (0.21g CO2 per view). "
         },
         {
             title: "Lighter image files",
-            text: "Image files inside web application should be in WebP and SVG format. These formats can crunch large images down into more manageable file sizes. We can achieve almost 99% reduction of file size using JPEG format over PPM, PS, RGB or PNG file. "
+            text: "Image files inside web application should have WebP or SVG format - these formats can crunch large images down into more manageable sizes. We can achieve 99% reduction of file size using these formats over PPM, PS, RGB or PNG file. "
         }
     ]
 };
