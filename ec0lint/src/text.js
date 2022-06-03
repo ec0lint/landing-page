@@ -11,6 +11,7 @@ export const banner = {
 }
 
 export const gitHubUrl = "https://github.com/ec0lint/ec0lint";
+export const linkedInUrl = "https://linkedin.com/company/ec0lint";
 
 export const whySection = {
     title: "Why?",

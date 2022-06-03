@@ -59,9 +59,3 @@ export default function GetStartedPage() {
     </div>
   );
 }
-
-// export const getStartedInANutshell = "In a nutshell: \n\n" +
-//     "1) Make sure you have Node installed\n" + 
-//     "2) Download ec0lint: npm i ec0lint \n" +
-//     "3) Configure your project: npm init @ec0lint/config \n" +
-//     "4) Let's go and build a web page!";

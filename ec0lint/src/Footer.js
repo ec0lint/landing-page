@@ -1,7 +1,7 @@
-import { banner } from './text';
+import { banner, gitHubUrl, linkedInUrl } from './text';
 import { Link, useLocation } from "react-router-dom";
-// import github from './images/github.svg';
-// import linkedin from './images/linkedin.svg';
+import github from './images/github.svg';
+import linkedin from './images/linkedin.svg';
 
 export default function Footer() {
   const location = useLocation();
@@ -28,10 +28,14 @@ export default function Footer() {
               Terms of Conditions
             </Link>
           </h6>
-          {/* <span> */}
-            {/* <img src={github} alt="github"/> */}
-            {/* <img src={linkedin} alt="linkedin"/> */}
-          {/* </span> */}
+          <span>
+            <a href={gitHubUrl} target="_blank" rel="noreferrer">
+              <img src={github} alt="github" className="icon"/>
+            </a>
+            <a href={linkedInUrl} target="_blank" rel="noreferrer">
+              <img src={linkedin} alt="linkedin" className="icon"/>
+            </a>
+          </span>
         </div>
     </div>
   );

@@ -1,5 +1,7 @@
 import React from 'react';
 import { team } from '../text';
+import github from '../images/github.svg';
+import linkedin from '../images/linkedin.svg';
 
 export default function TeamPage() {
   return (
@@ -10,7 +12,15 @@ export default function TeamPage() {
         {team.committee.map((x) => {
           return <span className="photo">
             {x.photo}
-            <h5>{x.name}</h5>
+            <h5 style={{ marginBottom: '10px' }}>{x.name}</h5>
+            <span>
+              <a href={x.linkedin} target="_blank" rel="noreferrer">
+                <img src={linkedin} alt={x.linkedin} className="icon"/>
+              </a>
+              {x.github && <a href={x.github} target="_blank" rel="noreferrer">
+                <img src={github} alt={x.github} className="icon"/>
+              </a>}
+            </span>
           </span>;
         })}
         <h6 className="sectionText">{team.intro}</h6>
@@ -20,15 +30,24 @@ export default function TeamPage() {
         {team.contributors.map((x) => {
           return <span className="photo">
             {x.photo}
-            <h5>{x.name}</h5>
+            <h5 style={{ marginBottom: '10px' }}>{x.name}</h5>
+            <span>
+              {x.linkedin && <a href={x.linkedin} target="_blank" rel="noreferrer">
+                <img src={linkedin} alt={x.linkedin} className="icon"/>
+              </a>}
+              {x.github && <a href={x.github} target="_blank" rel="noreferrer">
+                <img src={github} alt={x.github} className="icon"/>
+              </a>}
+            </span>
           </span>;
         })}
-        <span className="photo">
-            <div className="emptyPhoto">
-              <h4 style={{ marginTop: '63px' }}>You?</h4>
-            </div>
-            <h5 style={{ color: "#8ECCEA" }}>Do you want to join us?</h5>
-          </span>
+        <span className="photo" style={{ marginLeft: '40px' }}>
+          <div className="emptyPhoto">
+            <h4 style={{ marginTop: '63px' }}>You?</h4>
+          </div>
+          <h5 style={{ color: "#8ECCEA" }}>Do you want to</h5>
+          <h5 style={{ color: "#8ECCEA" }}>join us?</h5>
+        </span>
         <h6 className="sectionText" style={{ marginBottom: '60px', color: '#8ECCEA' }}>{team.footer}</h6>
     </div>
   );
