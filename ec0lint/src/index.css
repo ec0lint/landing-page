@@ -87,6 +87,7 @@ h6 {
 
 .prototype {
   margin-top: 3%;
+  max-width: 100%;
 }
 
 .mainButton {

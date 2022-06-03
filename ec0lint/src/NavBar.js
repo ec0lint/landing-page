@@ -21,11 +21,11 @@ export default function NavBar() {
       <h6 className="headerElement" onMouseEnter={() => setDisplayFeatures(true)} onMouseLeave={() => setDisplayFeatures(false)}>
         <Link to="/features" className={currentPath === "/features" ? "navLinkPurple" : "navLinkBlue"}>Features</Link>
       </h6>
-      {displayFeatures && <span>
+      {/* {displayFeatures && <span>
         <h6 className="headerElement headerDropdown">
           <Link to="/features/1" className={currentPath === "/features1" ? "navLinkPurple" : "navLinkBlue"}>Features 1</Link>
         </h6>
-      </span>}
+      </span>} */}
       <h6 className="headerElement">
         <Link to="/get-started" className={currentPath === "/get-started" ? "navLinkPurple" : "navLinkBlue"}>Get Started</Link>
       </h6>
