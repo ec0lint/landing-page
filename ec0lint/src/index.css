@@ -164,9 +164,9 @@ h6 {
   border-radius: 50%;
   background-color: #C571FF;
   color: black;
-  padding: 1px 0;
-  width: 200px;
-  height: 200px;
+  padding: 1px;
+  width: 220px;
+  height: 220px;
   margin: auto;
   margin-bottom: 100px;
 }
@@ -334,7 +334,7 @@ h6 {
   border-radius: 50%;
   background-color: #8ECCEA;
   color: black;
-  padding: 1px 0;
+  padding: 1px;
   width: 180px;
   height: 180px;
   margin: auto;

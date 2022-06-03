@@ -25,7 +25,7 @@ export default function TeamPage() {
         })}
         <span className="photo">
             <div className="emptyPhoto">
-              <h4>You?</h4>
+              <h4 style={{ marginTop: '63px' }}>You?</h4>
             </div>
             <h5 style={{ color: "#8ECCEA" }}>Do you want to join us?</h5>
           </span>
