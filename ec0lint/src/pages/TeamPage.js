@@ -29,7 +29,7 @@ export default function TeamPage() {
             </div>
             <h5 style={{ color: "#8ECCEA" }}>Do you want to join us?</h5>
           </span>
-        <h6 className="sectionText">{team.footer}</h6>
+        <h6 className="sectionText" style={{ marginBottom: '60px', color: '#8ECCEA' }}>{team.footer}</h6>
     </div>
   );
 }
