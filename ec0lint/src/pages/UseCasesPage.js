@@ -9,13 +9,13 @@ export default function UseCasesPage() {
           Comming soon
         </h3>
         <h4 className="sectionTitle" style={{ marginBottom: '30px', marginTop: '80px' }}>{useCases.title}</h4>
-        <ul className="sectionTitle" >{useCases.bulletPoints.map((x, i) => {
+        <h6 className="sectionText"><ul>{useCases.bulletPoints.map((x, i) => {
           return <span>
-              <li><h5 className="sectionText">{x.title}</h5></li>
-              <h6 className="sectionText">{x.text}</h6>
+              <li><h5 style={{ margin: '20px 0' }}>{x.title}</h5></li>
+              {x.text}
             </span>
           })}
-        </ul>
+        </ul></h6>
         <h6 className="sectionText" style={{ marginBottom: '40px', marginTop: '40px' }}>{useCases.footer}</h6>
         <References data={useCases.references} />
     </div>

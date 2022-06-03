@@ -378,7 +378,7 @@ export const useCases = {
         },
         { 
             title: "Illustration formats", 
-            text: "All images are saved in SVG which makes them lighter than PNGs and JPGs."
+            text: "All images are saved in SVG or WebP which makes them much lighter than PNGs and JPGs."
         },
         { 
             title: "Static", 

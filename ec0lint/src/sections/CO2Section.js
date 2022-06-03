@@ -15,20 +15,20 @@ export default function CO2Section() {
         <h4 className="sectionTitle">{CO2Calculation.formula.title}</h4>
         <h6 className="sectionText" style={{ textAlign: 'center', marginBottom: '20px' }}><i>{CO2Calculation.formula.equasion}</i></h6>
         <h6 className="sectionText">{CO2Calculation.formula.description.intro}</h6>
-        <ul className="sectionText">
+        <h6 className="sectionText"><ul>
           {CO2Calculation.formula.description.points.map((x, i) => {
-            return <li><h6 className="sectionText"><i>{x.name}</i> = {x.description}</h6></li>
+            return <li><i>{x.name}</i> = {x.description}</li>
           })}
-        </ul>
+        </ul></h6>
         <h6 className="sectionText">{CO2Calculation.formula.footNote}</h6>
       </div>
 
       <h5 className="sectionTitle">{CO2Calculation.assumptions.title}</h5>
-      <ul className="sectionText">
+      <h6 className="sectionText"><ul>
         {CO2Calculation.assumptions.bulletPoints.map((x, i) => {
-          return <li><h6 className="sectionText">{x}</h6></li>
+          return <li>{x}</li>
         })}
-      </ul>
+      </ul></h6>
       <h4 className="sectionTitle">{CO2Calculation.finalRemarks.title}</h4>
       <h6 className="sectionText">{CO2Calculation.finalRemarks.text}</h6>
       <References data={CO2Calculation.references} />
