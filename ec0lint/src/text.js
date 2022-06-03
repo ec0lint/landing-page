@@ -79,12 +79,6 @@ export const getStartedForUsers = "Have you ever heard of ESLint? You use it dai
     "pretty much ESLint, but it helps you to mitigate the carbon footprint of a web page. \n" + 
     "That's why we won't write long poems as ESLint did, once was enough. We'll forward you to their site.";
 
-export const getStartedInANutshell = "In a nutshell: \n\n" +
-    "1) Make sure you have Node installed\n" + 
-    "2) Download ec0lint: npm i ec0lint \n" +
-    "3) Configure your project: npm init @ec0lint/config \n" +
-    "4) Let's go and build a web page!";
-
 export const featuresPage = {
     title: "Currently",
     text: [
