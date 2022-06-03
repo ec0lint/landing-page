@@ -359,3 +359,8 @@ h6 {
   filter: invert(88%) sepia(3%) saturate(6004%) hue-rotate(175deg) brightness(97%) contrast(88%);
   cursor: pointer;
 }
+
+.headerDropdown {
+  position: absolute;
+  top: 20px;
+}
