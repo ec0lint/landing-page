@@ -36,7 +36,7 @@ export default function GetStartedPage() {
             {"\n3) Install dependencies"}
             {"\ncd ec0lint"}
             {"\nnpm install"}
-            {"\n4) Fork our repository and start contributing!"}</h6>
+            {"\n4) Start contributing!"}</h6>
         </div>
         <div>
           <a href={gitHubUrl} target="_blank" rel="noreferrer">
