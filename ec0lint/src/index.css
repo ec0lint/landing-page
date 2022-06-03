@@ -110,22 +110,22 @@ h6 {
 }
 
 .blueSwitchTextImpact {
-  min-height: 20vh;
+  min-height: 200px;
 }
 
 @media only screen and (min-width: 700px) {
   .blueSwitchTextImpact {
-    min-height: 8vh;
+    min-height: 150px;
   }
 }
 
 .blueSwitchTextCO2 {
-  min-height: 28vh;
+  min-height: 275px;
 }
 
 @media only screen and (min-width: 700px) {
   .blueSwitchTextCO2 {
-    min-height: 10vh;
+    min-height: 190px;
   }
 }
 
@@ -338,10 +338,22 @@ h6 {
   width: 180px;
   height: 180px;
   margin: auto;
-  margin-bottom: 26px;
+  margin-bottom: 45px;
 }
 
 .getStarted {
   column-count: 2;
   column-gap: 150px;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  filter: invert(54%) sepia(89%) saturate(2452%) hue-rotate(233deg) brightness(100%) contrast(101%);
+  padding-left: 10px;
+}
+
+.icon:hover {
+  filter: invert(88%) sepia(3%) saturate(6004%) hue-rotate(175deg) brightness(97%) contrast(88%);
+  cursor: pointer;
 }
