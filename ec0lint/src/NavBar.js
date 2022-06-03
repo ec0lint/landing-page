@@ -16,9 +16,11 @@ export default function NavBar() {
       <h6 className="headerElement">
         <Link to="/use-cases" className={currentPath === "/use-cases" ? "navLinkPurple" : "navLinkBlue"}>Use Cases</Link>
       </h6>
-      <h6 className="headerElement">
-        <Link to="/features" className={currentPath === "/features" ? "navLinkPurple" : "navLinkBlue"}>Features</Link>
-      </h6>
+      <span class="headerDropdown">
+        <h6 className="headerElement">
+          <Link to="/features" className={currentPath === "/features" ? "navLinkPurple" : "navLinkBlue"}>Features</Link>
+        </h6>
+      </span>
       <h6 className="headerElement">
         <Link to="/get-started" className={currentPath === "/get-started" ? "navLinkPurple" : "navLinkBlue"}>Get Started</Link>
       </h6>

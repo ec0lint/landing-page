@@ -1,7 +1,7 @@
 import { banner, gitHubUrl, linkedInUrl } from './text';
 import { Link, useLocation } from "react-router-dom";
-import github from './images/github.svg';
-import linkedin from './images/linkedin.svg';
+import github from './resources/github.svg';
+import linkedin from './resources/linkedin.svg';
 
 export default function Footer() {
   const location = useLocation();

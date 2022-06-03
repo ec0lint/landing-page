@@ -1,7 +1,7 @@
 import React from 'react';
 import { team } from '../text';
-import github from '../images/github.svg';
-import linkedin from '../images/linkedin.svg';
+import github from '../resources/github.svg';
+import linkedin from '../resources/linkedin.svg';
 
 export default function TeamPage() {
   return (

@@ -1,8 +1,10 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
-
 body {
   margin: 0;
+}
+
+@font-face {
+  font-family: firaCode;
+  src: url(resources/FiraCode-Light.woff2);
 }
 
 .mainContainer {
@@ -13,7 +15,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   color: #C571FF;
-  font-family: 'Fira Code', monospace;
+  font-family: firaCode, monospace;
 }
 
 .logo {

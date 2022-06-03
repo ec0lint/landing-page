@@ -1,8 +1,8 @@
 import React from 'react';
-import iec from '../images/iec.webp';
-import helsinki1 from '../images/helsinki1.webp';
-import helsinki2 from '../images/helsinki2.webp';
-import perspektywy from '../images/perspektywy.webp';
+import iec from '../resources/iec.webp';
+import helsinki1 from '../resources/helsinki1.webp';
+import helsinki2 from '../resources/helsinki2.webp';
+import perspektywy from '../resources/perspektywy.webp';
 
 function SupportSection() {
   
