@@ -9,10 +9,10 @@ export default function Footer() {
 
   return (
     <div className="footer">
-        <div className="sectionText">
-          <h2 className="logo">{banner.logo}</h2>
+        <div className="sectionText" style={{ marginBottom: '30px' }}>
+          <h3 className="logo">{banner.logo}</h3>
           <span className="logo">
-            <h4 className="footerName">{banner.name}</h4>
+            <h5 className="footerName" style={{ fontSize: '1.8em' }}>{banner.name}</h5>
             <h5 className="footerContact">Contact: {banner.email}</h5>
           </span>
         </div>
