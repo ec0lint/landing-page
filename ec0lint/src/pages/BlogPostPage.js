@@ -8,7 +8,7 @@ export default function BlogPostPage(data) {
       <h5 className="sectionText">
         <Link to="/blog"className="navLinkBlue"><i>{"<- Go back to all posts"}</i></Link>
       </h5>
-      <h3 className="sectionTitle">
+      <h3 className="sectionTitle" style={{ textAlign: 'left' }}>
         {data.data.title}
       </h3>
       <div style={{ marginBottom: '50px' }}>

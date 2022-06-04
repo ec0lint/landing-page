@@ -114,11 +114,12 @@ h6 {
 
 .blueSwitchTextImpact {
   min-height: 200px;
+  position: relative;
 }
 
 @media only screen and (min-width: 700px) {
   .blueSwitchTextImpact {
-    min-height: 150px;
+    min-height: 160px;
   }
 }
 
@@ -364,4 +365,13 @@ h6 {
 .headerDropdown {
   position: absolute;
   top: 20px;
+}
+
+.arrowButton {
+  cursor: pointer;
+  background-color: #8ECCEA;
+  border: none;
+  position: absolute;
+  top: 25%;
+  left: 20%;
 }

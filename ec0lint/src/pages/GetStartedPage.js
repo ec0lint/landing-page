@@ -9,7 +9,7 @@ export default function GetStartedPage() {
           For users
         </h4>
         <div className="getStarted sectionText">
-          <h6>{getStartedForUsers}</h6>
+          <h6 style={{ whiteSpace: 'pre-wrap' }}>{getStartedForUsers}</h6>
           <h6 style={{ whiteSpace: 'pre-wrap' }}>{"In a nutshell:"}
             {"\n1) Make sure you have Node installed "}
             {"\n2) Download ec0lint: \n"}<h6 style={{ color: '#8ECCEA' }}>   npm i ec0lint ec0lint-css ec0lint-css-config-recommended</h6>
