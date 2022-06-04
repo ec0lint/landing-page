@@ -421,7 +421,7 @@ export const useCases = {
 };
 
 export const blog = {
-    title: "Blog",
+    title: "Blog posts",
     posts: [
         {
             title: "Introduction to digital ecology",
@@ -601,7 +601,7 @@ export const team = {
     title1: "Steering Commitee",
     intro: "We met each other for the first time in 2018 during the scholarship program called \"New Technologies for Women\" organized by Intel and Perspektywy Women in Tech. In 2021, we participated in \"LeaderSHEp in Tech Academy\" and therefore, we were invited to take part in a hackathon about digital ecology. We won it by presenting ec0lint and here we are - developing the project further.  ",
     title2: "Contributors",
-    footer: "If you want to join our contributors team, feel free to reach out to us by email or on Linkedin!",
+    footer: "If you want to join our contributors team, feel free to reach out to us by email or on LinkedIn!",
     committee: [
         {
             name: "Katarzyna Wojdalska",
