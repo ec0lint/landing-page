@@ -1,7 +1,9 @@
-import { banner, gitHubUrl, linkedInUrl } from './text';
+import { banner, gitHubUrl, linkedInUrl, krystalUrl } from './text';
 import { Link, useLocation } from "react-router-dom";
 import github from './resources/github.svg';
 import linkedin from './resources/linkedin.svg';
+import krystal from './resources/krystal-badge.svg';
+import Carbonbadge from "react-carbonbadge";
 
 export default function Footer() {
   const location = useLocation();
@@ -15,6 +17,9 @@ export default function Footer() {
             <h5 className="footerName" style={{ fontSize: '1.8em' }}>{banner.name}</h5>
             <h5 className="footerContact">Contact: {banner.email}</h5>
           </span>
+          <a href={krystalUrl} target="_blank" rel="noreferrer">
+            <img src={krystal} alt="krystal" className="badge"/>
+          </a>
         </div>
         <div className="footerLinks">
           <h6 className="footerElement">&copy; ec0lint 2022</h6>
@@ -37,6 +42,7 @@ export default function Footer() {
             </a>
           </span>
         </div>
+        <Carbonbadge darkMode={true} style={{ float: 'right' }}/>
     </div>
   );
 }

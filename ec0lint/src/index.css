@@ -363,6 +363,25 @@ h6 {
   cursor: pointer;
 }
 
+.badge {
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+}
+
+@media only screen and (min-width: 800px) {
+  .badge {
+    float: right;
+    margin-top: 50px;
+    margin-right: -100px;
+  }
+}
+
+.badge2 {
+  margin-bottom: 1000px;
+  float: left;
+}
+
 .headerDropdown {
   position: absolute;
   top: 20px;

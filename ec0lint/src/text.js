@@ -12,6 +12,7 @@ export const banner = {
 
 export const gitHubUrl = "https://github.com/ec0lint/ec0lint";
 export const linkedInUrl = "https://linkedin.com/company/ec0lint";
+export const krystalUrl = "https://krystal.uk/green";
 
 export const whySection = {
     title: "Why?",
@@ -91,12 +92,12 @@ export const featuresPage = {
     mainFeatures: [
         {
             title: "Woff Woff! Font format validation",
-            text: "If a font format isn't WOFF or WOFF2, the font takes up to 75% more disk space. Let's change them all to WOFF!"
+            text: "If a font format isn't WOFF or WOFF2, the font takes up to 80% more disk space. Let's change them all to WOFF!"
         },
         {
             title: "Replacement of heavy libraries functions",
             text: "Heavy library calls can be replaced by plain JS code. In the case of axios - when all axios functions will be " +
-                "removed from the code, the module can be deleted, saving 400 kB of space (0.21g CO2 per view). "
+                "removed from the code, the module can be deleted, saving 440 kB of space (0.16 g CO2 per view). "
         },
         {
             title: "Lighter image files",
