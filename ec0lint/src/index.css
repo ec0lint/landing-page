@@ -213,8 +213,14 @@ h6 {
 }
 
 .navLinkPurple {
-  text-decoration: none;
+  text-decoration: underline;
   color: #C571FF;
+}
+
+@media only screen and (min-width: 700px) {
+  .navLinkPurple {
+    text-decoration: none;
+  }
 }
 
 .navLinkPurple:hover {
@@ -223,8 +229,14 @@ h6 {
 }
 
 .navLinkBlue {
-  text-decoration: none;
+  text-decoration: underline;
   color: #8ECCEA;
+}
+
+@media only screen and (min-width: 700px) {
+  .navLinkBlue {
+    text-decoration: none;
+  }
 }
 
 .navLinkBlue:hover {
