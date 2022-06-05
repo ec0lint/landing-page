@@ -38,7 +38,7 @@ export const impactSection = {
             "reducing CO2 emissions ",
             "per one click from 4.6 g to ~0.2 g so to only 24 kg CO2 annually, saving 528 kg CO2 (-96%!)."
         ],
-        [ "Free, open-source solution." ],
+        [ "Free, open-source solution - everyone has access to the code and can partcipate in ec0lint development." ],
         [ "The community can help in scaling up the tool and deciding on the most emerging features." ]
     ]
 };

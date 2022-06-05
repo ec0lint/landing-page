@@ -14,6 +14,12 @@ function ImpactSection() {
     const nextIndex = (currentIndex + 2) % 3;
     setCardDisplayed(nextIndex.toString());
   };
+
+  const onArrowClickRight = () => {
+    const currentIndex = cardDisplayed;
+    const nextIndex = (currentIndex + 1) % 3;
+    setCardDisplayed(nextIndex.toString());
+  };
   
   return (
       <span>
@@ -24,6 +30,7 @@ function ImpactSection() {
             <h6 className="blueSectionText">{impactSection.cards[cardDisplayed][0]}
               <u>{impactSection.cards[cardDisplayed][1]}</u>
             {impactSection.cards[cardDisplayed][2]}</h6>
+            <button onClick={onArrowClickRight} className="arrowButton"><h4>{">"}</h4></button>
           </div>
           {["0", "1", "2"].map((i) => {
             return <button className={cardDisplayed === i ? "switchButtonClicked" : "switchButton"}

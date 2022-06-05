@@ -125,6 +125,7 @@ h6 {
 
 .blueSwitchTextCO2 {
   min-height: 275px;
+  position: relative;
 }
 
 @media only screen and (min-width: 700px) {
@@ -373,5 +374,15 @@ h6 {
   border: none;
   position: absolute;
   top: 25%;
-  left: 20%;
+  margin-left: -15px;
+}
+
+.arrowButtonLeftCO2 {
+  margin-left: -45vw;
+}
+
+@media only screen and (min-width: 800px) {
+  .arrowButtonLeftCO2 {
+    margin-left: -400px;
+  }
 }
