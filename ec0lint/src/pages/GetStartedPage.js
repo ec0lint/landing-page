@@ -52,7 +52,7 @@ export default function GetStartedPage() {
         <h6 className="blueSectionText">{donateSection}</h6>
         <div>
           <a href={donateUrl} target="_blank" rel="noreferrer">
-            <button className="blueSectionButton">DONATE</button>
+            <button className="blueSectionButton">{"DONATE [soon]"}</button>
           </a>
         </div>
       </div>
