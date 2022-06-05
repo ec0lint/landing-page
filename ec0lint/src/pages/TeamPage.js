@@ -41,12 +41,12 @@ export default function TeamPage() {
             </span>
           </span>;
         })}
-        <span className="photo" style={{ marginLeft: '40px' }}>
+        <span>
           <div className="emptyPhoto">
             <h4 style={{ marginTop: '63px' }}>You?</h4>
           </div>
-          <h5 style={{ color: "#8ECCEA" }}>Do you want to</h5>
-          <h5 style={{ color: "#8ECCEA" }}>join us?</h5>
+          <h5 style={{ color: "#8ECCEA", marginTop: '-20px' }}>Do you want to</h5>
+          <h5 style={{ color: "#8ECCEA", marginBottom: '50px' }}>join us?</h5>
         </span>
         <h6 className="sectionText" style={{ marginBottom: '60px', color: '#8ECCEA' }}>{team.footer}</h6>
     </div>

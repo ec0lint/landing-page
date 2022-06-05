@@ -6,9 +6,9 @@ export default function UseCasesPage() {
   return (
     <div className="secondPage">
         <h3 className="sectionTitle" style={{ textAlign: 'center', color: '#8ECCEA' }}>
-          Comming soon
+          Coming soon
         </h3>
-        <h4 className="sectionTitle" style={{ marginBottom: '30px', marginTop: '80px' }}>{useCases.title}</h4>
+        <h4 className="sectionTitle" style={{ marginBottom: '30px', marginTop: '80px', textAlign: 'left' }}>{useCases.title}</h4>
         <h6 className="sectionText"><ul>{useCases.bulletPoints.map((x, i) => {
           return <span>
               <li><h5 style={{ margin: '20px 0' }}>{x.title}</h5></li>

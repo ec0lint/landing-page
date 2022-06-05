@@ -10,7 +10,7 @@ export default function BlogPage() {
         </h3>
         {blog.posts.map((x) => {
           return <div className="circleBlog">
-            <Link to={`/blog/${x.url}`} className="navLinkBlack"><div className="circleLink">
+            <Link to={`/blog/${x.url}`} className="navLinkBlack" onClick={() => window.scrollTo(0, 0)}><div className="circleLink">
               <h5 style={{ marginTop: '75px' }}>{x.title}</h5>
             </div></Link>
           </div>;
