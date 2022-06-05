@@ -92,19 +92,66 @@ export const featuresPage = {
     mainFeatures: [
         {
             title: "Woff Woff! Font format validation",
-            text: "If a font format isn't WOFF or WOFF2, the font takes up to 80% more disk space. Let's change them all to WOFF!"
+            text: "If a font format isn't WOFF or WOFF2, the font takes up to 80% more disk space. Let's change them all to WOFF!",
+            url: "/no-ttf-font-files"
         },
         {
             title: "Replacement of heavy libraries functions",
             text: "Heavy library calls can be replaced by plain JS code. In the case of axios - when all axios functions will be " +
-                "removed from the code, the module can be deleted, saving 440 kB of space (0.16 g CO2 per view). "
+                "removed from the code, the module can be deleted, saving 440 kB of space (0.16 g CO2 per view). ",
+            url: "/lighter-http"
         },
         {
             title: "Lighter image files",
-            text: "Image files inside web application should have WebP or SVG format - these formats can crunch large images down into more manageable sizes. We can achieve 99% reduction of file size using these formats over PPM, PS, RGB or PNG file. "
+            text: "Image files inside web application should have WebP or SVG format - these formats can crunch large images down into more manageable sizes. We can achieve 99% reduction of file size using these formats over PPM, PS, RGB or PNG file. ",
+            url: "/lighter-image-files"
         }
     ]
 };
+
+export const features = [
+    {
+        name: "no-ttf-font-files",
+        overview: <span>{"Disallow using TTF custom font files. \n\n"}
+            {"Fonts should be converted to WOFF or WOFF2 format. WOFF2 is now the most modern and efficient format available in browsers. We can achieve almost "}
+            <b>80% reduction</b> of file size simply through loading a WOFF2 file over a TTF.</span>,
+        CO2: <span>{"Convertion of only one of the most popular fonts used on websites – Helvetica Neue - from TTF to WOFF2 "}
+            {"format can reduce the carbon footprint even up to "}<u>1.23 g per website view.</u>
+            {"\n\nBy multiplying the library size by the end-user traffic (0.81 kWh / 1000 Mb) and by the energy emissions (442 g/kWh), the carbon footprint of the TTF file (4.45 Mb for Helvetica Neue) – sums up to 1.59 g. For WOFF2 (1.02 Mb) the carbon footprint amounts to 0.36. So, by substracting 0.36 g from 1.59 g we get 1.23 g."}
+            {"\n\nFont file sizes were checked at "}<a target="_blank" rel="noreferrer" href="https://mikeheavers.com/codepen/fonts/helvetica-neue" className="link">mikeheavers site.</a></span>,
+        examples: "@font-face { font-family: 'foo'; src: url('/path/to/foo.ttf'); } - Unrecommended format of the file \n\n" +
+            "The following patterns are considered problems: \n\n(a) \n@font-face { font-family: 'foo'; src: url('/path/to/foo.ttf'); } \n\n" +
+            "(b) \n@font-face { font-family: \"MyFont\"; src: url(\"myfont.ttf\") format(\"ttf\");} \n\n" +
+            "(c) \n@font-face { \n\tfont-family: dashicons; \n\tsrc: url(data:application/font-ttf;charset=utf-8;base64, ABCDEF= =) format(\"ttf\"); \n" +
+            "\tfont-weight: normal; \n\tfont-style: normal; \n } \n\n\nThe following patterns are not considered problems: \n\n" +
+            "(a) \n@font-face { font-family: 'foo'; src: url('/path/to/foo.woff'); } \n\n" +
+            "(b) \n@font-face { font-family: \"MyFont\"; src: url(\"myfont.woff2\") format(\"woff2\"); } \n\n" +
+            "(c) \n@font-face {\n\tfont-family: dashicons; \n\tsrc: url(data:application/font-woff;charset=utf-8;base64, ABCDEF==) format(\"woff\"), \n" +
+            "\turl(../fonts/dashicons.woff) format(\"truetype\"), \n\turl(../fonts/dashicons.svg#dashicons) format(\"svg\");" +
+            "\n\tfont-weight: normal; \n\tfont-style: normal;\n} "
+    },
+    {
+        name: "lighter-http",
+        overview: "Disallows to use libraries like: axios, got, request, make-fetch-happen, superagent, needle, simple-get. \n\nImporting large sets of packages, which are doing exactly the same work as fetch, takes a large amount of disk space. Fetch API is a built-in functionality, so it's always hereabouts.",
+        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.21 g per website view after removing a redundant library.</u>{"\n\n"} 
+            {"By multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of the heaviest library – superagent (0.58 MB) – sums up to 0.21g. For axios (0.44 MB) the carbon footprint amounts to 0.16 g, for needle (0.26 MB) - 0.09 g, for got (0.24 MB) - 0.08 g, for request (0.2 MB) - 0.07 g, for make-fetch-happen (0.06 MB) - 0.02 g, and for simple-get (0.01 MB) - 0.003 g.\n\n"}  
+            {"The library sizes were checked at "}<a target="_blank" rel="noreferrer" href="www.npmjs.com/package" className="link">www.npmjs.com/package</a>. </span>,
+        examples: "The following patterns are considered problems: \n\n(a) /* ec0lint lighter-http: \"error\" */ \n\n" +
+            "\tconst axios = require('axios') \n\n(b) /* ec0lint lighter-http: \"error\" */ \n\n\timport axios from 'axios'\n\n" +
+            "(c) /* ec0lint lighter-http: \"error\" */ \n\n\timport * as axios from 'axios' \n\n\n" +
+            "The following pattern is not considered as a problem: \n\n(a) /* ec0lint lighter-http: \"error\" */ \n\n fetch('https://api.github.com/orgs/nodejs')" +
+            "\n\t.then(response => response.json()) \n\t.then(data => { \n\t\tconsole.log(data) // Prints result from `response.json()` in getRequest \n\t})\n\t.catch(error => console.error(error)) "
+    },
+    {
+        name: "lighter-image-files",
+        overview: "Encourages to use WebP and SVG format of image files in CSS code. \n\nImage files inside web application should be in  WebP and SVG format. These formats can crunch large images down into more manageable file sizes. We can achieve almost 99% reduction of file size using JPEG format over PPM, PS, RGB or PNG file. ",
+        CO2: <span>Convertion of an exemplary image in 1800 x 1200 resolution from PNG to WebP format can reduce the carbon footprint by about <u>1.2 g per website view.</u>
+            {"\n\nBy multiplying the file size by the end-user traffic (0.81 kWh / 1000 Mb) and by the energy emissions (442 g/kWh), the carbon footprint of the exemplary PNG file (15.68 Mb) – sums up to 5.61 g. For the same exemplary image in WebP (12.32Mb) the carbon footprint amounts to 4.41g. So, by subtracting 4.41 g from 5.61g we get 1.2 g (21% less CO2)."}</span>,
+        examples: "background-image: url('image.png'); - Unrecommended format of the file \n\nThe following patterns are considered problems: \n\n(a)\nbackground-image: url('image.ppm'); \n\n" +
+            "(b) \nbackground-image: url('image.ps'); \n\n(c) \nbackground-image: url('image.rgb'); \n\n(d) \nbackground-image: url('image.png'); \n\n\nThe following patterns are not considered problems: \n\n" +
+            "(a) \nbackground-image: url('image.gif'); \n\n(b) \nbackground-image: url('image.jpg'); "
+    }
+]
 
 export const CO2Calculation = {
     title: "How do we calculate CO2 savings?",

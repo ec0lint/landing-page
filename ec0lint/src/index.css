@@ -124,13 +124,13 @@ h6 {
 }
 
 .blueSwitchTextCO2 {
-  min-height: 275px;
+  min-height: 310px;
   position: relative;
 }
 
 @media only screen and (min-width: 700px) {
   .blueSwitchTextCO2 {
-    min-height: 190px;
+    min-height: 260px;
   }
 }
 
@@ -404,4 +404,22 @@ h6 {
   .arrowButtonLeftCO2 {
     margin-left: -400px;
   }
+}
+
+.docsButton {
+  background-color: black;
+  color: #C571FF;
+  font-family: 'Fira Code', monospace;
+  font-size: 20px;
+  padding: 10px 60px;
+  cursor: pointer;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border-width: 0;;
+}
+
+.docsButton:hover {
+  background-color: #C571FF;
+  color: black;
 }

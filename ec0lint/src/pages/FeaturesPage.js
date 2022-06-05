@@ -1,6 +1,7 @@
 import React from 'react';
 import { featuresPage } from "../text";
 import CO2Section from '../sections/CO2Section';
+import { Link } from "react-router-dom";
 
 export default function FeaturesPage() {
   const [cardDisplayed, setCardDisplayed] = React.useState("0");
@@ -37,6 +38,11 @@ export default function FeaturesPage() {
               {featuresPage.mainFeatures[cardDisplayed].text}
             </h6>
             <button onClick={onArrowClickRight} className="arrowButton"><h4>{">"}</h4></button>
+            <div>
+              <Link to={`/features${featuresPage.mainFeatures[cardDisplayed].url}`}>
+                <button className="docsButton">DOCUMENTATION</button>
+              </Link>
+            </div>
           </div>
           {["0", "1", "2"].map((i) => {
             return <button className={cardDisplayed === i ? "switchButtonClicked" : "switchButton"}
