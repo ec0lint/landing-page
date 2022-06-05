@@ -40,7 +40,7 @@ export default function FeaturesPage() {
             <button onClick={onArrowClickRight} className="arrowButton"><h4>{">"}</h4></button>
             <div>
               <Link to={`/features${featuresPage.mainFeatures[cardDisplayed].url}`}>
-                <button className="docsButton">DOCUMENTATION</button>
+                <button className="docsButton" onClick={() => window.scrollTo(0, 0)}>DOCUMENTATION</button>
               </Link>
             </div>
           </div>

@@ -77,8 +77,8 @@ export const references = [
     }
 ];
 
-export const getStartedForUsers = <span>{"Have you ever heard of ESLint? You use it daily? Great! ec0lint is "}
-    {"pretty much ESLint, but it helps you to mitigate the carbon footprint of a web page. \n\n"}
+export const getStartedForUsers = <span>{"\nHave you ever heard of ESLint? You use it daily? Great! ec0lint is "}
+    {"pretty much ESLint, but it helps you to mitigate the carbon footprint of a web page. \n\n\n"}
     {"That's why we won't write long poems as ESLint did, once was enough. We'll forward you to "}
         <a target="_blank" rel="noreferrer" href="https://eslint.org/docs/user-guide/getting-started" className="link">their site.</a></span>;
 

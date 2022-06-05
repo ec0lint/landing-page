@@ -10,10 +10,10 @@ export default function GetStartedPage() {
         </h4>
         <div className="getStarted sectionText">
           <h6 style={{ whiteSpace: 'pre-wrap' }}>{getStartedForUsers}</h6>
-          <h6 style={{ whiteSpace: 'pre-wrap' }}>{"In a nutshell:"}
+          <h6 style={{ whiteSpace: 'pre-wrap' }}>{"\nIn a nutshell: \n"}
             {"\n1) Make sure you have Node installed "}
-            {"\n2) Download ec0lint: \n"}<h6 style={{ color: '#8ECCEA' }}>   npm i ec0lint ec0lint-css ec0lint-css-config-recommended</h6>
-            {"3) Configure your project: \n"}<h6 style={{ color: '#8ECCEA' }}>   npm init @ec0lint/config</h6>
+            {"\n2) Download ec0lint: \n"}<h6 style={{ color: '#8ECCEA' }}>npm i ec0lint ec0lint-css ec0lint-css-config-recommended</h6>
+            {"3) Configure your project: \n"}<h6 style={{ color: '#8ECCEA' }}>npm init @ec0lint/config</h6>
             {"4) Let's go and build an eco web page!"}
           </h6>
         </div>

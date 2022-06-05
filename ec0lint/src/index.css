@@ -85,6 +85,12 @@ h6 {
   text-justify: inter-word;
 }
 
+@media only screen and (max-width: 500px) {
+  .sectionTitle {
+    font-size: 2.8em;
+  }
+}
+
 .prototype {
   margin-top: 3%;
   max-width: 100%;
@@ -113,22 +119,34 @@ h6 {
 }
 
 .blueSwitchTextImpact {
-  min-height: 200px;
+  min-height: 15em;
   position: relative;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 400px) {
+  .blueSwitchTextImpact {
+    min-height: 13em;
+  }
+}
+
+@media only screen and (min-width: 500px) {
   .blueSwitchTextImpact {
     min-height: 160px;
   }
 }
 
 .blueSwitchTextCO2 {
-  min-height: 310px;
+  min-height: 25em;
   position: relative;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 400px) {
+  .blueSwitchTextCO2 {
+    min-height: 22em;
+  }
+}
+
+@media only screen and (min-width: 500px) {
   .blueSwitchTextCO2 {
     min-height: 260px;
   }
@@ -203,7 +221,7 @@ h6 {
 
 .footerName {
   margin: 0 20px;
-  margin-top: -100px;
+  margin-top: -30px;
 }
 
 @media only screen and (min-width: 700px) {
@@ -283,6 +301,7 @@ h6 {
 
 .header {
   margin-right: 5%;
+  margin-top: 30px;
 }
 
 @media only screen and (min-width: 1500px) {
@@ -292,14 +311,21 @@ h6 {
 }
 
 .headerElement {
-  padding: 6px;
-  margin-top: 30px;
   float: right;
+  margin-left: 10px;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
   .headerElement {
-    padding: 20px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .headerElement {
+    font-size: 0.75em;
+    margin-left: 8px;
+    display: inline-block;
   }
 }
 
@@ -358,9 +384,11 @@ h6 {
   margin-bottom: 45px;
 }
 
-.getStarted {
-  column-count: 2;
-  column-gap: 150px;
+@media only screen and (min-width: 800px) {
+  .getStarted {
+    column-count: 2;
+    column-gap: 150px;
+  }
 }
 
 .icon {
@@ -379,6 +407,7 @@ h6 {
   width: 100px;
   height: 100px;
   margin-left: 20px;
+  margin-top: 20px;
 }
 
 @media only screen and (min-width: 800px) {
@@ -387,16 +416,6 @@ h6 {
     margin-top: 50px;
     margin-right: -100px;
   }
-}
-
-.badge2 {
-  margin-bottom: 1000px;
-  float: left;
-}
-
-.headerDropdown {
-  position: absolute;
-  top: 20px;
 }
 
 .arrowButton {
