@@ -19,12 +19,12 @@ export default function Footer() {
         <div className="footerLinks">
           <h6 className="footerElement">&copy; ec0lint 2022</h6>
           <h6 className="footerElement">
-            <Link to="/privacy-policy" className={currentPath === "/privacy-policy" ? "navLinkBlue" : "navLinkPurple"}>
+            <Link to="/privacy-policy" className={currentPath === "/privacy-policy" ? "navLinkBlue" : "navLinkPurple"} onClick={() => window.scrollTo(0, 0)}>
               Privacy Policy
             </Link>
           </h6>
           <h6 className="footerElement">
-            <Link to="/terms-of-conditions" className={currentPath === "/terms-of-conditions" ? "navLinkBlue" : "navLinkPurple"}>
+            <Link to="/terms-of-conditions" className={currentPath === "/terms-of-conditions" ? "navLinkBlue" : "navLinkPurple"} onClick={() => window.scrollTo(0, 0)}>
               Terms of Conditions
             </Link>
           </h6>
