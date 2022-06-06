@@ -6,7 +6,7 @@ export default function BlogPostPage(data) {
   return (
     <div className="secondPage">
       <h5 className="sectionText">
-        <Link to="/blog"className="navLinkBlue"><i>{"<- Go back to all posts"}</i></Link>
+        <Link to="/blog" className="navLinkBlue"><i>{"<- Go back to all posts"}</i></Link>
       </h5>
       <h3 className="sectionTitle" style={{ textAlign: 'left' }}>
         {data.data.title}
@@ -16,8 +16,8 @@ export default function BlogPostPage(data) {
           return <h6 className="sectionText" style={{ marginBottom: '20px' }}>{x}</h6>;
         })}
       </div>
-      <h5 className="sectionText">
-        <Link to="/blog"className="navLinkBlue"><i>{"<- Go back to all posts"}</i></Link>
+      <h5 className="sectionText" style={{ marginBottom: '50px' }}>
+        <Link to="/blog" className="navLinkBlue"><i>{"<- Go back to all posts"}</i></Link>
       </h5>
       {data.data.references && <References data={data.data.references} />}
     </div>

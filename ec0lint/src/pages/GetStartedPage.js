@@ -1,4 +1,4 @@
-import { getStartedForUsers, gitHubUrl, donateSection, donateUrl } from "../text";
+import { getStartedForUsers, gitHubUrl, donateSection } from "../text";
 
 export default function GetStartedPage() {
 
@@ -14,7 +14,7 @@ export default function GetStartedPage() {
             {"\n1) Make sure you have Node installed "}
             {"\n2) Download ec0lint: \n"}<h6 style={{ color: '#8ECCEA' }}>npm i ec0lint ec0lint-css ec0lint-css-config-recommended</h6>
             {"3) Configure your project: \n"}<h6 style={{ color: '#8ECCEA' }}>npm init @ec0lint/config</h6>
-            {"4) Let's go and build an eco web page!"}
+            {"4) Let's build an eco-friendly website!"}
           </h6>
         </div>
       </div>
@@ -51,9 +51,10 @@ export default function GetStartedPage() {
       <div className="blueSection" style={{ marginBottom: '80px' }}>
         <h6 className="blueSectionText">{donateSection}</h6>
         <div>
-          <a href={donateUrl} target="_blank" rel="noreferrer">
+          <h5 style={{ marginBottom: '20px' }}>{"[soon]"}</h5>
+          {/* <a href={donateUrl} target="_blank" rel="noreferrer">
             <button className="blueSectionButton">{"DONATE [soon]"}</button>
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

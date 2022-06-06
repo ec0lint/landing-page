@@ -1,5 +1,4 @@
-import { whySection, ec0lintIsSection, gitHubUrl, donateSection, donateUrl,
-references } from '../text';
+import { whySection, ec0lintIsSection, gitHubUrl, donateSection, references } from '../text';
 import prototype from '../resources/prototype.webp';
 import ImpactSection from '../sections/ImpactSection';
 import SupportSection from '../sections/SupportSection';
@@ -30,9 +29,10 @@ function MainPage() {
         <ImpactSection/>
         <h6 className="sectionText" style={{ paddingTop: '70px' }}>{donateSection}</h6>
         <div>
-          <a href={donateUrl} target="_blank" rel="noreferrer">
+          <h5 style={{ margin: '50px' }}>{"[soon]"}</h5>
+          {/* <a href={donateUrl} target="_blank" rel="noreferrer">
             <button className="mainButton">{"DONATE [soon]"}</button>
-          </a>
+          </a> */}
         </div>
         <SupportSection/>
         <h4>Used by</h4>
