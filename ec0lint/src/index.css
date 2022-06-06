@@ -384,10 +384,10 @@ h6 {
   margin-bottom: 45px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1200px) {
   .getStarted {
     column-count: 2;
-    column-gap: 150px;
+    column-gap: 50px;
   }
 }
 
