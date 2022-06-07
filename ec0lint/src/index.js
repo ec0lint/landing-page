@@ -15,8 +15,6 @@ import BlogPostPage from './pages/BlogPostPage';
 import RulePage from './pages/RulePage';
 import TeamPage from './pages/TeamPage';
 import { blog, features } from './text';
-import * as axios from 'axios';
-import * as x from 'date-fns';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
