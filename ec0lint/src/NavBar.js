@@ -1,9 +1,12 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import axios from 'axios';
+
 
 export default function NavBar() {
   const location = useLocation();
   const currentPath = location.pathname;
+  const a = axios.run();
 
   return (
     <div className="header">
