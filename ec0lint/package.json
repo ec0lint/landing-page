@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "ec0lint": "^0.0.35",
+    "ec0lint": "^1.0.0",
     "ec0lint-css": "^1.0.0",
     "ec0lint-css-config-recommended": "^1.0.0",
     "react": "^18.1.0",
