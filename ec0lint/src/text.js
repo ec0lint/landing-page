@@ -18,7 +18,7 @@ export const whySection = {
     title: "Why?",
     text: [
         "Did you know that more than 250 000 web pages are published every day? " +
-        "The majority of them use too heavy fonts, too large/unnecessary images or utilize redundant libraries. " +
+        "The majority of them uses too heavy fonts, too large/unnecessary images or utilizes redundant libraries. " +
         "These factors, and more, generate carbon footprint. Actually, ",
         "one view of an average website generates 4.6 g CO2, which amounts to 552 kg CO2 annually",
         " (10 000 monthly views on average). Unfortunately, current solutions optimize only already existing websites."
@@ -39,12 +39,12 @@ export const impactSection = {
             "reducing CO2 emissions ",
             "per one click from 4.6 g to ~0.2 g so to only 24 kg CO2 annually, saving 528 kg CO2 (-96%!)."
         ],
-        [ "Free, open-source solution - everyone has access to the code and can partcipate in ec0lint development." ],
+        [ "Free, open-source solution - everyone has access to the code and can participate in ec0lint's development." ],
         [ "The community can help in scaling up the tool and deciding on the most emerging features." ]
     ]
 };
 
-export const donateSection = "We'd be thankful if you would like to support our work by pressing the donate " +
+export const donateSection = "We'd be thankful if you'd like to support our work by pressing the donate " +
 "button. We truly care about the environment and want to keep on developing ec0lint. Thanks!";
 
 export const donateUrl = "";
@@ -77,7 +77,7 @@ export const references = [
     }
 ];
 
-export const getStartedForUsers = <span>{"\nHave you ever heard of ESLint? You use it daily? Great! ec0lint is "}
+export const getStartedForUsers = <span>{"Have you ever heard of ESLint? You use it daily? Great! ec0lint is "}
     {"pretty much ESLint, but it helps you to mitigate the carbon footprint of a web page. \n\n\n"}
     {"That's why we won't write long poems as ESLint did, once was enough. We'll forward you to "}
         <a target="_blank" rel="noreferrer" href="https://eslint.org/docs/user-guide/getting-started" className="link">their site.</a></span>;
@@ -85,8 +85,8 @@ export const getStartedForUsers = <span>{"\nHave you ever heard of ESLint? You u
 export const featuresPage = {
     title: "Currently",
     text: [
-        "At the moment, we want to deploy the first three features, namely:",
-        "Eventually, we aim to automate our solution. One-click and you can start discovering a green " +
+        "At the moment, we deployed the first three features, namely:",
+        "Eventually, we aim to automate our solution. One click and you can start discovering a green " +
         "version of your website."
     ],
     mainFeatures: [
@@ -186,8 +186,8 @@ export const CO2Calculation = {
     },
     finalRemarks: {
         title: "Final remarks",
-        text: "The amount of carbon emissions per energy unit varies in the region. If you want to know what's the number of CO2 for " +
-            "specific locations, please refer to “Technology-specific Cost and Performance Parameters” by IPCC, and if you wish to know " +
+        text: "The amount of carbon emissions per energy unit varies in each region. If you want to know what's the number of CO2 for a" +
+            "specific location, please refer to “Technology-specific Cost and Performance Parameters” by IPCC, and if you wish to know " +
             "more about the differences, we suggest reading the article “Why do estimates of Internet energy consumption vary so drastically?” " +
             "published by Whole Grain Digital."
     },

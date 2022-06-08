@@ -23,7 +23,7 @@ export default function CO2Section() {
         <h6 className="sectionText">{CO2Calculation.formula.footNote}</h6>
       </div>
 
-      <h5 className="sectionTitle">{CO2Calculation.assumptions.title}</h5>
+      <h5 className="sectionTitle" style={{ textAlign: 'left' }}>{CO2Calculation.assumptions.title}</h5>
       <h6 className="sectionText"><ul>
         {CO2Calculation.assumptions.bulletPoints.map((x, i) => {
           return <li>{x}</li>

@@ -18,7 +18,7 @@ function SupportSection() {
         <span className="supportCompany">
         <img src={helsinki1} alt="helsinki think company" style={{ paddingRight: 0 }}/>
         <img src={helsinki2} alt="think company fund"style={{ paddingLeft: '10px' }}/>
-          <div style={{ paddingTop: '10px' }}><h6>{"Helsinki Think Company &"}</h6>
+          <div><h6>{"Helsinki Think Company &"}</h6>
           <h6>Think Company Fund</h6></div>
         </span>
         <span className="supportCompany">

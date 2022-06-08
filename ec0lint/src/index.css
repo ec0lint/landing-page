@@ -338,7 +338,7 @@ h6 {
   color: #C571FF;
   font-family: 'Fira Code', monospace;
   font-size: 25px;
-  padding: 12px 100px;
+  padding: 12px 80px;
   cursor: pointer;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -384,10 +384,10 @@ h6 {
   margin-bottom: 45px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1200px) {
   .getStarted {
     column-count: 2;
-    column-gap: 150px;
+    column-gap: 50px;
   }
 }
 
