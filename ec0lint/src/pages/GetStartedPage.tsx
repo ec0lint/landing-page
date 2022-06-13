@@ -1,3 +1,4 @@
+import React = require("react");
 import { getStartedForUsers, gitHubUrl, donateSection } from "../text";
 
 export default function GetStartedPage() {

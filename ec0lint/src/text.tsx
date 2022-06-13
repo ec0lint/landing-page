@@ -2,6 +2,7 @@ import Kasia from './resources/Kasia.webp';
 import Malwina from './resources/Malwina.webp';
 import Ania from './resources/Ania.webp';
 import Julia from './resources/Julia.webp';
+import React = require('react');
 
 export const banner = {
     logo: "{e}",

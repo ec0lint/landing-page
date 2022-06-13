@@ -1,8 +1,9 @@
-import { banner, gitHubUrl, linkedInUrl, krystalUrl } from './text';
+import React = require("react");
+import { banner, gitHubUrl, linkedInUrl, krystalUrl } from "./text";
 import { Link, useLocation } from "react-router-dom";
-import github from './resources/github.svg';
-import linkedin from './resources/linkedin.svg';
-import krystal from './resources/krystal-badge.svg';
+import github from "./resources/github.svg";
+import linkedin from "./resources/linkedin.svg";
+import krystal from "./resources/krystal-badge.svg";
 import Carbonbadge from "react-carbonbadge";
 
 export default function Footer() {
@@ -11,10 +12,10 @@ export default function Footer() {
 
   return (
     <div className="footer">
-        <div className="sectionText" style={{ marginBottom: '30px' }}>
+        <div className="sectionText" style={{ marginBottom: "30px" }}>
           <h3 className="logo">{banner.logo}</h3>
           <span className="logo">
-            <h5 className="footerName" style={{ fontSize: '1.8em' }}>{banner.name}</h5>
+            <h5 className="footerName" style={{ fontSize: "1.8em" }}>{banner.name}</h5>
             <h5 className="footerContact">Contact: {banner.email}</h5>
           </span>
           <a href={krystalUrl} target="_blank" rel="noreferrer">
@@ -42,7 +43,7 @@ export default function Footer() {
             </a>
           </span>
         </div>
-        <Carbonbadge darkMode={true} style={{ float: 'right' }}/>
+        <Carbonbadge darkMode={true} style={{ float: "right" }}/>
     </div>
   );
 }
