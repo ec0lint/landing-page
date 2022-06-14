@@ -12,14 +12,16 @@ export default function FeaturesPage() {
   };
 
   const onArrowClickLeft = () => {
-    const currentIndex = cardDisplayed;
-    const nextIndex = (currentIndex + 2) % 3;
-    setCardDisplayed(nextIndex);
+    onArrowClick(2);
   };
 
   const onArrowClickRight = () => {
+    onArrowClick(1);
+  };
+
+  const onArrowClick = (shift: number) => {
     const currentIndex = cardDisplayed;
-    const nextIndex = (currentIndex + 1) % 3;
+    const nextIndex = (currentIndex + shift) % 3;
     setCardDisplayed(nextIndex);
   };
 
