@@ -1,6 +1,7 @@
-import React from 'react';
+import React from "react";
+import { IRuleObj } from "../interfaces";
 
-export default function RulePage(data) {
+export default function RulePage(data: IRuleObj) {
   return (
     <div className="secondPage">
       <h3 className="sectionTitle" style={{ textAlign: 'left' }}>

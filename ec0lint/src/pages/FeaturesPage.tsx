@@ -1,26 +1,28 @@
-import React from 'react';
+import React from "react";
 import { featuresPage } from "../text";
 import CO2Section from '../sections/CO2Section';
 import { Link } from "react-router-dom";
 
 export default function FeaturesPage() {
-  const [cardDisplayed, setCardDisplayed] = React.useState("0");
+  const [cardDisplayed, setCardDisplayed] = React.useState(0);
 
-  const onButtonClick = (event) => {
-    const index = event.target.value;
+  const onButtonClick = (event: any) => {
+    const index = parseInt(event.target.value);
     setCardDisplayed(index);
   };
 
   const onArrowClickLeft = () => {
-    const currentIndex = cardDisplayed;
-    const nextIndex = (currentIndex + 2) % 3;
-    setCardDisplayed(nextIndex.toString());
+    onArrowClick(2);
   };
 
   const onArrowClickRight = () => {
+    onArrowClick(1);
+  };
+
+  const onArrowClick = (shift: number) => {
     const currentIndex = cardDisplayed;
-    const nextIndex = (currentIndex + 1) % 3;
-    setCardDisplayed(nextIndex.toString());
+    const nextIndex = (currentIndex + shift) % 3;
+    setCardDisplayed(nextIndex);
   };
 
   return (
@@ -44,7 +46,7 @@ export default function FeaturesPage() {
               </Link>
             </div>
           </div>
-          {["0", "1", "2"].map((i) => {
+          {[0, 1, 2].map((i) => {
             return <button className={cardDisplayed === i ? "switchButtonClicked" : "switchButton"}
               value={i} key={i} onClick={onButtonClick}>
             </button>

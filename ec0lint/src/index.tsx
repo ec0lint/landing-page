@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -16,7 +16,7 @@ import RulePage from './pages/RulePage';
 import TeamPage from './pages/TeamPage';
 import { blog, features } from './text';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root')!);
 root.render(
   <span className="mainContainer">
     <BrowserRouter>

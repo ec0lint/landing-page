@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { blog } from '../text';
 import { Link } from "react-router-dom";
 

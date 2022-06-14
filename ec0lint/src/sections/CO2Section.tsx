@@ -1,6 +1,6 @@
-import React from 'react';
 import { CO2Calculation } from "../text";
 import References from './References';
+import React from "react";
 
 export default function CO2Section() {
 

@@ -1,24 +1,26 @@
-import React from 'react';
 import { impactSection } from '../text';
+import React from "react";
 
-function ImpactSection() {
-  const [cardDisplayed, setCardDisplayed] = React.useState("0");
+export default function ImpactSection() {
+  const [cardDisplayed, setCardDisplayed] = React.useState(0);
 
-  const onButtonClick = (event) => {
+  const onButtonClick = (event: any) => {
     const index = event.target.value;
-    setCardDisplayed(index);
+    setCardDisplayed(parseInt(index));
   };
 
   const onArrowClickLeft = () => {
-    const currentIndex = cardDisplayed;
-    const nextIndex = (currentIndex + 2) % 3;
-    setCardDisplayed(nextIndex.toString());
+    onArrowClick(2);
   };
 
   const onArrowClickRight = () => {
+    onArrowClick(1);
+  };
+
+  const onArrowClick = (shift: number) => {
     const currentIndex = cardDisplayed;
-    const nextIndex = (currentIndex + 1) % 3;
-    setCardDisplayed(nextIndex.toString());
+    const nextIndex = (currentIndex + shift) % 3;
+    setCardDisplayed(nextIndex);
   };
   
   return (
@@ -32,7 +34,7 @@ function ImpactSection() {
             {impactSection.cards[cardDisplayed][2]}</h6>
             <button onClick={onArrowClickRight} className="arrowButton"><h4>{">"}</h4></button>
           </div>
-          {["0", "1", "2"].map((i) => {
+          {[0, 1, 2].map((i) => {
             return <button className={cardDisplayed === i ? "switchButtonClicked" : "switchButton"}
               value={i} key={i} onClick={onButtonClick}>
             </button>
@@ -41,5 +43,3 @@ function ImpactSection() {
     </span>
   );
 }
-
-export default ImpactSection;

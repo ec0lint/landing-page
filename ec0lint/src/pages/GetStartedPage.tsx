@@ -1,4 +1,5 @@
-import { getStartedForUsers, gitHubUrl, donateSection } from "../text";
+import React from "react";
+import { getStartedForUsers, gitHubUrl, donateSection, donateUrl } from "../text";
 
 export default function GetStartedPage() {
 
@@ -55,10 +56,9 @@ export default function GetStartedPage() {
       <div className="blueSection" style={{ marginBottom: '80px' }}>
         <h6 className="blueSectionText">{donateSection}</h6>
         <div>
-          <h5 style={{ marginBottom: '20px' }}>{"[soon]"}</h5>
-          {/* <a href={donateUrl} target="_blank" rel="noreferrer">
-            <button className="blueSectionButton">{"DONATE [soon]"}</button>
-          </a> */}
+          <a href={donateUrl} target="_blank" rel="noreferrer">
+            <button className="blueSectionButton">{"DONATE"}</button>
+          </a>
         </div>
       </div>
     </div>
