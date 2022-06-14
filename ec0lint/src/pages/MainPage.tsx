@@ -1,4 +1,4 @@
-import React = require("react");
+import React from "react";
 import { whySection, ec0lintIsSection, gitHubUrl, donateSection, references } from '../text';
 import prototype from '../resources/prototype.webp';
 import ImpactSection from '../sections/ImpactSection';

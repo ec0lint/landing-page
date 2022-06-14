@@ -1,6 +1,6 @@
-import React from 'react';
 import { useCases } from "../text";
 import References from '../sections/References';
+import React from "react";
 
 export default function UseCasesPage() {
   return (

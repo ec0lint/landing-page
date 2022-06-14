@@ -1,8 +1,9 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
 import References from '../sections/References';
+import { IBlogObj } from "../interfaces";
 
-export default function BlogPostPage(data) {
+export default function BlogPostPage(data: IBlogObj) {
   return (
     <div className="secondPage">
       <h5 className="sectionText">

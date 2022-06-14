@@ -1,4 +1,4 @@
-import React = require("react");
+import React from "react";
 import { banner, gitHubUrl, linkedInUrl, krystalUrl } from "./text";
 import { Link, useLocation } from "react-router-dom";
 import github from "./resources/github.svg";

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import iec from '../resources/iec.webp';
 import helsinki1 from '../resources/helsinki1.webp';
 import helsinki2 from '../resources/helsinki2.webp';
