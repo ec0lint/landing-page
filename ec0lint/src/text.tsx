@@ -48,7 +48,7 @@ export const impactSection = {
 export const donateSection = "We'd be thankful if you'd like to support our work by pressing the donate " +
 "button. We truly care about the environment and want to keep on developing ec0lint. Thanks!";
 
-export const donateUrl = "";
+export const donateUrl = "https://www.kickstarter.com/projects/ec0lint/create-sustainable-digital-environment-with-ec0lint";
 
 export const references = [
     {

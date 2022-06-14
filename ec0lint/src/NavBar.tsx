@@ -5,25 +5,29 @@ export default function NavBar() {
   const location = useLocation();
   const currentPath = location.pathname;
 
+  const getClassName = (path: string) => {
+    return currentPath.includes(path) ? "navLinkPurple" : "navLinkBlue";
+  }
+
   return (
     <div className="header">
       <h6 className="headerElement">
-        <Link to="/team" className={currentPath === "/team" ? "navLinkPurple" : "navLinkBlue"}>Team</Link>
+        <Link to="/team" className={getClassName("/team")}>Team</Link>
       </h6>
       <h6 className="headerElement">
-        <Link to="/blog" className={currentPath.includes("/blog") ? "navLinkPurple" : "navLinkBlue"}>Blog</Link>
+        <Link to="/blog" className={getClassName("/blog")}>Blog</Link>
       </h6>
       <h6 className="headerElement">
-        <Link to="/use-cases" className={currentPath === "/use-cases" ? "navLinkPurple" : "navLinkBlue"}>Use Cases</Link>
+        <Link to="/use-cases" className={getClassName("/use-cases")}>Use Cases</Link>
       </h6>
       <h6 className="headerElement">
-        <Link to="/features" className={currentPath.includes("/features") ? "navLinkPurple" : "navLinkBlue"}>Features</Link>
+        <Link to="/features" className={getClassName("/features")}>Features</Link>
       </h6>
       <h6 className="headerElement">
-        <Link to="/get-started" className={currentPath === "/get-started" ? "navLinkPurple" : "navLinkBlue"}>Get Started</Link>
+        <Link to="/get-started" className={getClassName("/get-started")}>Get Started</Link>
       </h6>
       <h6 className="headerElement">
-        <Link to="/"className={(currentPath === "" || currentPath === "/") ? "navLinkPurple" : "navLinkBlue"}>Home</Link>
+        <Link to="/" className={(currentPath === "" || currentPath === "/") ? "navLinkPurple" : "navLinkBlue"}>Home</Link>
       </h6>
   </div>
   );
