@@ -210,9 +210,14 @@ h6 {
   cursor: pointer;
 }
 
+.blogLinks {
+  justify-content: center;
+  display: inline-block;
+}
+
 .circleBlog {
   display: inline-block;
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 .footerContact {
@@ -453,4 +458,15 @@ h6 {
 .docsButton:hover {
   background-color: #C571FF;
   color: black;
+}
+
+.photo {
+  display: flex;
+  max-width: 100%;
+  max-height: 300px;
+  margin: auto;
+}
+
+.blogLinks {
+  max-width: 50% !important;
 }
