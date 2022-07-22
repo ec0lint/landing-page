@@ -217,7 +217,13 @@ h6 {
 
 .circleBlog {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 10px;
+}
+
+@media only screen and (max-width: 550px) {
+  .circleBlog {
+    padding: 0;
+  }
 }
 
 .footerContact {
