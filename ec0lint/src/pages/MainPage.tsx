@@ -31,7 +31,7 @@ function MainPage() {
         <h6 className="sectionText" style={{ paddingTop: '70px' }}>{donateSection}</h6>
         <div>
           <a href={donateUrl} target="_blank" rel="noreferrer">
-            <button className="mainButton">{"DONATE"}</button>
+            <button className="mainButton">{"DONATE [soon]"}</button>
           </a>
         </div>
         <SupportSection/>
