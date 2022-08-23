@@ -160,6 +160,12 @@ h6 {
   display: inline-block;
 }
 
+.blueSwitchInitiatives {
+  max-width: min(850px, 90%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .switchButtonClicked {
   background-color: #8ECCEA;
   border: 3px solid black;
@@ -179,7 +185,7 @@ h6 {
 
 .supportCompany {
   display: inline-block;
-  padding: 20px 50px;
+  padding: 40px 50px;
   vertical-align: text-top;
 }
 
@@ -425,6 +431,47 @@ h6 {
   position: absolute;
   top: 25%;
   margin-left: -15px;
+}
+
+.arrowButtonInititives {
+  margin-top: 5%;
+  float: right;
+  margin-left: -100px;
+  position: relative;
+}
+
+.arrowButtonInititivesRight {
+  top: -90px;
+}
+
+@media only screen and (max-width: 678px) {
+  .arrowButtonInititivesRight {
+    top: -200px;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .arrowButtonInititivesRight {
+    top: 0;
+  }
+}
+
+.arrowButtonInititivesLeft {
+  margin-left: 0px;
+  top: 110px;
+  float: left;
+}
+
+@media only screen and (max-width: 590px) {
+  .arrowButtonInititivesLeft {
+    top: 200px;
+  }
+}
+
+@media only screen and (min-width: 880px) {
+  .arrowButtonInititivesLeft {
+    top: 0;
+  }
 }
 
 .arrowButtonLeftCO2 {

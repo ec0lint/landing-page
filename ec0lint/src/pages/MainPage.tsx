@@ -2,7 +2,7 @@ import React from "react";
 import { whySection, ec0lintIsSection, gitHubUrl, donateSection, references, donateUrl } from '../text';
 import prototype from '../resources/prototype.webp';
 import ImpactSection from '../sections/ImpactSection';
-import SupportSection from '../sections/SupportSection';
+import SupportSection from '../sections/InitiativesSection';
 import { banner } from '../text';
 import References from '../sections/References';
 

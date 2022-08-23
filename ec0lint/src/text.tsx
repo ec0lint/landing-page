@@ -2,6 +2,13 @@ import Kasia from './resources/Kasia.webp';
 import Malwina from './resources/Malwina.webp';
 import Ania from './resources/Ania.webp';
 import Julia from './resources/Julia.webp';
+import iec from './resources/iec.webp';
+import helsinki1 from './resources/helsinki1.webp';
+import helsinki2 from './resources/helsinki2.webp';
+import perspektywy from './resources/perspektywy.webp';
+import ing from './resources/ing.webp';
+import reactIndia from './resources/reactindia.webp';
+import weAreDevelopers from './resources/wearedevelopers.webp';
 import React from "react";
 
 export const banner = {
@@ -679,4 +686,44 @@ export const team = {
             github: "https://github.com/nemmip"
         }
     ]
-}
+};
+
+export const initiativesSection = {
+    title: 'Initiatives',
+    cards: [
+        [
+            <span>
+                <img src={iec} alt="iec"/>
+                <h6>Digital Ecology</h6>
+                <h6>Institute</h6>
+            </span>,
+            <span>
+                <img src={helsinki1} alt="helsinki think company" style={{ paddingRight: 0 }}/>
+                <img src={helsinki2} alt="think company fund"style={{ paddingLeft: '5px' }}/>
+                <div>
+                    <h6>{"Helsinki Think Company &"}</h6>
+                    <h6>Think Company Fund</h6>
+                </div>
+            </span>,
+            <span>
+                <img src={weAreDevelopers} alt="WeAreDevelopers"/>
+                <h6>WeAreDevelopers</h6>
+            </span>
+        ],
+        [
+            <span>
+                <img src={perspektywy} alt="perspektywy women in tech"/>
+                <h6>Perspektywy</h6>
+                <h6>Women in Tech</h6>
+            </span>,
+            <span style={{ padding: '0 30px' }}>
+                <img src={reactIndia} alt="reactIndia"/>
+                <h6>React India</h6>
+            </span>,
+            <span>
+                <img src={ing} alt="ING"/>
+                <h6>ING</h6>
+            </span>
+        ]     
+    ]
+};
