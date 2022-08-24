@@ -15,11 +15,13 @@ import BlogPostPage from './pages/BlogPostPage';
 import RulePage from './pages/RulePage';
 import TeamPage from './pages/TeamPage';
 import { blog, features } from './text';
+import ScrollToTop from './ScrollToTop';
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 root.render(
   <span className="mainContainer">
     <BrowserRouter>
+      <ScrollToTop />
       <NavBar/>
       <Routes>
         <Route path="/" element={<MainPage />} />

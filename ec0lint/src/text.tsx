@@ -114,7 +114,8 @@ export const featuresPage = {
             text: "Image files inside web application should have WebP or SVG format - these formats can crunch large images down into more manageable sizes. We can achieve 99% reduction of file size using these formats over PPM, PS, RGB or PNG file. ",
             url: "/lighter-image-files"
         }
-    ]
+    ],
+    allFeaturesTitle: "All features"
 };
 
 export const features = [

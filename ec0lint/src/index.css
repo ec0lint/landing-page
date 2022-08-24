@@ -339,6 +339,10 @@ h6 {
   color: #8ECCEA;
 }
 
+.link:hover {
+  color: #C571FF;
+}
+
 .blueSectionButton {
   background-color: black;
   color: #C571FF;
