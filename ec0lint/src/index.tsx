@@ -35,9 +35,7 @@ root.render(
         <Route path="blog/ec0lint" element={<BlogPostPage data={blog.posts[1]}/>} />
         <Route path="blog/change-your-online-habits" element={<BlogPostPage data={blog.posts[2]}/>} />
 
-        <Route path="features/no-ttf-font-files" element={<RulePage data={features[0]}/>} />
-        <Route path="features/lighter-http" element={<RulePage data={features[1]}/>} />
-        <Route path="features/lighter-image-files" element={<RulePage data={features[2]}/>} />
+        {features.map(x => <Route path={`features/${x.name}`} element={<RulePage data={x}/>}/>)}
       </Routes>
       <Footer/>
     </BrowserRouter>
