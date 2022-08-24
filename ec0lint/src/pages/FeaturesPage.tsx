@@ -52,9 +52,9 @@ export default function FeaturesPage() {
             </button>
           })}
         </div>
-        <h6 className="sectionText" style={{ marginTop: '40px', marginBottom: '120px' }}>{featuresPage.text[1]}</h6>
+        <h6 className="sectionText" style={{ marginTop: '40px', marginBottom: '60px' }}>{featuresPage.text[1]}</h6>
         <h3 className="sectionTitle">{featuresPage.allFeaturesTitle}</h3>
-        <h6 className="sectionText"><ul>
+        <h6 className="sectionText" style={{ marginBottom: '70px' }}><ul>
           {features.map(x => <li style={{ paddingTop: '10px' }}>
             <Link to={`${x.name}`} className="link">{x.name}</Link>
           </li>)}
