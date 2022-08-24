@@ -144,8 +144,77 @@ export const features = [
             </span>,
         CO2: <span>{"Convertion of only one of the most popular fonts used on websites – Helvetica Neue - from TTF to WOFF2 format can reduce the carbon footprint even up to "}
             <u>0.54 g per website view.</u>{" By converting the same file to WOFF format we achieve "}<u>0.35 g</u>{" CO2 reduction."}
-            {"\n\nIn the table below we show carbon footprint emission depending on file format for 10 popular fonts used on websites. \n\n"}
-            {/* // table */}
+            {"\n\nIn the table below we show carbon footprint emission depending on file format for 10 popular fonts used on websites. \n"}
+            <table className="table">
+                <tbody>
+                    <tr>
+                        <td className="tableCell"><u>Font</u></td>
+                        <td className="tableCell"><u>TTF</u></td>
+                        <td className="tableCell"><u>WOFF</u></td>
+                        <td className="tableCell"><u>WOFF2</u></td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Helvetica</td>
+                        <td className="tableCell">0.89 g</td>
+                        <td className="tableCell">0.54 g (-39%)</td>
+                        <td className="tableCell">0.35 g (-61%)</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Tisa</td>
+                        <td className="tableCell">0.61 g</td>
+                        <td className="tableCell">0.29 g (-52%)</td>
+                        <td className="tableCell">0.24 g (-61%)</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Montserrat</td>
+                        <td className="tableCell">0.55 g</td>
+                        <td className="tableCell">0.27 g (-51%)</td>
+                        <td className="tableCell">0.17 g (-69%)</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Playfair Display</td>
+                        <td className="tableCell">0.54 g</td>
+                        <td className="tableCell">0.26 g (-52%)</td>
+                        <td className="tableCell">0.17 g (-69%)</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Roboto</td>
+                        <td className="tableCell">0.47 g</td>
+                        <td className="tableCell">0.26 g (-45%)</td>
+                        <td className="tableCell">0.18 g (-62%)</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Poppins</td>
+                        <td className="tableCell">0.44 g</td>
+                        <td className="tableCell">0.21 g (-52%)</td>
+                        <td className="tableCell">0.14 g (-68%)</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Merriweather</td>
+                        <td className="tableCell">0.42 g</td>
+                        <td className="tableCell">0.24 g (-43%)</td>
+                        <td className="tableCell">0.17 g (-60%)</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Open Sans</td>
+                        <td className="tableCell">0.37 g</td>
+                        <td className="tableCell">0.37 g</td>
+                        <td className="tableCell">0.17 g (-54%) </td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Lato</td>
+                        <td className="tableCell">0.21 g</td>
+                        <td className="tableCell">0.1 g (-52%)</td>
+                        <td className="tableCell">0.08 g (-62%)</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Oxygen</td>
+                        <td className="tableCell">0.13 g</td>
+                        <td className="tableCell">0.08 g (-48%)</td>
+                        <td className="tableCell">0.06 g (-54%)</td>
+                    </tr>
+                </tbody>
+            </table>
             {"By multiplying the library size by the end-user traffic (0.81 kWh / 1000 Mb) and by the energy emissions (442 g/kWh), the carbon footprint of the TTF file (2.49 Mb for Helvetica Neue) – sums up to 0.89 g. For WOFF2 (0.99 Mb) the carbon footprint amounts to 0.35g and for WOFF (1.51MB) to 0.54g. So, by substracting 0.35 g and 0.54g from 0.89 g we get respectively 0.54 g (61% less CO2) and 0.35g (39% less CO2) \n\n"}
             {"TTF font file sizes were checked at "}<a target="_blank" rel="noreferrer" href="https://fonts.google.com/" className="link">https://fonts.google.com/</a>{" and converted to WOFF and WOFF2 formats on "}<a target="_blank" rel="noreferrer" href="https://cloudconvert.com/" className="link">https://cloudconvert.com/</a>{". \n"}
             </span>,

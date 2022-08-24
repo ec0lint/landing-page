@@ -505,3 +505,16 @@ h6 {
   background-color: #C571FF;
   color: black;
 }
+
+.table {
+  width: 80%;
+  text-align: center;
+  border-collapse: collapse;
+  margin: 30px auto;
+}
+
+.tableCell {
+  border: 1px solid;
+  margin: 10px;
+  padding: 5px;
+}
