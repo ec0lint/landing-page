@@ -9,6 +9,7 @@ import perspektywy from './resources/perspektywy.webp';
 import ing from './resources/ing.webp';
 import reactIndia from './resources/reactindia.webp';
 import weAreDevelopers from './resources/wearedevelopers.webp';
+import lighterImageFile from './resources/lighter-image-file.webp';
 import React from "react";
 
 export const banner = {
@@ -292,7 +293,6 @@ export const features = [
             "Image files inside web application should be in  WebP and SVG format. These formats can crunch large images down into more manageable file sizes. They are on average much smaller than GIF, JPEG, PNG, even at extremely high resolutions. We can achieve up to 82% reduction of file size using SVG instead of JPG and up to 95% in case of PNG. For WebP format we get up to 60% reduction of file size in case of converting from JPG and up to 91% for PNG.",
         CO2: <span>Convertion of an exemplary image in 1800 x 1200 resolution from PNG to SVG format can reduce the carbon footprint by about <u>5.79 g per website view.</u>
             {"\n\nThe table below shows comparison between file sizes and CO2 emission for exemplary image (displayed below) in 1800 x 1200 resolution for the most popular image formats. \n"}
-            {/* image, table */}
             <table className="table">
                 <tbody>
                     <tr>
@@ -342,7 +342,8 @@ export const features = [
                     </tr>
                 </tbody>
             </table>
-            {"\n\By multiplying the file size by the end-user traffic (0.81 kWh / 1000 Mb) and by the energy emissions (442 g/kWh), the carbon footprint of the exemplary PNG file (16.89 Mb) – sums up to 6.05 g. The same image in SVG format (1.01 Mb) generates 0.26g CO2.  So, by substracting 0.26 g from 6.05 g we get 5.79g. (95% less CO2). \n"}
+            <img src={lighterImageFile} alt="lighter-image-file" className="image"/>
+            {"\nBy multiplying the file size by the end-user traffic (0.81 kWh / 1000 Mb) and by the energy emissions (442 g/kWh), the carbon footprint of the exemplary PNG file (16.89 Mb) – sums up to 6.05 g. The same image in SVG format (1.01 Mb) generates 0.26g CO2.  So, by substracting 0.26 g from 6.05 g we get 5.79g. (95% less CO2). \n"}
             {"\nFor the same exemplary image in WebP (1.6 Mb) the carbon footprint amounts to 0.57g. So, by subtracting 0.57 g from 6.05 g we get 5.48 g (91% less CO2). \n"}
             {"\nExemplary image was downloaded from "}<a target="_blank" rel="noreferrer" href="https://wallpaperaccess.com/1800x1200-hd" className="link">https://wallpaperaccess.com/1800x1200-hd</a>{" and converted to different formats using "}<a target="_blank" rel="noreferrer" href="https://cloudconvert.com/" className="link">https://cloudconvert.com/</a>
             </span>,
