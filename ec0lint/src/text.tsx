@@ -293,6 +293,55 @@ export const features = [
         CO2: <span>Convertion of an exemplary image in 1800 x 1200 resolution from PNG to SVG format can reduce the carbon footprint by about <u>5.79 g per website view.</u>
             {"\n\nThe table below shows comparison between file sizes and CO2 emission for exemplary image (displayed below) in 1800 x 1200 resolution for the most popular image formats. \n"}
             {/* image, table */}
+            <table className="table">
+                <tbody>
+                    <tr>
+                        <td className="tableCell"><u>File format</u></td>
+                        <td className="tableCell"><u>File size</u></td>
+                        <td className="tableCell"><u>CO2 emission</u></td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">SVG</td>
+                        <td className="tableCell">126 kB</td>
+                        <td className="tableCell">0.26 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">WebP</td>
+                        <td className="tableCell">200 kB</td>
+                        <td className="tableCell">0.57 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">JPG</td>
+                        <td className="tableCell">503 kB</td>
+                        <td className="tableCell">1.44 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">GIF</td>
+                        <td className="tableCell">913 kB</td>
+                        <td className="tableCell">2.61 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">PNG</td>
+                        <td className="tableCell">2 111 kB</td>
+                        <td className="tableCell">6.05 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">TIFF</td>
+                        <td className="tableCell">6 329 kB</td>
+                        <td className="tableCell">18.13 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">PSD</td>
+                        <td className="tableCell">12 657 kB</td>
+                        <td className="tableCell">36.25 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">PS</td>
+                        <td className="tableCell">12 825 kB</td>
+                        <td className="tableCell">36.73 g</td>
+                    </tr>
+                </tbody>
+            </table>
             {"\n\By multiplying the file size by the end-user traffic (0.81 kWh / 1000 Mb) and by the energy emissions (442 g/kWh), the carbon footprint of the exemplary PNG file (16.89 Mb) – sums up to 6.05 g. The same image in SVG format (1.01 Mb) generates 0.26g CO2.  So, by substracting 0.26 g from 6.05 g we get 5.79g. (95% less CO2). \n"}
             {"\nFor the same exemplary image in WebP (1.6 Mb) the carbon footprint amounts to 0.57g. So, by subtracting 0.57 g from 6.05 g we get 5.48 g (91% less CO2). \n"}
             {"\nExemplary image was downloaded from "}<a target="_blank" rel="noreferrer" href="https://wallpaperaccess.com/1800x1200-hd" className="link">https://wallpaperaccess.com/1800x1200-hd</a>{" and converted to different formats using "}<a target="_blank" rel="noreferrer" href="https://cloudconvert.com/" className="link">https://cloudconvert.com/</a>
