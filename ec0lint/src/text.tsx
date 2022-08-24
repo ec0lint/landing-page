@@ -235,7 +235,50 @@ export const features = [
             {"Importing large sets of packages, which are doing exactly the same work as fetch, takes a large amount of disk space. Fetch API is a built-in functionality, so it's always on hand. We recommend using fetch. "}</span>,
         CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.21 g per website view</u>{" after removing a redundant library.\n\n"} 
             {"By multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of a library can be calculated. \n\n"}  
-            {/* table */}
+            <table className="table">
+                <tbody>
+                    <tr>
+                        <td className="tableCell"><u>Name</u></td>
+                        <td className="tableCell"><u>Size</u></td>
+                        <td className="tableCell"><u>CO2 reduction</u></td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">simple-get</td>
+                        <td className="tableCell">0.01 MB</td>
+                        <td className="tableCell">0.003 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">make-fetch-happen</td>
+                        <td className="tableCell">0.06 MB</td>
+                        <td className="tableCell">0.02 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">request</td>
+                        <td className="tableCell">0.2 MB</td>
+                        <td className="tableCell">0.07 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">got</td>
+                        <td className="tableCell">0.24 MB</td>
+                        <td className="tableCell">0.08 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">needle</td>
+                        <td className="tableCell">0.26 MB</td>
+                        <td className="tableCell">0.09 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">axios</td>
+                        <td className="tableCell">0.44 MB</td>
+                        <td className="tableCell">0.16 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">superagent</td>
+                        <td className="tableCell">0.58 MB</td>
+                        <td className="tableCell">0.21 g</td>
+                    </tr>
+                </tbody>
+            </table>
             {"The library sizes were checked at "}<a target="_blank" rel="noreferrer" href="www.npmjs.com/package" className="link">www.npmjs.com/package</a>{". For more examples how to replace axios or other http library with plain javascript go here: "}<a target="_blank" rel="noreferrer" href="https://danlevy.net/you-may-not-need-axios/" className="link">https://danlevy.net/you-may-not-need-axios/</a></span>,
         examples: "The following patterns are considered problems: \n\n(a) /* ec0lint lighter-http: \"error\" */ \n\n" +
             "\tconst axios = require('axios') \n\n(b) /* ec0lint lighter-http: \"error\" */ \n\n\timport axios from 'axios'\n\n" +
