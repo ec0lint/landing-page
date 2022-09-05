@@ -13,12 +13,12 @@ export default function GetStartedPage() {
           <h6 style={{ whiteSpace: 'pre-wrap' }}>{getStartedForUsers}</h6>
           <h6 style={{ whiteSpace: 'pre-wrap' }}>{"\n\n\n\n\n\n\n\nIn a nutshell: \n"}
             {"\n1) Make sure you have Node installed "}
-            {"\n2) Download ec0lint: \n"}<h6 style={{ color: '#8ECCEA' }}>npm i ec0lint ec0lint-css ec0lint-css-config-recommended</h6>
+            {"\n2) Download ec0lint: \n"}<h6 style={{ color: '#8ECCEA' }}>npm i ec0lint ec0lint-style ec0lint-style-config-recommended</h6>
             {"3) Configure your project: \n"}<h6 style={{ color: '#8ECCEA' }}>npm init @ec0lint/config</h6>
-            {"4) Create a .ec0lint-cssrc.json configuration file in the root of your project with the following content: \n"}<h6 style={{ color: '#8ECCEA' }}>
-              {"{ \n \"extends\": \"ec0lint-css-config-recommended\" \n}\""}
+            {"4) Create a .ec0lint-stylerc.json configuration file in the root of your project with the following content: \n"}<h6 style={{ color: '#8ECCEA' }}>
+              {"{ \n \"extends\": \"ec0lint-style-config-recommended\" \n}\""}
             </h6>
-            {"5) Split your terminal and run: \n"}<h6 style={{ color: '#8ECCEA' }}>npx ec0lint-css "**/*.css"  npx ec0lint .</h6>
+            {"5) Split your terminal and run: \n"}<h6 style={{ color: '#8ECCEA' }}>npx ec0lint-style "**/*.css"  npx ec0lint .</h6>
             {"6) Let's build an eco-friendly website!"}
           </h6>
         </div>
