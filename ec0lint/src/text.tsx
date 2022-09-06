@@ -2,6 +2,11 @@ import Kasia from './resources/Kasia.webp';
 import Malwina from './resources/Malwina.webp';
 import Ania from './resources/Ania.webp';
 import Julia from './resources/Julia.webp';
+import website_1 from './resources/website_1.webp';
+import website_2 from './resources/website_2.webp';
+import website_3 from './resources/website_3.webp';
+import website_4 from './resources/website_4.webp';
+import website_5 from './resources/website_5.webp';
 import iec from './resources/iec.webp';
 import helsinki1 from './resources/helsinki1.webp';
 import helsinki2 from './resources/helsinki2.webp';
@@ -853,6 +858,28 @@ export const blog = {
                     url: "https://www.thetimes.co.uk/money-mentor/article/eco-friendly-cryptocurrencies/",
                     accessed: "11.05.2022"
                 }
+            ]
+        },
+        {
+            title: "Five websites we recommend",
+            url: "five-websites-we-recommend",
+            text: [
+                <h6>{"Do you want to more know about the sustainability of your website and your impact on digital pollution? This article is just for you. We're going to present you five web pages that are really absorbing. Go and check them out!"}</h6>,
+                <h5 style={{ color: '#8ECCEA' }}>{"1) "} <a target="_blank" rel="noreferrer" href="https://www.websitecarbon.com/" className="link">Website Carbon Calculator</a></h5>,
+                <img src={website_1} className="photo" style={{ maxHeight: '263px'}} alt="website_1" />,
+                <h6>{"Website Carbon Calculator determines the carbon footprint of any website and suggests what actions can be taken to enhance its sustainability level. It presents examples of web pages with notably low carbon dioxide emissions, invites to subscribe to their newsletter and even grants badges raising awareness about website carbon emissions. What we found stimulating were the comparisons Website Carbon Calculator made for the carbon emissions of our website, e.g. how many trees are needed to absorb the amount of carbon emitted by our web page annually."}</h6>,
+                <h5 style={{ color: '#8ECCEA' }}>{"2)  "} <a target="_blank" rel="noreferrer" href="https://ecograder.com/" className="link">Ecograder</a></h5>,
+                <img src={website_2} className="photo" style={{ maxHeight: '230px'}} alt="website_2" />,
+                <h6>{"Ecograder grades your website based on its page speed, findability, design and user experience, and green hosting. In every category, it gives you tips on how to improve your score. For example, a higher PageSpeed Insights means that your site runs more efficiently and uses less energy. And this can “simply” be achieved by reducing page load time."}</h6>, 
+                <h5 style={{ color: '#8ECCEA' }}>{"3)  "} <a target="_blank" rel="noreferrer" href="https://thanks-in-advance.com/" className="link">Thanks in Advance</a></h5>,
+                <img src={website_3} className="photo" alt="website_3" />,
+                <h6>{"Beautifully designed, Thanks in Advance draws attention to our inboxes. Have you ever wondered if Earth's inbox is already full? Thanks in Advance explains the problem and encourages to take actions like managing newsletters or reducing file sizes. What we love the most is how sustainable the web page was designed and how well each step of the process was described."}</h6>, 
+                <h5 style={{ color: '#8ECCEA' }}>{"4)  "} <a target="_blank" rel="noreferrer" href="https://www.thegreenwebfoundation.org/directory/" className="link">The Green Web Foundation</a></h5>,
+                <img src={website_4} className="photo" alt="website_4" />,
+                <h6>{"Recently, we used the Green Web Foundation to find a green hosting service. You can use the information to check if your website uses a green hosting service and if not, find in The Green Hosting Directory a list of over 400 companies that could become your future hosting provider. Besides, they offer a partnership opportunity, teach how to green someone's practices and publish an online magazine called Branch."}</h6>, 
+                <h5 style={{ color: '#8ECCEA' }}>{"5)  "} <a target="_blank" rel="noreferrer" href="https://sustainablewebdesign.org/" className="link">Sustainable Web Design</a></h5>,
+                <img src={website_5} className="photo" alt="website_5" />,
+                <h6>{"At the heart of Sustainable Web Design lies the Sustainable Web Manifesto, an approach to designing web services that puts people and the planet first. Sustainable Web Manifesto names clean, efficient, open, honest, regenerative, and resilient as the main principles. You can learn more about the manifesto and familiarise yourself with the literature they recommend on their website. "}</h6> 
             ]
         }
     ]
