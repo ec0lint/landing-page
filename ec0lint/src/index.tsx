@@ -36,6 +36,7 @@ root.render(
         <Route path="blog/introduction-to-digital-ecology" element={<BlogPostPage data={blog.posts[0]}/>} />
         <Route path="blog/ec0lint" element={<BlogPostPage data={blog.posts[1]}/>} />
         <Route path="blog/change-your-online-habits" element={<BlogPostPage data={blog.posts[2]}/>} />
+        <Route path="blog/five-websites-we-recommend" element={<BlogPostPage data={blog.posts[3]}/>} />
 
         {features.map(x => <Route path={`features/${x.name}`} element={<RulePage data={x}/>}/>)}
       </Routes>
