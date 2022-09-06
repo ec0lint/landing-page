@@ -15,11 +15,13 @@ import BlogPostPage from './pages/BlogPostPage';
 import RulePage from './pages/RulePage';
 import TeamPage from './pages/TeamPage';
 import { blog, features } from './text';
+import ScrollToTop from './ScrollToTop';
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 root.render(
   <span className="mainContainer">
     <BrowserRouter>
+      <ScrollToTop />
       <NavBar/>
       <Routes>
         <Route path="/" element={<MainPage />} />
@@ -36,9 +38,7 @@ root.render(
         <Route path="blog/change-your-online-habits" element={<BlogPostPage data={blog.posts[2]}/>} />
         <Route path="blog/five-websites-we-recommend" element={<BlogPostPage data={blog.posts[3]}/>} />
 
-        <Route path="features/no-ttf-font-files" element={<RulePage data={features[0]}/>} />
-        <Route path="features/lighter-http" element={<RulePage data={features[1]}/>} />
-        <Route path="features/lighter-image-files" element={<RulePage data={features[2]}/>} />
+        {features.map(x => <Route path={`features/${x.name}`} element={<RulePage data={x}/>}/>)}
       </Routes>
       <Footer/>
     </BrowserRouter>

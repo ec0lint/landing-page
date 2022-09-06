@@ -7,6 +7,14 @@ import website_2 from './resources/website_2.webp';
 import website_3 from './resources/website_3.webp';
 import website_4 from './resources/website_4.webp';
 import website_5 from './resources/website_5.webp';
+import iec from './resources/iec.webp';
+import helsinki1 from './resources/helsinki1.webp';
+import helsinki2 from './resources/helsinki2.webp';
+import perspektywy from './resources/perspektywy.webp';
+import ing from './resources/ing.webp';
+import reactIndia from './resources/reactindia.webp';
+import weAreDevelopers from './resources/wearedevelopers.webp';
+import lighterImageFile from './resources/lighter-image-file.webp';
 import React from "react";
 
 export const banner = {
@@ -89,7 +97,7 @@ export const getStartedForUsers = <span>{"Have you ever heard of ESLint? You use
         <a target="_blank" rel="noreferrer" href="https://eslint.org/docs/user-guide/getting-started" className="link">their site.</a></span>;
 
 export const featuresPage = {
-    title: "Currently",
+    title: "Highlights",
     text: [
         "At the moment, we deployed the first three features, namely:",
         "Eventually, we aim to automate our solution. One click and you can start discovering a green " +
@@ -112,19 +120,110 @@ export const featuresPage = {
             text: "Image files inside web application should have WebP or SVG format - these formats can crunch large images down into more manageable sizes. We can achieve 99% reduction of file size using these formats over PPM, PS, RGB or PNG file. ",
             url: "/lighter-image-files"
         }
-    ]
+    ],
+    allFeaturesTitle: "All features"
 };
 
 export const features = [
     {
+        name: "avoid-lodash",
+        overview: "",
+        CO2: <span></span>,
+        examples: ""
+    },
+    {
+        name: "no-date-fns",
+        overview: "",
+        CO2: <span></span>,
+        examples: ""
+    },
+    {
+        name: "no-moment-js",
+        overview: "",
+        CO2: <span></span>,
+        examples: ""
+    },
+    {
         name: "no-ttf-font-files",
         overview: <span>{"Disallow using TTF custom font files. \n\n"}
-            {"Fonts should be converted to WOFF or WOFF2 format. WOFF2 is now the most modern and efficient format available in browsers. We can achieve almost "}
-            <b>80% reduction</b> of file size simply through loading a WOFF2 file over a TTF.</span>,
-        CO2: <span>{"Convertion of only one of the most popular fonts used on websites – Helvetica Neue - from TTF to WOFF2 "}
-            {"format can reduce the carbon footprint even up to "}<u>1.23 g per website view.</u>
-            {"\n\nBy multiplying the library size by the end-user traffic (0.81 kWh / 1000 Mb) and by the energy emissions (442 g/kWh), the carbon footprint of the TTF file (4.45 Mb for Helvetica Neue) – sums up to 1.59 g. For WOFF2 (1.02 Mb) the carbon footprint amounts to 0.36. So, by substracting 0.36 g from 1.59 g we get 1.23 g."}
-            {"\n\nFont file sizes were checked at "}<a target="_blank" rel="noreferrer" href="https://mikeheavers.com/codepen/fonts/helvetica-neue" className="link">mikeheavers site.</a></span>,
+            {"Fonts should be converted to WOFF or WOFF2 format. WOFF2 is now the most modern and efficient format available in browsers. It was developed by Google as an update to the original WOFF format and is considered the best format of the bunch because it offers smaller file sizes and better performance for modern browsers that support it. We can achieve almost 80% reduction of file size simply through loading a WOFF2 file over a TTF and almost 60% in case of using WOFF instead of TTF font files. \n"}
+            </span>,
+        CO2: <span>{"Convertion of only one of the most popular fonts used on websites – Helvetica Neue - from TTF to WOFF2 format can reduce the carbon footprint even up to "}
+            <u>0.54 g per website view.</u>{" By converting the same file to WOFF format we achieve "}<u>0.35 g</u>{" CO2 reduction."}
+            {"\n\nIn the table below we show carbon footprint emission depending on file format for 10 popular fonts used on websites. \n"}
+            <table className="table">
+                <tbody>
+                    <tr>
+                        <td className="tableCell"><u>Font</u></td>
+                        <td className="tableCell"><u>TTF</u></td>
+                        <td className="tableCell"><u>WOFF</u></td>
+                        <td className="tableCell"><u>WOFF2</u></td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Helvetica</td>
+                        <td className="tableCell">0.89 g</td>
+                        <td className="tableCell">0.54 g (-39%)</td>
+                        <td className="tableCell">0.35 g (-61%)</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Tisa</td>
+                        <td className="tableCell">0.61 g</td>
+                        <td className="tableCell">0.29 g (-52%)</td>
+                        <td className="tableCell">0.24 g (-61%)</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Montserrat</td>
+                        <td className="tableCell">0.55 g</td>
+                        <td className="tableCell">0.27 g (-51%)</td>
+                        <td className="tableCell">0.17 g (-69%)</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Playfair Display</td>
+                        <td className="tableCell">0.54 g</td>
+                        <td className="tableCell">0.26 g (-52%)</td>
+                        <td className="tableCell">0.17 g (-69%)</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Roboto</td>
+                        <td className="tableCell">0.47 g</td>
+                        <td className="tableCell">0.26 g (-45%)</td>
+                        <td className="tableCell">0.18 g (-62%)</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Poppins</td>
+                        <td className="tableCell">0.44 g</td>
+                        <td className="tableCell">0.21 g (-52%)</td>
+                        <td className="tableCell">0.14 g (-68%)</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Merriweather</td>
+                        <td className="tableCell">0.42 g</td>
+                        <td className="tableCell">0.24 g (-43%)</td>
+                        <td className="tableCell">0.17 g (-60%)</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Open Sans</td>
+                        <td className="tableCell">0.37 g</td>
+                        <td className="tableCell">0.37 g</td>
+                        <td className="tableCell">0.17 g (-54%) </td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Lato</td>
+                        <td className="tableCell">0.21 g</td>
+                        <td className="tableCell">0.1 g (-52%)</td>
+                        <td className="tableCell">0.08 g (-62%)</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Oxygen</td>
+                        <td className="tableCell">0.13 g</td>
+                        <td className="tableCell">0.08 g (-48%)</td>
+                        <td className="tableCell">0.06 g (-54%)</td>
+                    </tr>
+                </tbody>
+            </table>
+            {"By multiplying the library size by the end-user traffic (0.81 kWh / 1000 Mb) and by the energy emissions (442 g/kWh), the carbon footprint of the TTF file (2.49 Mb for Helvetica Neue) – sums up to 0.89 g. For WOFF2 (0.99 Mb) the carbon footprint amounts to 0.35g and for WOFF (1.51MB) to 0.54g. So, by substracting 0.35 g and 0.54g from 0.89 g we get respectively 0.54 g (61% less CO2) and 0.35g (39% less CO2) \n\n"}
+            {"TTF font file sizes were checked at "}<a target="_blank" rel="noreferrer" href="https://fonts.google.com/" className="link">https://fonts.google.com/</a>{" and converted to WOFF and WOFF2 formats on "}<a target="_blank" rel="noreferrer" href="https://cloudconvert.com/" className="link">https://cloudconvert.com/</a>{". \n"}
+            </span>,
         examples: "@font-face { font-family: 'foo'; src: url('/path/to/foo.ttf'); } - Unrecommended format of the file \n\n" +
             "The following patterns are considered problems: \n\n(a) \n@font-face { font-family: 'foo'; src: url('/path/to/foo.ttf'); } \n\n" +
             "(b) \n@font-face { font-family: \"MyFont\"; src: url(\"myfont.ttf\") format(\"ttf\");} \n\n" +
@@ -138,10 +237,55 @@ export const features = [
     },
     {
         name: "lighter-http",
-        overview: "Disallows to use libraries like: axios, got, request, make-fetch-happen, superagent, needle, simple-get. \n\nImporting large sets of packages, which are doing exactly the same work as fetch, takes a large amount of disk space. Fetch API is a built-in functionality, so it's always hereabouts.",
-        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.21 g per website view after removing a redundant library.</u>{"\n\n"} 
-            {"By multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of the heaviest library – superagent (0.58 MB) – sums up to 0.21g. For axios (0.44 MB) the carbon footprint amounts to 0.16 g, for needle (0.26 MB) - 0.09 g, for got (0.24 MB) - 0.08 g, for request (0.2 MB) - 0.07 g, for make-fetch-happen (0.06 MB) - 0.02 g, and for simple-get (0.01 MB) - 0.003 g.\n\n"}  
-            {"The library sizes were checked at "}<a target="_blank" rel="noreferrer" href="www.npmjs.com/package" className="link">www.npmjs.com/package</a>. </span>,
+        overview: <span>{"Disallows to use libraries like: axios, got, request, make-fetch-happen, superagent, needle, simple-get. \n\n"}
+            {"Importing large sets of packages, which are doing exactly the same work as fetch, takes a large amount of disk space. Fetch API is a built-in functionality, so it's always on hand. We recommend using fetch. "}</span>,
+        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.21 g per website view</u>{" after removing a redundant library.\n\n"} 
+            {"By multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of a library can be calculated. \n\n"}  
+            <table className="table">
+                <tbody>
+                    <tr>
+                        <td className="tableCell"><u>Name</u></td>
+                        <td className="tableCell"><u>Size</u></td>
+                        <td className="tableCell"><u>CO2 reduction</u></td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">simple-get</td>
+                        <td className="tableCell">0.01 MB</td>
+                        <td className="tableCell">0.003 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">make-fetch-happen</td>
+                        <td className="tableCell">0.06 MB</td>
+                        <td className="tableCell">0.02 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">request</td>
+                        <td className="tableCell">0.2 MB</td>
+                        <td className="tableCell">0.07 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">got</td>
+                        <td className="tableCell">0.24 MB</td>
+                        <td className="tableCell">0.08 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">needle</td>
+                        <td className="tableCell">0.26 MB</td>
+                        <td className="tableCell">0.09 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">axios</td>
+                        <td className="tableCell">0.44 MB</td>
+                        <td className="tableCell">0.16 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">superagent</td>
+                        <td className="tableCell">0.58 MB</td>
+                        <td className="tableCell">0.21 g</td>
+                    </tr>
+                </tbody>
+            </table>
+            {"The library sizes were checked at "}<a target="_blank" rel="noreferrer" href="www.npmjs.com/package" className="link">www.npmjs.com/package</a>{". For more examples how to replace axios or other http library with plain javascript go here: "}<a target="_blank" rel="noreferrer" href="https://danlevy.net/you-may-not-need-axios/" className="link">https://danlevy.net/you-may-not-need-axios/</a></span>,
         examples: "The following patterns are considered problems: \n\n(a) /* ec0lint lighter-http: \"error\" */ \n\n" +
             "\tconst axios = require('axios') \n\n(b) /* ec0lint lighter-http: \"error\" */ \n\n\timport axios from 'axios'\n\n" +
             "(c) /* ec0lint lighter-http: \"error\" */ \n\n\timport * as axios from 'axios' \n\n\n" +
@@ -150,13 +294,80 @@ export const features = [
     },
     {
         name: "lighter-image-files",
-        overview: "Encourages to use WebP and SVG format of image files in CSS code. \n\nImage files inside web application should be in  WebP and SVG format. These formats can crunch large images down into more manageable file sizes. We can achieve almost 99% reduction of file size using JPEG format over PPM, PS, RGB or PNG file. ",
-        CO2: <span>Convertion of an exemplary image in 1800 x 1200 resolution from PNG to WebP format can reduce the carbon footprint by about <u>1.2 g per website view.</u>
-            {"\n\nBy multiplying the file size by the end-user traffic (0.81 kWh / 1000 Mb) and by the energy emissions (442 g/kWh), the carbon footprint of the exemplary PNG file (15.68 Mb) – sums up to 5.61 g. For the same exemplary image in WebP (12.32Mb) the carbon footprint amounts to 4.41g. So, by subtracting 4.41 g from 5.61g we get 1.2 g (21% less CO2)."}</span>,
+        overview: "Encourages to use WebP and SVG format of image files in CSS code. \n\n" +
+            "Image files inside web application should be in  WebP and SVG format. These formats can crunch large images down into more manageable file sizes. They are on average much smaller than GIF, JPEG, PNG, even at extremely high resolutions. We can achieve up to 82% reduction of file size using SVG instead of JPG and up to 95% in case of PNG. For WebP format we get up to 60% reduction of file size in case of converting from JPG and up to 91% for PNG.",
+        CO2: <span>Convertion of an exemplary image in 1800 x 1200 resolution from PNG to SVG format can reduce the carbon footprint by about <u>5.79 g per website view.</u>
+            {"\n\nThe table below shows comparison between file sizes and CO2 emission for exemplary image (displayed below) in 1800 x 1200 resolution for the most popular image formats. \n"}
+            <table className="table">
+                <tbody>
+                    <tr>
+                        <td className="tableCell"><u>File format</u></td>
+                        <td className="tableCell"><u>File size</u></td>
+                        <td className="tableCell"><u>CO2 emission</u></td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">SVG</td>
+                        <td className="tableCell">126 kB</td>
+                        <td className="tableCell">0.26 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">WebP</td>
+                        <td className="tableCell">200 kB</td>
+                        <td className="tableCell">0.57 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">JPG</td>
+                        <td className="tableCell">503 kB</td>
+                        <td className="tableCell">1.44 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">GIF</td>
+                        <td className="tableCell">913 kB</td>
+                        <td className="tableCell">2.61 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">PNG</td>
+                        <td className="tableCell">2 111 kB</td>
+                        <td className="tableCell">6.05 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">TIFF</td>
+                        <td className="tableCell">6 329 kB</td>
+                        <td className="tableCell">18.13 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">PSD</td>
+                        <td className="tableCell">12 657 kB</td>
+                        <td className="tableCell">36.25 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">PS</td>
+                        <td className="tableCell">12 825 kB</td>
+                        <td className="tableCell">36.73 g</td>
+                    </tr>
+                </tbody>
+            </table>
+            <img src={lighterImageFile} alt="lighter-image-file" className="image"/>
+            {"\nBy multiplying the file size by the end-user traffic (0.81 kWh / 1000 Mb) and by the energy emissions (442 g/kWh), the carbon footprint of the exemplary PNG file (16.89 Mb) – sums up to 6.05 g. The same image in SVG format (1.01 Mb) generates 0.26g CO2.  So, by substracting 0.26 g from 6.05 g we get 5.79g. (95% less CO2). \n"}
+            {"\nFor the same exemplary image in WebP (1.6 Mb) the carbon footprint amounts to 0.57g. So, by subtracting 0.57 g from 6.05 g we get 5.48 g (91% less CO2). \n"}
+            {"\nExemplary image was downloaded from "}<a target="_blank" rel="noreferrer" href="https://wallpaperaccess.com/1800x1200-hd" className="link">https://wallpaperaccess.com/1800x1200-hd</a>{" and converted to different formats using "}<a target="_blank" rel="noreferrer" href="https://cloudconvert.com/" className="link">https://cloudconvert.com/</a>
+            </span>,
         examples: "background-image: url('image.png'); - Unrecommended format of the file \n\nThe following patterns are considered problems: \n\n(a)\nbackground-image: url('image.ppm'); \n\n" +
             "(b) \nbackground-image: url('image.ps'); \n\n(c) \nbackground-image: url('image.rgb'); \n\n(d) \nbackground-image: url('image.png'); \n\n\nThe following patterns are not considered problems: \n\n" +
             "(a) \nbackground-image: url('image.gif'); \n\n(b) \nbackground-image: url('image.jpg'); "
+    },
+    {
+        name: "require-font-display",
+        overview: "",
+        CO2: <span></span>,
+        examples: ""
     }
+    // {
+    //     name: "",
+    //     overview: "",
+    //     CO2: <span></span>,
+    //     examples: ""
+    // }
 ]
 
 export const CO2Calculation = {
@@ -706,4 +917,44 @@ export const team = {
             github: "https://github.com/nemmip"
         }
     ]
-}
+};
+
+export const initiativesSection = {
+    title: 'Initiatives',
+    cards: [
+        [
+            <span>
+                <img src={iec} alt="iec"/>
+                <h6>Digital Ecology</h6>
+                <h6>Institute</h6>
+            </span>,
+            <span>
+                <img src={helsinki1} alt="helsinki think company" style={{ paddingRight: 0 }}/>
+                <img src={helsinki2} alt="think company fund"style={{ paddingLeft: '5px' }}/>
+                <div>
+                    <h6>{"Helsinki Think Company &"}</h6>
+                    <h6>Think Company Fund</h6>
+                </div>
+            </span>,
+            <span>
+                <img src={weAreDevelopers} alt="WeAreDevelopers"/>
+                <h6>WeAreDevelopers</h6>
+            </span>
+        ],
+        [
+            <span>
+                <img src={perspektywy} alt="perspektywy women in tech"/>
+                <h6>Perspektywy</h6>
+                <h6>Women in Tech</h6>
+            </span>,
+            <span style={{ padding: '0 30px' }}>
+                <img src={reactIndia} alt="reactIndia"/>
+                <h6>React India</h6>
+            </span>,
+            <span>
+                <img src={ing} alt="ING"/>
+                <h6>ING</h6>
+            </span>
+        ]     
+    ]
+};
