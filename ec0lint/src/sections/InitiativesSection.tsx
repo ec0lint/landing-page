@@ -1,6 +1,17 @@
 import React from "react";
 import { initiativesSection } from '../text';
 
+
+
+// export function windowOnClick(event: any) {
+//     if (event.target === modal) {
+//         toggleModal();
+//     }
+// }
+
+
+// window?.addEventListener("click", windowOnClick);
+
 export default function InitiativesSection() {
   const [cardDisplayed, setCardDisplayed] = React.useState(0);
 

@@ -34,6 +34,12 @@ function MainPage() {
             <button className="mainButton">{"DONATE [soon]"}</button>
           </a>
         </div>
+        <div className="modal">
+          <div className="modal-content">
+            <span className="close-button">&times;</span>
+            <h1>Hello, I am a modal!</h1>
+          </div>
+        </div>
         <SupportSection/>
         <h4>Used by</h4>
         <div className="circle"><h3>You?</h3></div>
@@ -41,5 +47,18 @@ function MainPage() {
     </div>
   );
 }
+
+export function toggleModal() {
+  console.log("whatever")
+  console.log(document.getElementsByClassName("modal")[0]);
+  const modal = document.getElementsByClassName("modal")[0];
+  console.log(modal);
+
+  console.log("dpa");
+  modal.classList.toggle("show-modal");
+}
+
+const closeButton = document.getElementsByClassName("close-button")[0];
+closeButton?.addEventListener("click", toggleModal);
 
 export default MainPage;

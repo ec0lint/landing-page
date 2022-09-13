@@ -16,6 +16,7 @@ import reactIndia from './resources/reactindia.webp';
 import weAreDevelopers from './resources/wearedevelopers.webp';
 import lighterImageFile from './resources/lighter-image-file.webp';
 import React from "react";
+import { toggleModal } from './pages/MainPage';
 
 export const banner = {
     logo: "{e}",
@@ -923,12 +924,12 @@ export const initiativesSection = {
     title: 'Initiatives',
     cards: [
         [
-            <span>
+            <span onClick={toggleModal}>
                 <img src={iec} alt="iec"/>
                 <h6>Digital Ecology</h6>
                 <h6>Institute</h6>
             </span>,
-            <span>
+            <span onClick={e => toggleModal}>
                 <img src={helsinki1} alt="helsinki think company" style={{ paddingRight: 0 }}/>
                 <img src={helsinki2} alt="think company fund"style={{ paddingLeft: '5px' }}/>
                 <div>
@@ -936,22 +937,22 @@ export const initiativesSection = {
                     <h6>Think Company Fund</h6>
                 </div>
             </span>,
-            <span>
+            <span onClick={e => toggleModal}>
                 <img src={weAreDevelopers} alt="WeAreDevelopers"/>
                 <h6>WeAreDevelopers</h6>
             </span>
         ],
         [
-            <span>
+            <span onClick={e => toggleModal}>
                 <img src={perspektywy} alt="perspektywy women in tech"/>
                 <h6>Perspektywy</h6>
                 <h6>Women in Tech</h6>
             </span>,
-            <span style={{ padding: '0 30px' }}>
+            <span onClick={e => toggleModal} style={{ padding: '0 30px' }}>
                 <img src={reactIndia} alt="reactIndia"/>
                 <h6>React India</h6>
             </span>,
-            <span>
+            <span onClick={e => toggleModal}>
                 <img src={ing} alt="ING"/>
                 <h6>ING</h6>
             </span>
