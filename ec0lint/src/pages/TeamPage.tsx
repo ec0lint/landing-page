@@ -10,7 +10,7 @@ export default function TeamPage() {
           {team.title1}
         </h3>
         {team.committee.map((x) => {
-          return <span className="photo">
+          return <span className="teamPhoto">
             {x.photo}
             <h5 style={{ marginBottom: '10px' }}>{x.name}</h5>
             <span>
@@ -28,7 +28,24 @@ export default function TeamPage() {
           {team.title2}
         </h3>
         {team.contributors.map((x) => {
-          return <span className="photo">
+          return <span className="teamPhoto">
+            {x.photo}
+            <h5 style={{ marginBottom: '10px' }}>{x.name}</h5>
+            <span>
+              {x.linkedin && <a href={x.linkedin} target="_blank" rel="noreferrer">
+                <img src={linkedin} alt={x.linkedin} className="icon"/>
+              </a>}
+              {x.github && <a href={x.github} target="_blank" rel="noreferrer">
+                <img src={github} alt={x.github} className="icon"/>
+              </a>}
+            </span>
+          </span>;
+        })}
+        <h3 className="sectionTitle" style={{ marginBottom: '40px' }}>
+          {team.title3}
+        </h3>
+        {team.comitters.map((x) => {
+          return <span className="teamPhoto">
             {x.photo}
             <h5 style={{ marginBottom: '10px' }}>{x.name}</h5>
             <span>
