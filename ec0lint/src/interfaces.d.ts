@@ -22,7 +22,7 @@ export interface IBlogObj {
 export interface IRule {
     name: string,
     overview: JSX.Element | string,
-    CO2: JSX.Element,
+    CO2?: JSX.Element,
     examples: string
 }
 

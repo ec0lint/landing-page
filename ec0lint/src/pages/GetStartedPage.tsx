@@ -11,7 +11,7 @@ export default function GetStartedPage() {
         </h4>
         <div className="getStarted sectionText">
           <h6 style={{ whiteSpace: 'pre-wrap' }}>{getStartedForUsers}</h6>
-          <h6 style={{ whiteSpace: 'pre-wrap' }}>{"\n\n\n\n\n\n\n\nIn a nutshell: \n"}
+          <h6 style={{ whiteSpace: 'pre-wrap' }}>{"\n\n\n\n\n\n\n\n\nIn a nutshell: \n"}
             {"\n1) Make sure you have Node installed "}
             {"\n2) Download ec0lint: \n"}<h6 style={{ color: '#8ECCEA' }}>npm i ec0lint ec0lint-style ec0lint-style-config-recommended</h6>
             {"3) Configure your project: \n"}<h6 style={{ color: '#8ECCEA' }}>npm init @ec0lint/config</h6>
@@ -57,7 +57,7 @@ export default function GetStartedPage() {
         <h6 className="blueSectionText">{donateSection}</h6>
         <div>
           <a href={donateUrl} target="_blank" rel="noreferrer">
-            <button className="blueSectionButton">{"DONATE SOON"}</button>
+            <button className="blueSectionButton">{"SOON"}</button>
           </a>
         </div>
       </div>
