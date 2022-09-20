@@ -53,7 +53,7 @@ export const impactSection = {
         [
             "Thanks to code optimization we can help in ",
             "reducing CO2 emissions ",
-            "per one click from 1.8 g to ~0.2 g so to only 24 kg CO2 annually, saving 216 kg CO2 (-96%!)."
+            "per one click from 1.8 g to ~0.2 g so to only 24 kg CO2 annually, saving 198 kg CO2 (-88%!)."
         ],
         [ "Free, open-source solution - everyone has access to the code and can participate in ec0lint's development." ],
         [ "The community can help in scaling up the tool and deciding on the most emerging features." ]
@@ -82,9 +82,9 @@ export const references = [
         accessed: "28.02.2022"
     },
     {
-        text: "EPA",
-        url: "https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator",
-        accessed: "28.02.2022"
+        text: "WIRED",
+        url: "https://www.wired.co.uk/article/internet-carbon-footprint",
+        accessed: "18.09.2022"
     },
     {
         text: "RESET Digital for good",
@@ -108,18 +108,18 @@ export const featuresPage = {
     mainFeatures: [
         {
             title: "Woff Woff! Font format validation",
-            text: "If a font format isn't WOFF or WOFF2, the font takes up to 80% more disk space. Let's change them all to WOFF!",
+            text: "If a font format isn't WOFF or WOFF2, the font takes up to 70% more disk space. Let's change them all to WOFF2!",
             url: "/no-ttf-font-files"
         },
         {
             title: "Replacement of heavy libraries functions",
-            text: "Heavy library calls can be replaced by plain JS code. In the case of axios - when all axios functions will be " +
+            text: "Heavy library calls can be replaced by plain JS code or lighter libraries. In the case of axios - when all axios functions will be " +
                 "removed from the code, the module can be deleted, saving 440 kB of space (0.16 g CO2 per view). ",
             url: "/lighter-http"
         },
         {
             title: "Lighter image files",
-            text: "Image files inside web application should have WebP or SVG format - these formats can crunch large images down into more manageable sizes. We can achieve 99% reduction of file size using these formats over PPM, PS, RGB or PNG file. ",
+            text: "Image files inside web application should have WebP format - these formats can crunch large images down into more manageable sizes. We can achieve 99% reduction of file size using these formats over PPM, PS, RGB or PNG file. ",
             url: "/lighter-image-files"
         }
     ],
@@ -129,21 +129,113 @@ export const featuresPage = {
 export const features = [
     {
         name: "avoid-lodash",
-        overview: "",
-        CO2: <span></span>,
-        examples: ""
-    },
+        overview: <span>{"Disallows to use lodash. \n\n"}
+        {"It’s a great library, but in most cases can be replaced by plain javascript.\n"}
+        </span>,
+        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.5 g per website view</u>{" after removing the redundant library. By multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of a library can be calculated."}
+                <table className="table">
+                    <tbody>
+                        <tr>
+                            <td className="tableCell"><u>Name</u></td>
+                            <td className="tableCell"><u>Size</u></td>
+                            <td className="tableCell"><u>CO2 reduction</u></td>
+                        </tr>
+                        <tr>
+                            <td className="tableCell">lodash</td>
+                            <td className="tableCell">1.41 MB</td>
+                            <td className="tableCell">0.5 g</td>
+                        </tr>
+                    </tbody>
+                </table>
+                {"The library sizes were checked at "}<a target="_blank" rel="noreferrer" href="https://www.npmjs.com/package" className="link">https://www.npmjs.com/package.</a>{" For more examples how to replace lodash with plain javascript go here: "}<a target="_blank" rel="noreferrer" href="https://youmightnotneed.com/lodash" className="link">https://youmightnotneed.com/lodash.</a>
+            </span>,
+        examples: "The following patterns are considered problems:\n\n/*ec0lint avoid-lodash: \"error\"*/\n\n" +
+                "const lodash = require(lodash)\n\n/*ec0lint avoid-lodash: \"error\"*/\n\n " +
+                "import lodash from ‘lodash’\n\n/*ec0lint avoid-lodash: \"error\"*/ \n\n"  +
+                "import { compact } from 'lodash'\ncompact([0, 1, 2])\n\n"  +
+                "The following pattern is not considered as a problem:\n\n" +
+                "/*ec0lint avoid-lodash: \"error\"*/\n\n[0, 1, 2].filter(x => !!x)"
+    }
+    ,
     {
         name: "no-date-fns",
-        overview: "",
-        CO2: <span></span>,
-        examples: ""
+        overview: <span>{"Disallows to use date-fns. \n\n"}
+        {"It’s a great library, but in most cases can be replaced by plain javascript.\n"}
+        </span>,
+        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>2.26 g per website view</u>{" after removing the redundant library. By multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of a library can be calculated."}
+                <table className="table">
+                    <tbody>
+                        <tr>
+                            <td className="tableCell"><u>Name</u></td>
+                            <td className="tableCell"><u>Size</u></td>
+                            <td className="tableCell"><u>CO2 reduction</u></td>
+                        </tr>
+                        <tr>
+                            <td className="tableCell">date-fns</td>
+                            <td className="tableCell">6.47 MB</td>
+                            <td className="tableCell">2.26 g</td>
+                        </tr>
+                    </tbody>
+                </table>
+                {"The library sizes were checked at "}<a target="_blank" rel="noreferrer" href="https://www.npmjs.com/package" className="link">https://www.npmjs.com/package.</a>{" For more examples how to replace date-fns with plain javascript go here: "}<a target="_blank" rel="noreferrer" href="https://youmightnotneed.com/date-fns" className="link">https://youmightnotneed.com/date-fns.</a>
+            </span>,
+        examples: "The following patterns are considered problems:\n\n/*ec0lint  no-date-fns: \"error\"*/\n\n" +
+                "const date_fns = require(‘date-fns’)\n\n/*ec0lint  no-date-fns: \"error\"*/\n\n " +
+                "import date_fns from ‘date-fns’\n\n/*ec0lint  no-date-fns: \"error\"*/ \n\n"  +
+                "const closestIndexTo = require('date-fns/closestIndexTo')\n" + 
+                "const dateToCompare = new Date(2015, 8, 6)\n" + 
+                "const datesArray = [\n" +  
+                "\tnew Date(2015, 0, 1),\n" +  
+                "\tnew Date(2016, 0, 1),\n" +  
+                "\tnew Date(2017, 0, 1)\n" + 
+                "\t]\n\n" +
+                "closestIndexTo(dateToCompare, datesArray)\n\n"  +
+                "The following pattern is not considered as a problem:\n\n" +
+                "/*ec0lint  no-date-fns: \"error\"*/\n\n" +
+                "const closestIndexTo = (dateToCompare, datesArray) => \n{\n" +
+                "\tconst distances = datesArray.map(date => Math.abs(date - dateToCompare));\n" +
+                "\treturn distances.indexOf(Math.min(...distances));\n" +
+                "}\n\n" +
+                "const dateToCompare = new Date(2015, 8, 6)\n" +  
+                "const datesArray = [\n" +  
+                "\tnew Date(2015, 0, 1),\n" +  
+                "\tnew Date(2016, 0, 1),\n" +  
+                "\tnew Date(2017, 0, 1)\n" +
+                "\t]\n\n" +  
+                "closestIndexTo(dateToCompare, datesArray)"
     },
     {
         name: "no-moment-js",
-        overview: "",
-        CO2: <span></span>,
-        examples: ""
+        overview: <span>{"Disallows to use moment-js. \n\n"}
+        {"It’s a great library, but in most cases can be replaced by plain javascript. If you are working on a performance sensitive web application, using moment-js might cause a huge performance overhead because of its complex APIs and large bundle size. Plain javascript is much greener than moment-js.\n"}
+        </span>,
+        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>1.48 g per website view</u>{" after removing the redundant library. By multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of a library can be calculated."}
+        <table className="table">
+            <tbody>
+                <tr>
+                    <td className="tableCell"><u>Name</u></td>
+                    <td className="tableCell"><u>Size</u></td>
+                    <td className="tableCell"><u>CO2 reduction</u></td>
+                </tr>
+                <tr>
+                    <td className="tableCell">moment-js</td>
+                    <td className="tableCell">4.23 MB</td>
+                    <td className="tableCell">1.48 g</td>
+                </tr>
+            </tbody>
+        </table>
+        {"The library sizes were checked at "}<a target="_blank" rel="noreferrer" href="https://www.npmjs.com/package" className="link">https://www.npmjs.com/package.</a>{" For more examples how to replace moment-js with plain javascript go here: "}<a target="_blank" rel="noreferrer" href="https://github.com/you-dont-need/You-Dont-Need-Momentjs" className="link">https://github.com/you-dont-need/You-Dont-Need-Momentjs.</a>
+    </span>,
+        examples: "The following patterns are considered problems:\n\n/*ec0lint no-moment-js: \"error\"*/\n\n" +
+        "const moment = require(‘moment-js’)\n\n/*ec0lint no-moment-js: \"error\"*/\n\n " +
+        "import moment from ‘no-moment-js’\n\n/*ec0lint  no-moment-js: \"error\"*/ \n\n"  +
+        "import moment from ‘moment-js’\n\n" +  
+        "moment('12-25-1995', 'MM-DD-YYYY');\n\n"  +
+        "The following pattern is not considered as a problem:\n\n" +
+        "/*ec0lint  no-moment-js: \"error\"*/\n\n" +
+        "const datePattern = /^(\d{2})-(\d{2})-(\d{4})$/;\n" +
+        "const [, month, day, year] = datePattern.exec('12-25-1995');\n" +
+        "new Date(`${month}, ${day} ${year}`);"
     },
     {
         name: "no-ttf-font-files",
@@ -206,7 +298,7 @@ export const features = [
                     <tr>
                         <td className="tableCell">Open Sans</td>
                         <td className="tableCell">0.37 g</td>
-                        <td className="tableCell">0.37 g</td>
+                        <td className="tableCell">0.23 g (-48%) </td>
                         <td className="tableCell">0.17 g (-54%) </td>
                     </tr>
                     <tr>
@@ -220,6 +312,24 @@ export const features = [
                         <td className="tableCell">0.13 g</td>
                         <td className="tableCell">0.08 g (-48%)</td>
                         <td className="tableCell">0.06 g (-54%)</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Arial</td>
+                        <td className="tableCell">1.03 g</td>
+                        <td className="tableCell">0.50 g (-51%)</td>
+                        <td className="tableCell">0.43 g (-58%)</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Calibri</td>
+                        <td className="tableCell">0.99 g</td>
+                        <td className="tableCell">0.40 g (-60%)</td>
+                        <td className="tableCell">0.34 g (-66%)</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Times New Roman</td>
+                        <td className="tableCell">0.97 g</td>
+                        <td className="tableCell">0.50 g (-48%)</td>
+                        <td className="tableCell">0.45 g (-54%)</td>
                     </tr>
                 </tbody>
             </table>
@@ -360,9 +470,18 @@ export const features = [
     },
     {
         name: "require-font-display",
-        overview: "",
-        CO2: <span></span>,
-        examples: ""
+        overview: <span>{"Disallow using @font-face without font-display property. \n\n"}
+        {"The font-display property supports five different values: “auto”, “block”, “swap” , “fallback”, “optional”, each describing a different method of behaviour for different scenarios. In short, it allows fine control over whether a fallback font is used immediately, and whether or not after a period of time (and the custom font has loaded) what should happen. "}</span>,
+        examples: "@font-face { font-family: 'foo'; src: url('/path/to/foo.ttf'); } \n\n" +
+        "The following patterns are considered problems: \n\n(a) \n@font-face { font-family: \"MyFont\"; src: url(\"myfont.ttf\") format(\"ttf\"); } \n\n" +
+        "(b) \n@font-face { font-family: \"MyFont\"; src: url(\"myfont.ttf\") format(\"ttf\"); } \n\n" +
+        "(c) \n@font-face { \n\tfont-family: dashicons; \n\tsrc: url(\"myfont.ttf\") format(\"ttf\");\n" +
+        "\tfont-weight: normal; \n\tfont-style: normal; \n } \n\n\nThe following patterns are not considered problems: \n\n" +
+        "(a) \n@font-face { font-family: 'foo'; font-display: block; src: url('/path/to/foo.woff'); } \n\n" +
+        "(b) \n@font-face { font-family: \"MyFont\"; font-display: block; src: url(\"myfont.woff2\") format(\"woff2\"); } \n\n" +
+        "(c) \n@font-face {\n\tfont-family: dashicons; \n\tsrc: url(data:application/font-woff;charset=utf-8;base64, ABCDEF==) format(\"woff\"), \n" +
+        "\turl(../fonts/dashicons.woff) format(\"truetype\"), \n\turl(../fonts/dashicons.svg#dashicons) format(\"svg\");" +
+        "\n\tfont-weight: normal; \n\tfont-style: normal;\n} "
     }
     // {
     //     name: "",
@@ -924,8 +1043,7 @@ export const team = {
         {
             name: "Natalia Otto",
             photo: <img src={Natalia} className="circlePhoto" alt="Natalia Otto"/>,
-            linkedin: "https://www.linkedin.com/in/natalia-otto/",
-            github: "https://github.com/nataaliaotto"
+            linkedin: "https://www.linkedin.com/in/natalia-otto/"
 
         },
         {

@@ -13,7 +13,7 @@ export default function RulePage(data: IRuleObj) {
       </h3>
       <h6 className="sectionText" style={{ whiteSpace: 'pre-wrap' }}>{data.data.overview}</h6>
       <h4 className="sectionTitle" style={{ textAlign: 'left', color: '#8ECCEA' }}>
-        CO2 reduction
+        {data.data.CO2 ? "CO2 reduction" : ""}
       </h4>
       <h6 className="sectionText" style={{ whiteSpace: 'pre-wrap' }}>{data.data.CO2}</h6>
       <h4 className="sectionTitle" style={{ textAlign: 'left', color: '#8ECCEA' }}>
