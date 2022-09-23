@@ -1,5 +1,5 @@
 import React from "react";
-import { whySection, ec0lintIsSection, gitHubUrl, donateSection, references, donateUrl } from '../text';
+import { whySection, ec0lintIsSection, gitHubUrl, donateSection, references, donateUrl, initiativesSection } from '../text';
 import prototype from '../resources/prototype.webp';
 import ImpactSection from '../sections/ImpactSection';
 import SupportSection from '../sections/InitiativesSection';
@@ -36,8 +36,9 @@ function MainPage() {
         </div>
         <div className="modal">
           <div className="modal-content">
-            <span className="close-button">&times;</span>
-            <h1>Hello, I am a modal!</h1>
+            <span className="close-button" onClick={() => toggleModal()}>&times;</span>
+            <h3 className="modal-title"></h3>
+            <span className="modal-text"></span>
           </div>
         </div>
         <SupportSection/>
@@ -48,17 +49,15 @@ function MainPage() {
   );
 }
 
-export function toggleModal() {
-  console.log("whatever")
-  console.log(document.getElementsByClassName("modal")[0]);
+export function toggleModal(modalId?: string) {
   const modal = document.getElementsByClassName("modal")[0];
-  console.log(modal);
-
-  console.log("dpa");
+  if (modalId) {
+    const modalTitle = document.getElementsByClassName("modal-title")[0];
+    const modalText = document.getElementsByClassName("modal-text")[0];
+    modalTitle.innerHTML = initiativesSection.modal.iec.title;
+    modalText.innerHTML = initiativesSection.modal.iec.text;
+  }
   modal.classList.toggle("show-modal");
 }
-
-const closeButton = document.getElementsByClassName("close-button")[0];
-closeButton?.addEventListener("click", toggleModal);
 
 export default MainPage;

@@ -924,12 +924,12 @@ export const initiativesSection = {
     title: 'Initiatives',
     cards: [
         [
-            <span onClick={toggleModal}>
+            <span onClick={() => toggleModal("iec")}>
                 <img src={iec} alt="iec"/>
                 <h6>Digital Ecology</h6>
                 <h6>Institute</h6>
             </span>,
-            <span onClick={e => toggleModal}>
+            <span onClick={() => toggleModal("helsinki")}>
                 <img src={helsinki1} alt="helsinki think company" style={{ paddingRight: 0 }}/>
                 <img src={helsinki2} alt="think company fund"style={{ paddingLeft: '5px' }}/>
                 <div>
@@ -937,25 +937,52 @@ export const initiativesSection = {
                     <h6>Think Company Fund</h6>
                 </div>
             </span>,
-            <span onClick={e => toggleModal}>
+            <span onClick={() => toggleModal("weAreDevelopers")}>
                 <img src={weAreDevelopers} alt="WeAreDevelopers"/>
                 <h6>WeAreDevelopers</h6>
             </span>
         ],
         [
-            <span onClick={e => toggleModal}>
+            <span onClick={() => toggleModal("perspektywy")}>
                 <img src={perspektywy} alt="perspektywy women in tech"/>
                 <h6>Perspektywy</h6>
                 <h6>Women in Tech</h6>
             </span>,
-            <span onClick={e => toggleModal} style={{ padding: '0 30px' }}>
+            <span onClick={() => toggleModal("reactIndia")} style={{ padding: '0 30px' }}>
                 <img src={reactIndia} alt="reactIndia"/>
                 <h6>React India</h6>
             </span>,
-            <span onClick={e => toggleModal}>
+            <span onClick={() => toggleModal("ing")}>
                 <img src={ing} alt="ING"/>
                 <h6>ING</h6>
             </span>
         ]     
-    ]
+    ],
+    modal: {
+        "iec": {
+            title: "Digital Ecology Institute ",
+            text: "We collaborate with a mentor from the Digital Ecology Institute." + 
+            "<a target=\"_blank\" href=\"https://digitalecology.institute\">More information</a>"
+        },
+        "helsinki": {
+            title: "",
+            text: ""
+        },
+        "weAreDevelopers": {
+            title: "",
+            text: ""
+        },
+        "perspektywy": {
+            title: "",
+            text: ""
+        },
+        "reactIndia": {
+            title: "",
+            text: ""
+        },
+        "ing": {
+            title: "",
+            text: ""
+        }
+    }
 };
