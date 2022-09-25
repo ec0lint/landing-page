@@ -16,7 +16,7 @@ Did you know that more than 250 000 websites are published every day?
 
 The majority uses too heavy fonts, too large/unnecessary images or utilises redundant libraries. These and other factors generate the carbon footprint. Actually, one view of an average website emits 1.8 g CO2 which sums up to 216 kg CO2 annually. Unfortunately, current solutions optimise only already existing websites.
 
-ec0lint is a tool for frontend developers that mitigates the carbon footprint of websites. It shows tips advising how to create a more climate-friendly code. Thanks to code optimization ec0lint can help in reducing CO2 emissions per one view from 1.8 g to ~0.2 g saving 216 kg CO2 (-96%!) annually.
+ec0lint is a tool for frontend developers that mitigates the carbon footprint of websites. It shows tips advising how to create a more climate-friendly code. Thanks to code optimization ec0lint can help in reducing CO2 emissions per one view from 1.8 g to ~0.2 g saving 198 kg CO2 (-88%!) annually.
 
 The tool is customized and each rule applied during the analysis can be adjusted, or treated as hints rather than errors. This flexibility allows the developers to reach their goals without interruptions from ec0lint, at the same time drawing attention to possible improvements.
 
