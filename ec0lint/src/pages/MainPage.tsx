@@ -3,6 +3,7 @@ import { whySection, ec0lintIsSection, gitHubUrl, donateSection, references, don
 import prototype from '../resources/prototype.webp';
 import ImpactSection from '../sections/ImpactSection';
 import SupportSection from '../sections/InitiativesSection';
+import ModalSection from "../sections/ModalSection";
 import { banner } from '../text';
 import References from '../sections/References';
 
@@ -34,30 +35,13 @@ function MainPage() {
             <button className="mainButton">{"DONATE [soon]"}</button>
           </a>
         </div>
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close-button" onClick={() => toggleModal()}>&times;</span>
-            <h3 className="modal-title"></h3>
-            <span className="modal-text"></span>
-          </div>
-        </div>
+        <ModalSection/>
         <SupportSection/>
         <h4>Used by</h4>
         <div className="circle"><h3>You?</h3></div>
         <References data={references} />
     </div>
   );
-}
-
-export function toggleModal(modalId?: string) {
-  const modal = document.getElementsByClassName("modal")[0];
-  if (modalId) {
-    const modalTitle = document.getElementsByClassName("modal-title")[0];
-    const modalText = document.getElementsByClassName("modal-text")[0];
-    modalTitle.innerHTML = initiativesSection.modal.iec.title;
-    modalText.innerHTML = initiativesSection.modal.iec.text;
-  }
-  modal.classList.toggle("show-modal");
 }
 
 export default MainPage;

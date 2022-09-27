@@ -184,6 +184,7 @@ h6 {
 }
 
 .supportCompany {
+  cursor: pointer;
   display: inline-block;
   padding: 40px 50px;
   vertical-align: text-top;
@@ -563,27 +564,26 @@ h6 {
 
 .modal-content {
   position: absolute;
+  display: flex;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  background-color: #8ECCEA;
+  min-height: 10rem;
   padding: 1rem 1.5rem;
-  width: 24rem;
+  width: 56rem;
   border-radius: 0.5rem;
 }
 
 .close-button {
   float: right;
+  color: black;
+  font-size: 3rem;
   width: 1.5rem;
   line-height: 1.5rem;
   text-align: center;
   cursor: pointer;
   border-radius: 0.25rem;
-  background-color: lightgray;
-}
-
-.close-button:hover {
-  background-color: darkgray;
 }
 
 .show-modal {
@@ -591,4 +591,32 @@ h6 {
   visibility: visible;
   transform: scale(1.0);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 1;
+}
+
+.modal-title {
+  color: black;
+  font-size: 1.4em;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.modal-text {
+  color: black;
+  font-size: 1.2em;
+}
+
+.modal-link {
+  color: black;
+  font-size: 1.2em;
+}
+
+.modal-main-content {
+  display: flex;
+  align-items: center;
+}
+
+.modal-image {
+  display: flex;
+  padding: 0 20px 0 10px;
 }

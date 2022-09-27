@@ -16,7 +16,7 @@ import reactIndia from './resources/reactindia.webp';
 import weAreDevelopers from './resources/wearedevelopers.webp';
 import lighterImageFile from './resources/lighter-image-file.webp';
 import React from "react";
-import { toggleModal } from './pages/MainPage';
+import { toggleModal } from './sections/ModalSection';
 
 export const banner = {
     logo: "{e}",
@@ -959,30 +959,89 @@ export const initiativesSection = {
         ]     
     ],
     modal: {
-        "iec": {
-            title: "Digital Ecology Institute ",
-            text: "We collaborate with a mentor from the Digital Ecology Institute." + 
-            "<a target=\"_blank\" href=\"https://digitalecology.institute\">More information</a>"
+        iec: {
+            title: "Digital Ecology Institute",
+            text: "We collaborate with a mentor from the Digital Ecology Institute.", 
+            link: "More information " + "<a target=\"_blank\" href=\"https://digitalecology.institute\">here</a>."
         },
-        "helsinki": {
-            title: "",
-            text: ""
+        helsinki: {
+            title: "Helsinki Think Company",
+            text: "Helsinki Think Company granted ec0lint a small fund from the Think Company Fund.",
+            link: "You can read more about the initiative " + "<a target=\"_blank\" href=\"https://www.thinkcompany.fi/what-we-do/programs/think-company-fund-2022\">here</a>."
         },
-        "weAreDevelopers": {
-            title: "",
-            text: ""
+        weAreDevelopers: {
+            title: "WeAreDevelopers",
+            text: "ec0lint was featured in the newsletter sent out by WeAreDevelopers (60 000+ readers).",
+            link: "More information " + "<a target=\"_blank\" href=\"https://www.wearedevelopers.com/\">here</a>."
         },
-        "perspektywy": {
-            title: "",
-            text: ""
+        perspektywy: {
+            title: "Perspektywy Women in Tech",
+            text: "ec0lint stems from the LeaderSHEp Women in Tech program organized by Perspektywy Women in Tech. ec0lint had its premiere during the flagship event of the foundation - Women in Tech Summit (10 000+ attended). ",
+            link: "You can find more information " + "<a target=\"_blank\" href=\"https://womenintech.perspektywy.org/\">here</a>."
         },
-        "reactIndia": {
-            title: "",
-            text: ""
+        reactIndia: {
+            title: "React India",
+            text: "At the end of September, we are going to talk about the importance of digital ecology and present ec0lint during React India (600+ developers in-person, 3 000+ participants online). ",
+            link: "More information " +  "<a target=\"_blank\" href=\"https://www.reactindia.io/\">here</a>."
         },
-        "ing": {
-            title: "",
-            text: ""
+        ing: {
+            title: "ING",
+            text: "ec0lint was chosen as one of the top 10 finalists in the ING Grant Competition. Being a part of the ING community, we were given the opportunity to share our history and showcase the tool during FEST Festival in Chorzow. ",
+            link: "You can read more about the competition " + "<a target=\"_blank\" href=\"https://www.ing.pl/o-banku/esg/program-grantowy\">here</a>."
+        },
+        getTitle(id: string): string {
+            switch(id) {
+                case "iec":
+                    return this.iec.title;
+                case "helsinki":
+                    return this.helsinki.title;
+                case "weAreDevelopers":
+                    return this.weAreDevelopers.title;
+                case "perspektywy":
+                    return this.perspektywy.title;
+                case "reactIndia":
+                    return this.reactIndia.title;
+                case "ing":
+                    return this.ing.title;
+                default:
+                    return "";
+            }
+        },
+        getText(id: string): string {
+            switch(id) {
+                case "iec":
+                    return this.iec.text;
+                case "helsinki":
+                    return this.helsinki.text;
+                case "weAreDevelopers":
+                    return this.weAreDevelopers.text;
+                case "perspektywy":
+                    return this.perspektywy.text;
+                case "reactIndia":
+                    return this.reactIndia.text;
+                case "ing":
+                    return this.ing.text;
+                default:
+                    return "";
+            }
+        },
+        getLink(id: string): string {
+            switch(id) {
+                case "iec":
+                    return this.iec.link;
+                case "helsinki":
+                    return this.helsinki.link;
+                case "weAreDevelopers":
+                    return this.weAreDevelopers.link;
+                case "perspektywy":
+                    return this.perspektywy.link;
+                case "reactIndia":
+                    return this.reactIndia.link;
+                case "ing":
+                    return this.ing.link;
+                default:
+                    return "";
+            }
         }
     }
 };
