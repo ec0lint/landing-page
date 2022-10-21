@@ -3,7 +3,6 @@ import { whySection, ec0lintIsSection, gitHubUrl, donateSection, references, don
 import prototype from '../resources/prototype.webp';
 import ImpactSection from '../sections/ImpactSection';
 import SupportSection from '../sections/InitiativesSection';
-import ModalSection from "../sections/ModalSection";
 import { banner } from '../text';
 import References from '../sections/References';
 
@@ -35,7 +34,6 @@ function MainPage() {
             <button className="mainButton">{"DONATE [soon]"}</button>
           </a>
         </div>
-        <ModalSection/>
         <SupportSection/>
         <h4>Used by</h4>
         <div className="circle"><h3>You?</h3></div>

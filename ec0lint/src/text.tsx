@@ -16,7 +16,6 @@ import reactIndia from './resources/reactindia.webp';
 import weAreDevelopers from './resources/wearedevelopers.webp';
 import lighterImageFile from './resources/lighter-image-file.webp';
 import React from "react";
-import { toggleModal } from './sections/ModalSection';
 
 export const banner = {
     logo: "{e}",
@@ -924,12 +923,12 @@ export const initiativesSection = {
     title: 'Initiatives',
     cards: [
         [
-            <span onClick={() => toggleModal("iec")}>
+            <span id="0">
                 <img src={iec} alt="iec"/>
                 <h6>Digital Ecology</h6>
                 <h6>Institute</h6>
             </span>,
-            <span onClick={() => toggleModal("helsinki")}>
+            <span id="1">
                 <img src={helsinki1} alt="helsinki think company" style={{ paddingRight: 0 }}/>
                 <img src={helsinki2} alt="think company fund"style={{ paddingLeft: '5px' }}/>
                 <div>
@@ -937,111 +936,63 @@ export const initiativesSection = {
                     <h6>Think Company Fund</h6>
                 </div>
             </span>,
-            <span onClick={() => toggleModal("weAreDevelopers")}>
+            <span id="2">
                 <img src={weAreDevelopers} alt="WeAreDevelopers"/>
                 <h6>WeAreDevelopers</h6>
             </span>
         ],
         [
-            <span onClick={() => toggleModal("perspektywy")}>
+            <span id="3">
                 <img src={perspektywy} alt="perspektywy women in tech"/>
                 <h6>Perspektywy</h6>
                 <h6>Women in Tech</h6>
             </span>,
-            <span onClick={() => toggleModal("reactIndia")} style={{ padding: '0 30px' }}>
+            <span id="4" style={{ padding: '0 30px' }}>
                 <img src={reactIndia} alt="reactIndia"/>
                 <h6>React India</h6>
             </span>,
-            <span onClick={() => toggleModal("ing")}>
+            <span id="5">
                 <img src={ing} alt="ING"/>
                 <h6>ING</h6>
             </span>
         ]     
     ],
-    modal: {
-        iec: {
+    modal: [
+        {
             title: "Digital Ecology Institute",
             text: "We collaborate with a mentor from the Digital Ecology Institute.", 
-            link: "More information " + "<a target=\"_blank\" href=\"https://digitalecology.institute\">here</a>."
+            link: <span>More information <a className="navLinkPurple" target="_blank" href="https://digitalecology.institute">here</a>.</span>,
+            image: <img src={iec}></img>
         },
-        helsinki: {
+        {
             title: "Helsinki Think Company",
             text: "Helsinki Think Company granted ec0lint a small fund from the Think Company Fund.",
-            link: "You can read more about the initiative " + "<a target=\"_blank\" href=\"https://www.thinkcompany.fi/what-we-do/programs/think-company-fund-2022\">here</a>."
+            link: <span>You can read more about the initiative <a className="navLinkPurple" target="_blank" href="https://www.thinkcompany.fi/what-we-do/programs/think-company-fund-2022">here</a>.</span>,
+            image: <><img src={helsinki1} className="helsinki-image"></img><img src={helsinki2}></img></>,
         },
-        weAreDevelopers: {
+        {
             title: "WeAreDevelopers",
             text: "ec0lint was featured in the newsletter sent out by WeAreDevelopers (60 000+ readers).",
-            link: "More information " + "<a target=\"_blank\" href=\"https://www.wearedevelopers.com/\">here</a>."
+            link: <span>More information <a className="navLinkPurple" target="_blank" href="https://www.wearedevelopers.com/">here</a>.</span>,
+            image: <img src={weAreDevelopers}></img>
         },
-        perspektywy: {
+        {
             title: "Perspektywy Women in Tech",
             text: "ec0lint stems from the LeaderSHEp Women in Tech program organized by Perspektywy Women in Tech. ec0lint had its premiere during the flagship event of the foundation - Women in Tech Summit (10 000+ attended). ",
-            link: "You can find more information " + "<a target=\"_blank\" href=\"https://womenintech.perspektywy.org/\">here</a>."
+            link: <span>You can find more information <a className="navLinkPurple" target="_blank" href="https://womenintech.perspektywy.org/">here</a>.</span>,
+            image: <img src={perspektywy}></img>
         },
-        reactIndia: {
+        {
             title: "React India",
             text: "At the end of September, we are going to talk about the importance of digital ecology and present ec0lint during React India (600+ developers in-person, 3 000+ participants online). ",
-            link: "More information " +  "<a target=\"_blank\" href=\"https://www.reactindia.io/\">here</a>."
+            link: <span>More information <a className="navLinkPurple" target="_blank" href="https://www.reactindia.io/">here</a>.</span>,
+            image: <img src={reactIndia}></img>
         },
-        ing: {
+        {
             title: "ING",
             text: "ec0lint was chosen as one of the top 10 finalists in the ING Grant Competition. Being a part of the ING community, we were given the opportunity to share our history and showcase the tool during FEST Festival in Chorzow. ",
-            link: "You can read more about the competition " + "<a target=\"_blank\" href=\"https://www.ing.pl/o-banku/esg/program-grantowy\">here</a>."
-        },
-        getTitle(id: string): string {
-            switch(id) {
-                case "iec":
-                    return this.iec.title;
-                case "helsinki":
-                    return this.helsinki.title;
-                case "weAreDevelopers":
-                    return this.weAreDevelopers.title;
-                case "perspektywy":
-                    return this.perspektywy.title;
-                case "reactIndia":
-                    return this.reactIndia.title;
-                case "ing":
-                    return this.ing.title;
-                default:
-                    return "";
-            }
-        },
-        getText(id: string): string {
-            switch(id) {
-                case "iec":
-                    return this.iec.text;
-                case "helsinki":
-                    return this.helsinki.text;
-                case "weAreDevelopers":
-                    return this.weAreDevelopers.text;
-                case "perspektywy":
-                    return this.perspektywy.text;
-                case "reactIndia":
-                    return this.reactIndia.text;
-                case "ing":
-                    return this.ing.text;
-                default:
-                    return "";
-            }
-        },
-        getLink(id: string): string {
-            switch(id) {
-                case "iec":
-                    return this.iec.link;
-                case "helsinki":
-                    return this.helsinki.link;
-                case "weAreDevelopers":
-                    return this.weAreDevelopers.link;
-                case "perspektywy":
-                    return this.perspektywy.link;
-                case "reactIndia":
-                    return this.reactIndia.link;
-                case "ing":
-                    return this.ing.link;
-                default:
-                    return "";
-            }
+            link: <span>You can read more about the competition <a className="navLinkPurple" target="_blank" href="https://www.ing.pl/o-banku/esg/program-grantowy">here</a>.</span>,
+            image: <img src={ing}></img>
         }
-    }
+    ]
 };
