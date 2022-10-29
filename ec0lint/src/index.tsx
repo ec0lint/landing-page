@@ -32,7 +32,7 @@ root.render(
         <Route path="use-cases" element={<UseCasesPage />} />
         <Route path="blog" element={<BlogPage />} />
         <Route path="team" element={<TeamPage />} />
-      
+
         <Route path="blog/introduction-to-digital-ecology" element={<BlogPostPage data={blog.posts[0]}/>} />
         <Route path="blog/ec0lint" element={<BlogPostPage data={blog.posts[1]}/>} />
         <Route path="blog/change-your-online-habits" element={<BlogPostPage data={blog.posts[2]}/>} />
