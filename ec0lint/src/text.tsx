@@ -961,37 +961,37 @@ export const initiativesSection = {
         {
             title: "Digital Ecology Institute",
             text: "We collaborate with a mentor from the Digital Ecology Institute.", 
-            link: <span>More information <a className="navLinkPurple" target="_blank" href="https://digitalecology.institute">here</a>.</span>,
+            link: <span>More information <a className="navLinkPurple" target="_blank" href="https://digitalecology.institute" rel="noreferrer">here</a>.</span>,
             image: <img src={iec}></img>
         },
         {
             title: "Helsinki Think Company",
             text: "Helsinki Think Company granted ec0lint a small fund from the Think Company Fund.",
-            link: <span>You can read more about the initiative <a className="navLinkPurple" target="_blank" href="https://www.thinkcompany.fi/what-we-do/programs/think-company-fund-2022">here</a>.</span>,
+            link: <span>You can read more about the initiative <a className="navLinkPurple" target="_blank" href="https://www.thinkcompany.fi/what-we-do/programs/think-company-fund-2022" rel="noreferrer">here</a>.</span>,
             image: <><img src={helsinki1} className="helsinki-image"></img><img src={helsinki2}></img></>,
         },
         {
             title: "WeAreDevelopers",
             text: "ec0lint was featured in the newsletter sent out by WeAreDevelopers (60 000+ readers).",
-            link: <span>More information <a className="navLinkPurple" target="_blank" href="https://www.wearedevelopers.com/">here</a>.</span>,
+            link: <span>More information <a className="navLinkPurple" target="_blank" href="https://www.wearedevelopers.com/" rel="noreferrer">here</a>.</span>,
             image: <img src={weAreDevelopers}></img>
         },
         {
             title: "Perspektywy Women in Tech",
             text: "ec0lint stems from the LeaderSHEp Women in Tech program organized by Perspektywy Women in Tech. ec0lint had its premiere during the flagship event of the foundation - Women in Tech Summit (10 000+ attended). ",
-            link: <span>You can find more information <a className="navLinkPurple" target="_blank" href="https://womenintech.perspektywy.org/">here</a>.</span>,
+            link: <span>You can find more information <a className="navLinkPurple" target="_blank" href="https://womenintech.perspektywy.org/" rel="noreferrer">here</a>.</span>,
             image: <img src={perspektywy}></img>
         },
         {
             title: "React India",
             text: "At the end of September, we are going to talk about the importance of digital ecology and present ec0lint during React India (600+ developers in-person, 3 000+ participants online). ",
-            link: <span>More information <a className="navLinkPurple" target="_blank" href="https://www.reactindia.io/">here</a>.</span>,
+            link: <span>More information <a className="navLinkPurple" target="_blank" href="https://www.reactindia.io/" rel="noreferrer">here</a>.</span>,
             image: <img src={reactIndia}></img>
         },
         {
             title: "ING",
             text: "ec0lint was chosen as one of the top 10 finalists in the ING Grant Competition. Being a part of the ING community, we were given the opportunity to share our history and showcase the tool during FEST Festival in Chorzow. ",
-            link: <span>You can read more about the competition <a className="navLinkPurple" target="_blank" href="https://www.ing.pl/o-banku/esg/program-grantowy">here</a>.</span>,
+            link: <span>You can read more about the competition <a className="navLinkPurple" target="_blank" href="https://www.ing.pl/o-banku/esg/program-grantowy" rel="noreferrer">here</a>.</span>,
             image: <img src={ing}></img>
         }
     ]

@@ -1,5 +1,5 @@
 import React from "react";
-import { whySection, ec0lintIsSection, gitHubUrl, donateSection, references, donateUrl, initiativesSection } from '../text';
+import { whySection, ec0lintIsSection, gitHubUrl, donateSection, references, donateUrl } from '../text';
 import prototype from '../resources/prototype.webp';
 import ImpactSection from '../sections/ImpactSection';
 import SupportSection from '../sections/InitiativesSection';
