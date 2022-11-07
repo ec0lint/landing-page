@@ -23,7 +23,8 @@ export interface IRule {
     name: string,
     overview: JSX.Element | string,
     CO2?: JSX.Element,
-    examples: string
+    examples: string,
+    packages: string[]
 }
 
 export interface IRuleObj {

@@ -12,6 +12,8 @@ export default function RulePage(data: IRuleObj) {
         {data.data.name}
       </h3>
       <h6 className="sectionText" style={{ whiteSpace: 'pre-wrap' }}>{data.data.overview}</h6>
+      <h6 className="sectionTitle" style={{ color: '#8ECCEA' }}>Packages: <span style={{ color: '#C571FF', whiteSpace: 'pre-wrap' }}>{data.data.packages.join(', ')}</span>
+      </h6>
       <h4 className="sectionTitle" style={{ textAlign: 'left', color: '#8ECCEA' }}>
         {data.data.CO2 ? "CO2 reduction" : ""}
       </h4>
@@ -21,7 +23,7 @@ export default function RulePage(data: IRuleObj) {
       </h4>
       <h6 className="sectionText" style={{ whiteSpace: 'pre-wrap', marginBottom: '50px' }}>{data.data.examples}</h6>
       <h5 className="sectionText" style={{ marginBottom: '50px' }}>
-        <Link to="/features" className="navLinkBlue"><i>{"<- Go back to all features"}</i></Link>
+        <Link to="/features" className="navLinkBlue"><i>{"<- Go back to all rules"}</i></Link>
       </h5>
     </div>
   );

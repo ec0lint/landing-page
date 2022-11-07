@@ -101,7 +101,7 @@ export const getStartedForUsers = <span>{"Have you ever heard of ESLint? You use
 export const featuresPage = {
     title: "Highlights",
     text: [
-        "At the moment, we deployed the first three features, namely:",
+        "At the moment, we released version 2.0.0, which calculates CO2 savings on the fly. Our example features:",
         "Eventually, we aim to automate our solution. One click and you can start discovering a green " +
         "version of your website."
     ],
@@ -123,15 +123,16 @@ export const featuresPage = {
             url: "/lighter-image-files"
         }
     ],
-    allFeaturesTitle: "All features"
+    allFeaturesTitle: "All rules"
 };
 
 export const features = [
     {
         name: "avoid-lodash",
         overview: <span>{"Disallows to use lodash. \n\n"}
-        {"It’s a great library, but in most cases can be replaced by plain javascript.\n"}
+        {"It’s a great library, but in most cases can be replaced by plain JavaScript.\n"}
         </span>,
+        packages: ["ec0lint"],
         CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.5 g per website view</u>{" after removing the redundant library. By multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of a library can be calculated."}
                 <table className="table">
                     <tbody>
@@ -147,7 +148,7 @@ export const features = [
                         </tr>
                     </tbody>
                 </table>
-                {"The library sizes were checked at "}<a target="_blank" rel="noreferrer" href="https://www.npmjs.com/package" className="link">https://www.npmjs.com/package.</a>{" For more examples how to replace lodash with plain javascript go here: "}<a target="_blank" rel="noreferrer" href="https://youmightnotneed.com/lodash" className="link">https://youmightnotneed.com/lodash.</a>
+                {"The library sizes were checked at "}<a target="_blank" rel="noreferrer" href="https://www.npmjs.com/package" className="link">https://www.npmjs.com/package.</a>{" For more examples how to replace lodash with plain JavaScript go here: "}<a target="_blank" rel="noreferrer" href="https://youmightnotneed.com/lodash" className="link">https://youmightnotneed.com/lodash.</a>
             </span>,
         examples: "The following patterns are considered problems:\n\n/*ec0lint avoid-lodash: \"error\"*/\n\n" +
                 "const lodash = require(lodash)\n\n/*ec0lint avoid-lodash: \"error\"*/\n\n " +
@@ -160,8 +161,9 @@ export const features = [
     {
         name: "no-date-fns",
         overview: <span>{"Disallows to use date-fns. \n\n"}
-        {"It’s a great library, but in most cases can be replaced by plain javascript.\n"}
+        {"It’s a great library, but in most cases can be replaced by plain JavaScript.\n"}
         </span>,
+        packages: ["ec0lint"],
         CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>2.26 g per website view</u>{" after removing the redundant library. By multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of a library can be calculated."}
                 <table className="table">
                     <tbody>
@@ -177,7 +179,7 @@ export const features = [
                         </tr>
                     </tbody>
                 </table>
-                {"The library sizes were checked at "}<a target="_blank" rel="noreferrer" href="https://www.npmjs.com/package" className="link">https://www.npmjs.com/package.</a>{" For more examples how to replace date-fns with plain javascript go here: "}<a target="_blank" rel="noreferrer" href="https://youmightnotneed.com/date-fns" className="link">https://youmightnotneed.com/date-fns.</a>
+                {"The library sizes were checked at "}<a target="_blank" rel="noreferrer" href="https://www.npmjs.com/package" className="link">https://www.npmjs.com/package.</a>{" For more examples how to replace date-fns with plain JavaScript go here: "}<a target="_blank" rel="noreferrer" href="https://youmightnotneed.com/date-fns" className="link">https://youmightnotneed.com/date-fns.</a>
             </span>,
         examples: "The following patterns are considered problems:\n\n/*ec0lint  no-date-fns: \"error\"*/\n\n" +
                 "const date_fns = require(‘date-fns’)\n\n/*ec0lint  no-date-fns: \"error\"*/\n\n " +
@@ -207,8 +209,9 @@ export const features = [
     {
         name: "no-moment-js",
         overview: <span>{"Disallows to use moment-js. \n\n"}
-        {"It’s a great library, but in most cases can be replaced by plain javascript. If you are working on a performance sensitive web application, using moment-js might cause a huge performance overhead because of its complex APIs and large bundle size. Plain javascript is much greener than moment-js.\n"}
+        {"It’s a great library, but in most cases can be replaced by plain JavaScript. If you are working on a performance sensitive web application, using moment-js might cause a huge performance overhead because of its complex APIs and large bundle size. Plain JavaScript is much greener than moment-js.\n"}
         </span>,
+        packages: ["ec0lint"],
         CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>1.48 g per website view</u>{" after removing the redundant library. By multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of a library can be calculated."}
         <table className="table">
             <tbody>
@@ -224,7 +227,7 @@ export const features = [
                 </tr>
             </tbody>
         </table>
-        {"The library sizes were checked at "}<a target="_blank" rel="noreferrer" href="https://www.npmjs.com/package" className="link">https://www.npmjs.com/package.</a>{" For more examples how to replace moment-js with plain javascript go here: "}<a target="_blank" rel="noreferrer" href="https://github.com/you-dont-need/You-Dont-Need-Momentjs" className="link">https://github.com/you-dont-need/You-Dont-Need-Momentjs.</a>
+        {"The library sizes were checked at "}<a target="_blank" rel="noreferrer" href="https://www.npmjs.com/package" className="link">https://www.npmjs.com/package.</a>{" For more examples how to replace moment-js with plain JavaScript go here: "}<a target="_blank" rel="noreferrer" href="https://github.com/you-dont-need/You-Dont-Need-Momentjs" className="link">https://github.com/you-dont-need/You-Dont-Need-Momentjs.</a>
     </span>,
         examples: "The following patterns are considered problems:\n\n/*ec0lint no-moment-js: \"error\"*/\n\n" +
         "const moment = require(‘moment-js’)\n\n/*ec0lint no-moment-js: \"error\"*/\n\n " +
@@ -242,6 +245,7 @@ export const features = [
         overview: <span>{"Disallow using TTF custom font files. \n\n"}
             {"Fonts should be converted to WOFF or WOFF2 format. WOFF2 is now the most modern and efficient format available in browsers. It was developed by Google as an update to the original WOFF format and is considered the best format of the bunch because it offers smaller file sizes and better performance for modern browsers that support it. We can achieve almost 80% reduction of file size simply through loading a WOFF2 file over a TTF and almost 60% in case of using WOFF instead of TTF font files. \n"}
             </span>,
+        packages: ["ec0lint-style"],
         CO2: <span>{"Convertion of only one of the most popular fonts used on websites – Helvetica Neue - from TTF to WOFF2 format can reduce the carbon footprint even up to "}
             <u>0.54 g per website view.</u>{" By converting the same file to WOFF format we achieve "}<u>0.35 g</u>{" CO2 reduction."}
             {"\n\nIn the table below we show carbon footprint emission depending on file format for 10 popular fonts used on websites. \n"}
@@ -351,6 +355,7 @@ export const features = [
         name: "lighter-http",
         overview: <span>{"Disallows to use libraries like: axios, got, request, make-fetch-happen, superagent, needle, simple-get. \n\n"}
             {"Importing large sets of packages, which are doing exactly the same work as fetch, takes a large amount of disk space. Fetch API is a built-in functionality, so it's always on hand. We recommend using fetch. "}</span>,
+        packages: ["ec0lint"],
         CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.21 g per website view</u>{" after removing a redundant library.\n\n"} 
             {"By multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of a library can be calculated. \n\n"}  
             <table className="table">
@@ -397,7 +402,7 @@ export const features = [
                     </tr>
                 </tbody>
             </table>
-            {"The library sizes were checked at "}<a target="_blank" rel="noreferrer" href="www.npmjs.com/package" className="link">www.npmjs.com/package</a>{". For more examples how to replace axios or other http library with plain javascript go here: "}<a target="_blank" rel="noreferrer" href="https://danlevy.net/you-may-not-need-axios/" className="link">https://danlevy.net/you-may-not-need-axios/</a></span>,
+            {"The library sizes were checked at "}<a target="_blank" rel="noreferrer" href="www.npmjs.com/package" className="link">www.npmjs.com/package</a>{". For more examples how to replace axios or other http library with plain JavaScript go here: "}<a target="_blank" rel="noreferrer" href="https://danlevy.net/you-may-not-need-axios/" className="link">https://danlevy.net/you-may-not-need-axios/</a></span>,
         examples: "The following patterns are considered problems: \n\n(a) /* ec0lint lighter-http: \"error\" */ \n\n" +
             "\tconst axios = require('axios') \n\n(b) /* ec0lint lighter-http: \"error\" */ \n\n\timport axios from 'axios'\n\n" +
             "(c) /* ec0lint lighter-http: \"error\" */ \n\n\timport * as axios from 'axios' \n\n\n" +
@@ -408,6 +413,7 @@ export const features = [
         name: "lighter-image-files",
         overview: "Encourages to use WebP and SVG format of image files in CSS code. \n\n" +
             "Image files inside web application should be in  WebP and SVG format. These formats can crunch large images down into more manageable file sizes. They are on average much smaller than GIF, JPEG, PNG, even at extremely high resolutions. We can achieve up to 82% reduction of file size using SVG instead of JPG and up to 95% in case of PNG. For WebP format we get up to 60% reduction of file size in case of converting from JPG and up to 91% for PNG.",
+        packages: ["ec0lint", "ec0lint-style"],
         CO2: <span>Convertion of an exemplary image in 1800 x 1200 resolution from PNG to SVG format can reduce the carbon footprint by about <u>5.79 g per website view.</u>
             {"\n\nThe table below shows comparison between file sizes and CO2 emission for exemplary image (displayed below) in 1800 x 1200 resolution for the most popular image formats. \n"}
             <table className="table">
@@ -471,7 +477,10 @@ export const features = [
     {
         name: "require-font-display",
         overview: <span>{"Disallow using @font-face without font-display property. \n\n"}
-        {"The font-display property supports five different values: “auto”, “block”, “swap” , “fallback”, “optional”, each describing a different method of behaviour for different scenarios. In short, it allows fine control over whether a fallback font is used immediately, and whether or not after a period of time (and the custom font has loaded) what should happen. "}</span>,
+        {"The font-display property supports five different values: “auto”, “block”, “swap”, “fallback”, “optional”, each describing a different method of behaviour for different scenarios. In short, it allows fine control over whether a fallback font is used immediately and what should happen after the custom font has loaded."}</span>,
+        CO2: <span>{"If the font is hosted online and the page is visited for a short period of time (less than the time needed to load the font), it saves the equivalent of the font size in data transfer. \n\n"}
+        {"If you’re interested to know more about font sizes please visit no-ttf-font-files documentation. "}</span>,
+        packages: ["ec0lint-style"],
         examples: "@font-face { font-family: 'foo'; src: url('/path/to/foo.ttf'); } \n\n" +
         "The following patterns are considered problems: \n\n(a) \n@font-face { font-family: \"MyFont\"; src: url(\"myfont.ttf\") format(\"ttf\"); } \n\n" +
         "(b) \n@font-face { font-family: \"MyFont\"; src: url(\"myfont.ttf\") format(\"ttf\"); } \n\n" +
