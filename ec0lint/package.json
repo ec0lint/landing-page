@@ -7,7 +7,7 @@
     "@types/jest": "^28.1.1",
     "@types/react": "^18.0.12",
     "@types/react-dom": "^18.0.5",
-    "ec0lint": "^2.0.0",
+    "ec0lint": "^2.0.2",
     "ec0lint-style": "^2.0.7",
     "ec0lint-style-config-recommended": "^2.0.1",
     "react": "^18.1.0",

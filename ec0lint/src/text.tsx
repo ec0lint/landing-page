@@ -119,7 +119,7 @@ export const featuresPage = {
         },
         {
             title: "Lighter image files",
-            text: "Image files inside web application should have WebP format - these formats can crunch large images down into more manageable sizes. We can achieve 99% reduction of file size using these formats over PPM, PS, RGB or PNG file. ",
+            text: "Image files inside web application should have WebP format - these formats can crunch large images down into more manageable sizes. We can achieve 95% reduction of file size using these formats over PPM, PS, RGB or PNG file. ",
             url: "/lighter-image-files"
         }
     ],
@@ -243,7 +243,7 @@ export const features = [
     {
         name: "no-ttf-font-files",
         overview: <span>{"Disallow using TTF custom font files. \n\n"}
-            {"Fonts should be converted to WOFF or WOFF2 format. WOFF2 is now the most modern and efficient format available in browsers. It was developed by Google as an update to the original WOFF format and is considered the best format of the bunch because it offers smaller file sizes and better performance for modern browsers that support it. We can achieve almost 80% reduction of file size simply through loading a WOFF2 file over a TTF and almost 60% in case of using WOFF instead of TTF font files. \n"}
+            {"Fonts should be converted to WOFF or WOFF2 format. WOFF2 is now the most modern and efficient format available in browsers. It was developed by Google as an update to the original WOFF format and is considered the best format of the bunch because it offers smaller file sizes and better performance for modern browsers that support it. We can achieve almost 70% reduction of file size simply through loading a WOFF2 file over a TTF and almost 60% in case of using WOFF instead of TTF font files. \n"}
             </span>,
         packages: ["ec0lint-style"],
         CO2: <span>{"Convertion of only one of the most popular fonts used on websites – Helvetica Neue - from TTF to WOFF2 format can reduce the carbon footprint even up to "}
@@ -470,16 +470,16 @@ export const features = [
             {"\nFor the same exemplary image in WebP (1.6 Mb) the carbon footprint amounts to 0.57g. So, by subtracting 0.57 g from 6.05 g we get 5.48 g (91% less CO2). \n"}
             {"\nExemplary image was downloaded from "}<a target="_blank" rel="noreferrer" href="https://wallpaperaccess.com/1800x1200-hd" className="link">https://wallpaperaccess.com/1800x1200-hd</a>{" and converted to different formats using "}<a target="_blank" rel="noreferrer" href="https://cloudconvert.com/" className="link">https://cloudconvert.com/</a>
             </span>,
-        examples: "background-image: url('image.png'); - Unrecommended format of the file \n\nThe following patterns are considered problems: \n\n(a)\nbackground-image: url('image.ppm'); \n\n" +
-            "(b) \nbackground-image: url('image.ps'); \n\n(c) \nbackground-image: url('image.rgb'); \n\n(d) \nbackground-image: url('image.png'); \n\n\nThe following patterns are not considered problems: \n\n" +
-            "(a) \nbackground-image: url('image.gif'); \n\n(b) \nbackground-image: url('image.jpg'); "
+        examples: "background-image: url('image.png'); \n\nimport image from './image.png'; - Unrecommended format of the file \n\nThe following patterns are considered problems: \n\n(a)\nbackground-image: url('image.ppm'); \n\nimport image from './image.png'; \n\n" +
+            "(b) \nbackground-image: url('image.ps'); \n\nimport image from './image.ppm'; \n\n(c) \nbackground-image: url('image.rgb'); \n\nimport {ReactComponent as image} from './image.ps'; \n\n(d) \nbackground-image: url('image.png'); \n\nlet Image = require('../src/image.rgb'); \n\n\nThe following patterns are not considered problems: \n\n" +
+            "(a) \nbackground-image: url('image.gif'); \n\nimport {ReactComponent as image} from './image.webp'; \n\n(b) \nbackground-image: url('image.jpg'); \n\nimport image from './image.svg'; \n\n(c) \nbackground-image: url('image.jpg'); \n\nlet Image = require('../src/image.jpg'); \n\n(d) \nbackground-image: url('image.gif'); \n\nimport image from './image.gif'; "
     },
     {
         name: "require-font-display",
         overview: <span>{"Disallow using @font-face without font-display property. \n\n"}
         {"The font-display property supports five different values: “auto”, “block”, “swap”, “fallback”, “optional”, each describing a different method of behaviour for different scenarios. In short, it allows fine control over whether a fallback font is used immediately and what should happen after the custom font has loaded."}</span>,
         CO2: <span>{"If the font is hosted online and the page is visited for a short period of time (less than the time needed to load the font), it saves the equivalent of the font size in data transfer. \n\n"}
-        {"If you’re interested to know more about font sizes please visit no-ttf-font-files documentation. "}</span>,
+        {"If you're interested to know more about font sizes please visit no-ttf-font-files documentation. "}</span>,
         packages: ["ec0lint-style"],
         examples: "@font-face { font-family: 'foo'; src: url('/path/to/foo.ttf'); } \n\n" +
         "The following patterns are considered problems: \n\n(a) \n@font-face { font-family: \"MyFont\"; src: url(\"myfont.ttf\") format(\"ttf\"); } \n\n" +
