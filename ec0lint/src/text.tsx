@@ -482,6 +482,212 @@ export const features = [
         "(c) \n@font-face {\n\tfont-family: dashicons; \n\tsrc: url(data:application/font-woff;charset=utf-8;base64, ABCDEF==) format(\"woff\"), \n" +
         "\turl(../fonts/dashicons.woff) format(\"truetype\"), \n\turl(../fonts/dashicons.svg#dashicons) format(\"svg\");" +
         "\n\tfont-weight: normal; \n\tfont-style: normal;\n} "
+    },
+        {
+        name: "lazy-load",
+        overview: `Encourages to use lazy loading for image and video files. \n\nLazy loading loads heavy elements of a website, like an image or a video, only when they’re needed. For example, images or videos further down on a website are only loaded if the user scrolls down. \n\nWith lazy loading, less data needs to be transferred and thus less energy is consumed.`,
+        CO2: <span>{"By using lazy loading no unnecessary images and videos are transferred. For the file that isn’t displayed by a website user, we reduce CO2 emissions related to loading the file to 0 g.\n\n"}
+        {"To calculate the combined carbon footprint of all image files on an average website (1000 kB), we multiply the file sizes by the end-user traffic (0.81 kWh/1 GB) and by the energy emissions (442 g/kWh), which sums up to 0.36 g.\n\n"}
+        {"So, by enabling lazy loading of these files, we could get 0.36 CO2 reduction (100% less CO2). \n\n"}
+        {"In the case of video files (on average 3472 kB per website), we get 1.25 g CO2 reduction."}</span>,
+        examples: "The following patterns are considered as problems: \n\n" +
+        "(a) <video class='none'></video> \n\n" +
+        "(b) <video preload='auto'></video> \n\n" +
+        "(c) <img src='img.jpg'></img> \n\n" +
+        "(d) <iframe data-src='img.jpg' class='none'></iframe> \n\n\n" +
+        "The following patterns are not considered problems: " +
+        "(a) <img src='img.jpg' loading='lazy'></img> \n\n" +
+        "(b) <iframe data-src='img.jpg' class='lazy'></iframe> \n\n" +
+        "(c) <img data-src='img.jpg' class='lazyload'></img> \n\n" +
+        "(d) <video class='lazy'></video> "
+    },
+        {
+        name: "lighter-video-files",
+        overview: `Encourages to use WebM video file format in React code. \n\nVideo files inside web applications should be in WebM format. It is an open, royalty-free media file format designed specifically for the web, hence it is supported by HTML and has a good compatibility with all modern browsers. Clips in the WebM format are on average much smaller than those in MP4 or OGG (other video formats supported by HTML). We can achieve even a 66% reduction of the file size using WebM instead of the popular MP4 format which quality is only slightly better.`,
+        CO2: <span>{"The table below shows the comparison between file sizes and CO2 emission for a short (23 s) exemplary video (in 1366 x 720 resolution). \n\n"}
+        {"Link to the exemplary video: "} <a target="_blank" rel="noreferrer" href="www.pexels.com/video/alpaca-closeup-5795043/" className="link">https://www.pexels.com/video/alpaca-closeup-5795043/</a>
+        <table className="table">
+                <tbody>
+                    <tr>
+                        <td className="tableCell"><u>File format</u></td>
+                        <td className="tableCell"><u>File size</u></td>
+                        <td className="tableCell"><u>CO2 emission</u></td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">WebM</td>
+                        <td className="tableCell">2.6 MB</td>
+                        <td className="tableCell">0.91 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">MP4</td>
+                        <td className="tableCell">5.9 MB</td>
+                        <td className="tableCell">2.06 g</td>
+                    </tr>
+                </tbody>
+                <caption style={{captionSide: "bottom"}}>Converting the video from MP4 to WebM format can reduce the carbon footprint by 1.15 g of CO2 per website view. </caption>
+        </table>
+        {"By multiplying the file size by the end-user traffic (0.81 kWh / GB) and by thy energy emissions (442 g / kWh), the carbon footprint of the exemplary video in MP4 sums up to 2.06 g. The same file in WebM format generates 0.91 g of CO2. So, by subtracting 0.91 g from 2.06 g, we get "}<u>1.15 g (56% less CO2)</u>{". \n\nExemplary video was downloaded from "}<a target="_blank" rel="noreferrer" href='www.pexels.com/search/videos/' className="link">https://www.pexels.com/search/videos/</a> {"and converted to WebM online with "}<a target="_blank" rel="noreferrer" href='www.veed.io/convert/video-converter' className="link">https://www.veed.io/convert/video-converter</a>{"."}</span>,
+        examples: "The following patterns are considered problems: \n\n" +
+        "(a) \nimport video from './video.ogg'; \n\n" +
+        "(b) \nimport video from './video.mp4'; \n\n" +
+        "(c) \nimport {ReactComponent as video} from './video.m4a'; \n\n" +
+        "(d) \nimport {ReactComponent as video} from './video.m4p'; \n\n" +
+        "(e) \nlet Video = require('../src/video.m4b'); \n\n" +
+        "(f) \nlet Video = require('../src/video.m4r'); \n\n" +
+        "(g) \nlet Video = require('../src/video.m4v'); \n\n\n" +
+        "The following patterns are not considered problems: \n\n" +
+        "(a) \nimport video from './video.webm'; \n\n" +
+        "(b) \nimport {ReactComponent as video} from './video.webm'; \n\n" +
+        "(c) \nlet Video = require('../src/video.webm'); "
+    },
+    {
+        name: "no-ajax",
+        overview: <span>{"Disallows the "}<a target="_blank" rel="noreferrer" href='https://api.jquery.com/jQuery.ajax/' className="link">/$.ajax</a><a target="_blank" rel="noreferrer" href='api.jquery.com/jQuery.get/' className="link">/$.get</a><a target="_blank" rel="noreferrer" href='https://api.jquery.com/jQuery.getJSON/' className="link">/$.getJSON</a><a target="_blank" rel="noreferrer" href='https://api.jquery.com/jQuery.getScript/' className="link">/$.getScript</a><a target="_blank" rel="noreferrer" href='api.jquery.com/jQuery.post/' className="link">/$.post</a>{" utilities. We recommend using Window.fetch. \n\n"}
+        {"Fetch API is the new standard to replace XMLHttpRequest to do what ajax does. It works on Chrome and Firefox, you can use polyfills to make it work on legacy browsers. \n\n"}
+        {"Try github/fetch on IE9+ or fetch-ie8 on IE8+, fetch-jsonp to make JSONP requests. "}</span>,
+        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.46 g per website view</u>{" if you decide to remove the jQuery library.\n\nBy multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of this library can be calculated. "}</span>,
+        examples: "The following patterns are considered problems: \n\n" +
+        "$.ajax({ \n\ttype: 'POST',\n\turl: '/my/url',\n\tdata: data\n});\n\n " +
+        "$.ajax({\n\ttype: 'GET',\n\turl: '/my/url',\n\tsuccess: function (resp) {},\n\terror: function () {}\n}); \n\n\n" +
+        "The following patterns are not considered problems: \n\n" +
+        "await fetch('/my/url', {\n\tmethod: 'POST',\n\theaders: {\n\t\t'Content-Type': 'application/json'\n\t},\n\tbody: JSON.stringify(data)\n});\n\nconst response = await fetch('/my/url')\n\nif (!response.ok) {\n}\n\nconst body = await response.text(); "
+    },
+    {
+        name: "no-ajax-events",
+        overview: <span>{"Disallows to use global ajax events handlers: "}<a target="_blank" rel="noreferrer" href='api.jquery.com/ajaxComplete/' className="link">.ajaxComplete/</a> <a target="_blank" rel="noreferrer" href='api.jquery.com/ajaxError/' className="link">.ajaxError/</a> <a target="_blank" rel="noreferrer" href='api.jquery.com/ajaxSend/' className="link">.ajaxSend/</a> <a target="_blank" rel="noreferrer" href='api.jquery.com/ajaxStart/' className="link">.ajaxStart/</a> <a target="_blank" rel="noreferrer" href='api.jquery.com/ajaxStop/' className="link">.ajaxStop/</a> <a target="_blank" rel="noreferrer" href='api.jquery.com/ajaxSuccess/' className="link">.ajaxSuccess</a>{". We recommend using local events instead. "}</span>,
+        CO2: <span>{"Using global events causes an increase in requests to the HTTP server. Global events make queries per each ajax call. Replacing these events with local ones will significantly reduce the number of requests to the server. For example:\n\n$.ajaxSuccess(callback)\n\nWill call HTTP server each time any ajax call will be resolved, but\n\n$.ajax({\n\tsuccess: callback })\n\nWill be called only on this particular ajax call.\n\nThe amount of CO2 produced varies with the amount of data transferred, on average it is "}<u>0.35 g/MB</u>{". "}</span>,
+        examples: "The following patterns are considered problems: \n\n" +
+        "$( document ).on( 'ajaxSend', function ( e ) { } );\n\n" + 
+        "$( document ).on( 'ajaxSuccess', function ( e ) { } ); \n\n" + 
+        "$form.on( 'ajaxError', function ( e ) { } ); \n\n" +
+        "$form.on( 'ajaxComplete', function ( e ) { } ); \n\n" +
+        "$form.on( 'ajaxStart', function ( e ) { } ); \n\n" +
+        "$form.on( 'ajaxStop', function ( e ) { } ); \n\n" +
+        "$( document ).ajaxSend( function ( e ) { } ); \n\n" +
+        "$( document ).ajaxSuccess( function ( e ) { } ); \n\n" +
+        "$form.ajaxError( function ( e ) { } ); \n\n" +
+        "$form.ajaxComplete( function ( e ) { } ); \n\n" +
+        "$form.ajaxStart( function ( e ) { } ); \n\n" +
+        "$form.ajaxStop( function ( e ) { } ); \n\n\n" +
+        "The following patterns are not considered problems: \n\n" + 
+        "$( document ).on( 'click', function ( e ) { } ); \n\n" +
+        "$form.on( 'submit', function ( e ) { } ); \n\n" +
+        "$form.on(); \n\n" +
+        "on( 'ajaxSuccess', '.js-select-menu', function ( e ) { } ); \n\n" +
+        "form.on( 'ajaxSend' ); \n\n" +
+        "form.ajaxSend(); \n\n" +
+        "$.ajaxSend(); "
+    },
+    {
+        name: "no-animate",
+        overview: "Disallows the .animate method. Use CSS transitions instead.",
+        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.46 g per website view</u>{" if you decide to remove the jQuery library.\n\nBy multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of this library can be calculated."}</span>,
+        examples: "The following pattern is considered as a problem:\n\n" +
+        "$( 'div' ).animate(); \n\n" +
+        "$div.animate(); \n\n" +
+        "$( 'div' ).first().animate();\n\n" + 
+        "$( 'div' ).append( $( 'input' ).animate() );\n\n" + 
+        "$div.animate( { scrollTop: 100 } ); \n\n" +
+        "$div.animate( { scrollLeft: 200 } ); \n\n" +
+        "$div.animate( { scrollTop: 100, scrollLeft: 200 } );\n\n" + 
+        "$div.animate( { scrollTop: 100, width: 300 } ); \n\n\n" +
+        "The following pattern is not considered as a problem: \n\n" +
+        "animate(); \n\n" +
+        "[].animate(); \n\n" +
+        "div.animate(); \n\n" +
+        "div.animate; "
+    },
+    {
+        name: "no-attr",
+        overview: "Disallows the .attr/.removeAttr methods and $.attr/$.removeAttr utilies. We recommend using Element#getAttribute/setAttribute/removeAttribute.",
+        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.46 g per website view</u>{" if you decide to remove the jQuery library.\n\nBy multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of this library can be calculated. "}</span>,
+        examples: "The following patterns is considered a problem:\n\n" +
+        "$.attr(); \n\n" +
+        "$( 'div' ).attr();\n\n" + 
+        "$div.attr(); \n\n" +
+        "$( 'div' ).first().attr();\n\n" + 
+        "$( 'div' ).append( $( 'input' ).attr() );\n\n" + 
+        "$( 'div' ).attr( 'name' ); \n\n" +
+        "$( 'div' ).attr( 'name', 'random' );\n\n" + 
+        "$.removeAttr(); \n\n" +
+        "$( 'div' ).removeAttr( 'name' );\n\n\n" + 
+        "The following pattern is not considered as a problem:\n\n" +  
+        "el.getAttribute('tabindex'); \n\n" +
+        "el.removeAttribute('tabindex'); \n\n" +
+        "el.setAttribute('tabindex', 3); "
+    },
+    {
+        name: "no-autoplay",
+        overview: "Disallows the autoplay property of YouTube videos embedded in your web application.\n\n" + 
+        "The autoplay parameter appended to a YouTube video’s URL makes a video start automatically. This behaviour forces to download the video before the website is being loaded. On the other hand, when autoplay is not set to true, the only resource needed when the website is being loaded is the cover image of the video. The video itself is downloaded only if the user clicks on YouTube iframe element.\n\n" +
+        "Autoplay property significantly increases the bandwidth needed to display a website as well as makes the page load much longer. ",
+        CO2: <span>{"By deleting the autoplay=1 part of the YouTube video URL, the video is not downloaded when entering the website. Carbon emissions can be reduced by 99% if a user does not click on the video.\n\nA sample YouTube video – "}<a target="_blank" rel="noreferrer" href='www.youtube.com/watch?v=XqZsoesa55w&ab_channel=PinkfongBabyShark-Kids%27Songs%26Stories' className="link">Baby Shark</a>{" which lasts only 2 minutes, in the resolution of 720p (HD), has the file size of 14.7 MB.\n\nTo calculate the carbon footprint of a YouTube video file, we multiply the size of the video (14.7 MB) by the end-user traffic (0.81 kWh/1 GB) and by the energy emissions (442 g/kWh), which sums up to "}<u>5.14 g of CO2</u>{". "}</span>,
+        examples: "<iframe width=”420” height=”315”\nsrc='https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1'>\n" +
+        "</iframe>\n\n" + 
+        "src='https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1'>\n\n" +
+        "Autoplay property in YouTube links makes the video download upfront. Delete it from the URL.\n\n\n" +  
+        "The following patterns are considered problems: \n\n" +
+        "(a) \n" +
+        "<iframe src='https://www.youtube.com/embed/tgbNymZ7mvqY?autoplay=1&mute=1'></iframe> \n\n" +
+        "(b) \n" +
+        "<iframe src='https://www.youtube.com/embed/tgbNymZ7mvqY?mute=1&autoplay=1'></iframe> \n\n\n" +
+        "The following pattern is not considered as a problem: \n\n" +
+        "(a) \n"+
+        "<iframe src='https://www.youtube.com/embed/tgbNymZ7mvqY'></iframe> "
+    },
+    {
+        name: "no-bind",
+        overview: "Disallows the .bind/.unbind methods. We recommend using .on/.off or EventTarget#addEventListener/removeEventListener.",
+        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.46 g per website view</u>{" if you decide to remove the jQuery library.\n\nBy multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of this library can be calculated. "}</span>,
+        examples: "The following pattern is considered as a problem:\n\n" + 
+        "$( 'div' ).bind(); \n\n" +
+        "$div.bind(); \n\n" +
+        "$( 'div' ).first().bind();\n\n" + 
+        "$( 'div' ).append( $( 'input' ).bind() );\n\n" + 
+        "$( 'div' ).unbind(); \n\n" +
+        "$div.unbind(); \n\n" +
+        "$( 'div' ).first().unbind();\n\n" + 
+        "$( 'div' ).append( $( 'input' ).unbind() );\n\n\n" +        
+        "The following pattern is not considered as a problem:\n\n" +        
+        "el.getAttribute('tabindex'); \n\n" +
+        "el.removeAttribute('tabindex'); \n\n" +
+        "el.setAttribute('tabindex', 3); "
+    },
+    {
+        name: "no-web-fonts",
+        overview: <span>{"Disallows importing web fonts by @import and @font-face CSS rules. We recommend using system or locally hosted fonts.\n\nSystem fonts are automatically installed in every operating system of any device, which is used to display a website. Even if you don’t like system fonts, you can add a static font file (we recommend WOFF2, see: "}<a target="_blank" rel="noreferrer" href='ec0lint.com/features/no-ttf-font-files)' className="link">https://ec0lint.com/features/no-ttf-font-files</a>{") to your website. All additional server requests and data transfer related to fonts can be saved. "}</span>,
+        CO2: <span>{"By using system fonts or fonts hosted locally, you do not import any data from an external server. If you choose Arial (system font) instead of Arimo (web font, Arial equivalent from Google Fonts) you can save up to "}<u>0.021 g CO2 per view</u>{". To calculate the carbon footprint of a web font, the size of TTF font file can be multiplied by the end-user traffic (0.81 kWh/1000 MB) and by the energy emissions (442 g/kWh). "}
+            <table className="table">
+                <tbody>
+                    <tr>
+                        <td className="tableCell"><u>Name</u></td>
+                        <td className="tableCell"><u>Size</u></td>
+                        <td className="tableCell"><u>CO2 reduction</u></td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Arimo</td>
+                        <td className="tableCell">0.061 MB</td>
+                        <td className="tableCell">0.021 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Roboto</td>
+                        <td className="tableCell">0.14 MB</td>
+                        <td className="tableCell">0.049 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">Open Sans</td>
+                        <td className="tableCell">0.516 MB</td>
+                        <td className="tableCell">0.18 g</td>
+                    </tr>
+                </tbody>
+            </table></span>,
+        examples: "The following patterns are considered problems:\n\n" +
+        "@font-face { font-family: 'foo'; src: url('/path/to/foo.ttf') };\n\n" +         
+        "@import url('www.foo-font.com');\n\n\n" +        
+        "The following patterns are not considered problems:\n\n" +         
+        "@font-face { font-family: system-ui; }\n\n" +         
+        "@font-face { font-family: system-ui, Verdana; }\n\n" +        
+        "@import url('./foo.woff'); "
     }
     // {
     //     name: "",
