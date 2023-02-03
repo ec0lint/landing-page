@@ -4,6 +4,10 @@ import Ania from './resources/Ania.webp';
 import Julia from './resources/Julia.webp';
 import Natalia from './resources/Natalia.webp';
 import Martyna from './resources/Martyna.webp';
+import Ola from './resources/Ola.webp';
+import Marta from './resources/Marta.webp';
+import Gosia from './resources/Gosia.webp';
+import Joanna from './resources/Joanna.webp';
 import website_1 from './resources/website_1.webp';
 import website_2 from './resources/website_2.webp';
 import website_3 from './resources/website_3.webp';
@@ -1243,9 +1247,7 @@ export const team = {
             photo: <img src={Julia} className="circlePhoto" alt="Julia Ziębińska" />,
             linkedin: "https://www.linkedin.com/in/julia-zi%C4%99bi%C5%84ska/",
             github: "https://github.com/nemmip"
-        }
-    ],
-    comitters: [
+        },
         {
             name: "Natalia Otto",
             photo: <img src={Natalia} className="circlePhoto" alt="Natalia Otto"/>,
@@ -1258,6 +1260,33 @@ export const team = {
             linkedin: "https://www.linkedin.com/in/martyna-babiak/",
             github: "https://github.com/martinabab?fbclid=IwAR3mmVZVB-kI6jIP_w5wznkllt79Yd2W9paWrMSdIDPEKo4puoYoJMFjnWQ"
         }
+    ],
+    comitters: [
+        {
+            name: "Małgosia Haruba",
+            photo: <img src={Gosia} className="circlePhoto" alt="Małgosia Haruba"/>,
+            linkedin: "https://www.linkedin.com/in/ma%C5%82gorzata-haruba/"
+
+        },
+        {
+            name: "Aleksandra Borowska",
+            photo: <img src={Ola} className="circlePhoto" alt="Aleksandra Borowska"/>,
+            linkedin: "https://www.linkedin.com/in/aleksandra-borowska28/",
+            github: "https://github.com/Ola2808-Boro"
+        },
+        {
+            name: "Marta Weiner",
+            photo: <img src={Marta} className="circlePhoto" alt="Marta Weiner"/>,
+            linkedin: "https://www.linkedin.com/in/marta-weiner-3b7721259/",
+            github: "https://github.com/martaweiner/"
+            
+        },
+        {
+            name: "Joanna Nitek",
+            photo: <img src={Joanna} className="circlePhoto" alt="Joanna Nitek"/>,
+            linkedin: "https://www.linkedin.com/in/joannanitek/",
+            github: "https://github.com/JoannaNitek"
+        },
     ]
 };
 
