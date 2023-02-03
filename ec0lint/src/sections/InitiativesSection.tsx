@@ -12,11 +12,15 @@ export default function InitiativesSection() {
   };
 
   const onArrowClickLeft = () => {
-    setCardDisplayed(0);
+    var x = cardDisplayed;
+    x -= 1;
+    setCardDisplayed(x);
   };
 
   const onArrowClickRight = () => {
-    setCardDisplayed(1);
+    var x = cardDisplayed;
+    x += 1;
+    setCardDisplayed(x);
   };
 
   const toggleModal = (modalId?: number) => {
@@ -34,7 +38,7 @@ export default function InitiativesSection() {
         <h3 className="sectionTitle" style={{ color: '#8ECCEA' }}>{initiativesSection.title}</h3>
         <div className="blueSection">
           <div className="blueSwitchInitiatives">
-            {cardDisplayed === 1 && <button onClick={onArrowClickLeft} className="arrowButton arrowButtonInititives arrowButtonInititivesLeft">
+            {cardDisplayed !== 0 && <button onClick={onArrowClickLeft} className="arrowButton arrowButtonInititives arrowButtonInititivesLeft">
               <h4>{"<"}</h4>
             </button>}
             {initiativesSection.cards[cardDisplayed].map((x: JSX.Element) => {
@@ -42,11 +46,11 @@ export default function InitiativesSection() {
                 {x}
               </span>
             })}
-            {cardDisplayed === 0 && <button onClick={onArrowClickRight} className="arrowButton arrowButtonInititives arrowButtonInititivesRight">
-              <h4>{">"}</h4>
-            </button>}
+          {cardDisplayed !== 3 && <button onClick={onArrowClickRight} className="arrowButton arrowButtonInititives arrowButtonInititivesRight">
+            <h4>{">"}</h4>
+          </button>}
           </div>
-          {[0, 1].map((i) => {
+          {[0, 1, 2, 3].map((i) => {
             return <button className={cardDisplayed === i ? "switchButtonClicked" : "switchButton"}
               value={i} key={i} onClick={onButtonClick}>
             </button>
