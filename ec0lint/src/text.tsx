@@ -991,7 +991,7 @@ export const useCases = {
         },
         {
             text: "Colorable",
-            url: "https://colorable.jxnblk.com/c571ff/000000",
+            url: "https://colorable.jxnblk.com",
             accessed: "14.04.2022"
         },
         {
