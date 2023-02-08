@@ -57,9 +57,3 @@ export default function ModalForm() {
     )
 
 }
-{/* <div className="modal"></div>
-<div className="modal-content">
-<div className="modal-main-content">
-        <div className="modal-main-text">
-        <div className="modal-title">tytuł</div>
-                        <div className="modal-text"><ModalForm /></div> */}

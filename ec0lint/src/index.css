@@ -550,9 +550,6 @@ h6 {
 }
 
 .form {
-  /* display: flex;
-  flex-direction: column; */
-  /* border: 1px solid blue; */
   margin: 1em auto 0;
   padding: 10px;
   width: 90%;
@@ -561,7 +558,6 @@ h6 {
 .form label, input {
   display: flex;
   justify-content: space-between;
-  /* border: 1px dotted firebrick; */
   margin: 10px 40px;
   align-items: center;
   color: black;

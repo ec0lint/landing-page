@@ -1350,10 +1350,6 @@ export const initiativesSection = {
             <span id="9">
                 <img src={kdi} alt="krakowskie dni informatyki" />
                 <h6>Krakowskie Dni Informatyki</h6>
-            </span>,
-            <span id="10">
-                <img src={goldman} alt="goldman sachs" />
-                <h6>Goldman Sachs</h6>
             </span>
         ]
     ],
@@ -1418,12 +1414,6 @@ export const initiativesSection = {
             text: "We presented a speech during Krakowskie Dni Informatyki (1 000+ attendees) in December 2022.",
             link: <span>More information <a className="navLinkPurple" target="_blank" href="https://kdi.org.pl/" rel="noreferrer">here</a>.</span>,
             image: <img src={kdi}></img>
-        },
-        {
-            title: "Goldman Sachs",
-            text: "ec0lint was presented during 20 years of Women in Engineering conference.",
-            link: <span>More information <a className="navLinkPurple" target="_blank" href="https://www.goldmansachs.com/index.html" rel="noreferrer">here</a>.</span>,
-            image: <img src={goldman}></img>
-        },
+        }
     ]
 };

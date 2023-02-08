@@ -12,13 +12,13 @@ export default function InitiativesSection() {
   };
 
   const onArrowClickLeft = () => {
-    var x = cardDisplayed;
+    let x = cardDisplayed;
     x -= 1;
     setCardDisplayed(x);
   };
 
   const onArrowClickRight = () => {
-    var x = cardDisplayed;
+    let x = cardDisplayed;
     x += 1;
     setCardDisplayed(x);
   };
