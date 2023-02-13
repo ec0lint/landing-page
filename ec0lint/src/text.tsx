@@ -24,7 +24,6 @@ import reactdayberlin from './resources/reactdayberlin.webp';
 import conf42 from './resources/conf42.webp';
 import xtremejs from './resources/xtremejs.webp';
 import kdi from './resources/kdi.webp';
-import goldman from './resources/goldman.webp';
 import lighterImageFile from './resources/lighter-image-file.webp';
 import React from "react";
 
@@ -1264,6 +1263,12 @@ export const team = {
             photo: <img src={Martyna} className="circlePhoto" alt="Martyna Babiak" />,
             linkedin: "https://www.linkedin.com/in/martyna-babiak/",
             github: "https://github.com/martinabab?fbclid=IwAR3mmVZVB-kI6jIP_w5wznkllt79Yd2W9paWrMSdIDPEKo4puoYoJMFjnWQ"
+        },
+        {
+            name: "Aleksandra Borowska",
+            photo: <img src={Ola} className="circlePhoto" alt="Aleksandra Borowska" />,
+            linkedin: "https://www.linkedin.com/in/aleksandra-borowska28/",
+            github: "https://github.com/Ola2808-Boro"
         }
     ],
     comitters: [
@@ -1272,12 +1277,6 @@ export const team = {
             photo: <img src={Gosia} className="circlePhoto" alt="Małgosia Haruba" />,
             linkedin: "https://www.linkedin.com/in/ma%C5%82gorzata-haruba/"
 
-        },
-        {
-            name: "Aleksandra Borowska",
-            photo: <img src={Ola} className="circlePhoto" alt="Aleksandra Borowska" />,
-            linkedin: "https://www.linkedin.com/in/aleksandra-borowska28/",
-            github: "https://github.com/Ola2808-Boro"
         },
         {
             name: "Marta Weiner",

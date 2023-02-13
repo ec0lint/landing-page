@@ -26,7 +26,8 @@ export default function TeamPage() {
         <h6 className="sectionText">{team.intro}</h6>
         <h3 className="sectionTitle" style={{ marginBottom: '40px' }}>
           {team.title2}
-        </h3>
+      </h3>
+      <div className='contributorsSection'>
         {team.contributors.map((x) => {
           return <span className="teamPhoto">
             {x.photo}
@@ -41,6 +42,7 @@ export default function TeamPage() {
             </span>
           </span>;
         })}
+        </div>
         <h3 className="sectionTitle" style={{ marginBottom: '40px' }}>
           {team.title3}
         </h3>

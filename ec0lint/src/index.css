@@ -655,3 +655,11 @@ h6 {
 .helsinki-image {
   padding-right:10px;
 }
+
+.contributorsSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: min(900px, 85%);
+  margin: auto;
+}
