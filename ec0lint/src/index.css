@@ -164,6 +164,7 @@ h6 {
   max-width: min(850px, 90%);
   margin-left: auto;
   margin-right: auto;
+  height: 200px;
 }
 
 .switchButtonClicked {
