@@ -20,7 +20,7 @@ import perspektywy from './resources/perspektywy.webp';
 import ing from './resources/ing.webp';
 import reactIndia from './resources/reactindia.webp';
 import weAreDevelopers from './resources/wearedevelopers.webp';
-import reactdayberlin from './resources/reactdayberlin.webp';
+import react from './resources/react.webp';
 import conf42 from './resources/conf42.webp';
 import xtremejs from './resources/xtremejs.webp';
 import kdi from './resources/kdi.webp';
@@ -1333,7 +1333,7 @@ export const initiativesSection = {
         ],
         [
             <span id="6">
-                <img src={reactdayberlin} alt="react day Berlin" />
+                <img src={react} alt="react day Berlin" />
                 <h6>React Day Berlin</h6>
             </span>,
             <span id="7">
@@ -1392,9 +1392,9 @@ export const initiativesSection = {
         },
         {
             title: "React Day Berlin",
-            text: "ec0lint’s team gave a speech at React Day Berlin (800 in-person attendees, 5 000 remote attendees) in December 2022.",
+            text: "ec0lint’s team gave a speech at React Day Berlin (800+ in-person attendees, 5 000 remote attendees) in December 2022.",
             link: <span>More information <a className="navLinkPurple" target="_blank" href="https://reactday.berlin/" rel="noreferrer">here</a>.</span>,
-            image: <img src={reactdayberlin}></img>
+            image: <img src={react}></img>
         },
         {
             title: "Conf42",
