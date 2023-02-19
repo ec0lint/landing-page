@@ -164,7 +164,6 @@ h6 {
   max-width: min(850px, 90%);
   margin-left: auto;
   margin-right: auto;
-  height: 200px;
 }
 
 .switchButtonClicked {
@@ -189,6 +188,8 @@ h6 {
   display: inline-block;
   padding: 40px 50px;
   vertical-align: text-top;
+  height: 123px;
+  ;
 }
 
 .circle {
@@ -550,25 +551,6 @@ h6 {
   margin-right: auto;
 }
 
-.form {
-  margin: 1em auto 0;
-  padding: 10px;
-  width: 90%;
-}
-
-.form label, input {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px 40px;
-  align-items: center;
-  color: black;
-  font-size: 1.1em;
-}
-
-.form input {
-  padding: .5rem;
-  font-family: firaCode, monospace;
-}
 
 .modal {
   position: fixed;
@@ -638,6 +620,7 @@ h6 {
 
 .modal-main-content {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 95%
 }
@@ -654,7 +637,7 @@ h6 {
 }
 
 .helsinki-image {
-  padding-right:10px;
+  padding-right: 10px;
 }
 
 .contributorsSection {
@@ -662,5 +645,43 @@ h6 {
   flex-wrap: wrap;
   justify-content: center;
   max-width: min(900px, 85%);
+}
+
+.flex-item-right {
+  resize: vertical;
+  width: 70%;
+  float: right;
+  padding: .5rem;
+  color: black;
+  font-size: 1.1em;
+}
+
+.flex-item-left {
+  padding: 12px;
+  display: inline-block;
+}
+
+.use-case-form {
+  padding: 1%;
   margin: auto;
+}
+
+form {
+  margin: 20px auto 0;
+  text-align: center;
+  width: 85%;
+}
+
+.formButton {
+  background-color: black;
+  color: #C571FF;
+  font-family: 'Fira Code', monospace;
+  font-size: 1.1em;
+  padding: 2%;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  border-width: 0;
+  margin: 30px auto 0;
+  width: 40%;
 }

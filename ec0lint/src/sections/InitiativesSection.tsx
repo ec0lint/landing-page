@@ -32,10 +32,10 @@ export default function InitiativesSection() {
       setModalId(undefined);
     }
   }
-  
+
   return (
       <span>
-        <h3 className="sectionTitle" style={{ color: '#8ECCEA' }}>{initiativesSection.title}</h3>
+        <h3 className="sectionTitle" style={{ color: '#8ECCEA' }}>{initiativesSection.title}</h3>1
         <div className="blueSection">
           <div className="blueSwitchInitiatives">
             {cardDisplayed !== 0 && <button onClick={onArrowClickLeft} className="arrowButton arrowButtonInititives arrowButtonInititivesLeft">

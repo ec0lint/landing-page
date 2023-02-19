@@ -15,16 +15,15 @@ export default function UseCasesPage() {
         Coming soon
       </h3>
       <h5 className="sectionText">We are working on the first use case with Perspektywy Women in Tech. If you would like us to create a greener version of your website please contact us.</h5>
-      <button className="mainButton" style={{ margin: '40px auto' }} onClick={() => Toggle()}>GET A USE CASE</button>
+      <button className="mainButton" style={{ margin: '40px auto' }} onClick={() => Toggle()}>I WANT IT!</button>
       {modal === true && <div className="modal">
         <div className="modal-content">
-          <div className="modal-main-text">
-            <div className="modal-title">Use Case</div>
-            <div className="modal-text">If you want to remodel your site in ecological way, please let us contact.</div>
-            <ModalForm />
+          <div className="modal-main-content">
+              <ModalForm />
+            </div>
+            <span className="close-button" onClick={() => setModal(false)}>&times;</span>
           </div>
-          <span className="close-button" onClick={() => setModal(false)}>&times;</span>
-        </div>
+
       </div>}
       <h4 className="sectionTitle" style={{ marginBottom: '30px', marginTop: '30px', textAlign: 'left' }}>{useCases.title}</h4>
       <h6 className="sectionText"><ul>{useCases.bulletPoints.map((x, i) => {
