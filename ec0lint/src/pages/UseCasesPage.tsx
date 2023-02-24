@@ -1,12 +1,12 @@
 import { useCases } from "../text";
 import References from '../sections/References';
 import React from "react";
-import ModalForm from "../sections/ModalForm";
+// import ModalForm from "../sections/ModalForm";
 
 export default function UseCasesPage() {
 
-  const [modal, setModal] = React.useState(false);
-  const Toggle = () => setModal(!modal);
+  // const [modal, setModal] = React.useState(false);
+  // const Toggle = () => setModal(!modal);
 
 
   return (
@@ -15,16 +15,9 @@ export default function UseCasesPage() {
         Coming soon
       </h3>
       <h5 className="sectionText">We are working on the first use case with Perspektywy Women in Tech. If you would like us to create a greener version of your website please contact us.</h5>
-      <button className="mainButton" style={{ margin: '40px auto' }} onClick={() => Toggle()}>I WANT IT!</button>
-      {modal === true && <div className="modal">
-        <div className="modal-content">
-          <div className="modal-main-content">
-              <ModalForm />
-            </div>
-            <span className="close-button" onClick={() => setModal(false)}>&times;</span>
-          </div>
-
-      </div>}
+      <div className="mailBox">
+        <label className="mailBoxLabel">@</label><input id="mail" type="email" name="mail" />
+      </div>
       <h4 className="sectionTitle" style={{ marginBottom: '30px', marginTop: '30px', textAlign: 'left' }}>{useCases.title}</h4>
       <h6 className="sectionText"><ul>{useCases.bulletPoints.map((x, i) => {
         return <span>

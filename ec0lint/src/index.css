@@ -647,41 +647,38 @@ h6 {
   max-width: min(900px, 85%);
 }
 
-.flex-item-right {
-  resize: vertical;
-  width: 70%;
-  float: right;
-  padding: .5rem;
-  color: black;
-  font-size: 1.1em;
-}
-
-.flex-item-left {
-  padding: 12px;
-  display: inline-block;
-}
-
-.use-case-form {
-  padding: 1%;
-  margin: auto;
-}
-
-form {
-  margin: 20px auto 0;
-  text-align: center;
-  width: 85%;
-}
-
-.formButton {
-  background-color: black;
-  color: #C571FF;
-  font-family: 'Fira Code', monospace;
-  font-size: 1.1em;
-  padding: 2%;
-  cursor: pointer;
-  text-align: center;
+.mailBox {
+  border: 2px solid #C571FF;
   border-radius: 5px;
-  border-width: 0;
-  margin: 30px auto 0;
-  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 3em auto 5em;
+  width: 30%;
+  align-items: center;
+  font-family: 'Fira Code', monospace;
+}
+
+input[type=email] {
+  padding: .5em;
+  color: #C571FF;
+  font-size: 1em;
+  background-color: black;
+  border: none;
+  color-scheme: dark;
+  width: 100%;
+  font-family: 'Fira Code', monospace;
+}
+
+input[type=email]:focus {
+  outline: none;
+}
+
+.mailBoxLabel {
+  color: black;
+  background-color: #C571FF;
+  font-size: 1.1em;
+  padding: .5em 0;
+  width: 2em;
+  text-align: center;
 }
