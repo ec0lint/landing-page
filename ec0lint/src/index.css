@@ -635,3 +635,16 @@ h6 {
 .helsinki-image {
   padding-right:10px;
 }
+
+@media only screen and (min-width: 900px) {
+  .serviceCircles {
+    justify-content: center;
+    display: inline-flex;
+  }
+}
+
+.meetUs {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

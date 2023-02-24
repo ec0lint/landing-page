@@ -14,6 +14,7 @@ import helsinki1 from './resources/helsinki1.webp';
 import helsinki2 from './resources/helsinki2.webp';
 import perspektywy from './resources/perspektywy.webp';
 import ing from './resources/ing.webp';
+import youtube from './resources/youtube.webp'
 import reactIndia from './resources/reactindia.webp';
 import weAreDevelopers from './resources/wearedevelopers.webp';
 import lighterImageFile from './resources/lighter-image-file.webp';
@@ -125,6 +126,36 @@ export const featuresPage = {
     ],
     allFeaturesTitle: "All features"
 };
+
+export const servicesPage = {
+    text: [
+        "We are ec0hub and we have a lot to offer:",
+        "Except for ec0lint we are always happy to share our knowledge and help organisations become more environment-friendly." +
+        "We will help you identify and reduce the carbon footprint of your website and learn about digital ecology.",
+        "Services",
+        "Need help? Schedule a call",
+        "Meet us:"
+    ],
+    services: [
+        {title: "website audits", text: "We will identify your website's ecological impact and provide you with recommendations how to improve it."},
+        {title: "website optimisation", text: "We can make your current website lighter and reduce its carbon footprint"},
+        {title: "workshops", text: "We are always eager to talk about digital ecology and how to implement its principles into daily practices of your organisation."}
+    ],
+    meetUs: [
+        <span>
+            <img src={ing} style={{marginBottom: '15px' }} alt="ing"/>
+            <a className="link" href={"https://spolecznosc.ing.pl/-/Blog/Startup-zakodowany-na-zielone/ba-p/39931"} target="_blank">
+                <h6>ING - Zakodowani na zielone</h6>
+            </a>
+        </span>,
+        <span>
+            <img src={youtube} style={{marginBottom: '15px' }} alt="youtube"/>
+            <a className="link" href={"https://spolecznosc.ing.pl/-/Blog/Startup-zakodowany-na-zielone/ba-p/39931"} target="_blank">
+                <h6>Co-founder and CEO of ec0lint<br /> gives advice for beginners in programming</h6>
+            </a>
+        </span>
+    ]
+}
 
 export const features = [
     {

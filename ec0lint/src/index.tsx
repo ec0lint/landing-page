@@ -6,6 +6,7 @@ import NavBar from './NavBar';
 import MainPage from './pages/MainPage';
 import GetStartedPage from './pages/GetStartedPage';
 import FeaturesPage from './pages/FeaturesPage';
+import ServicesPage from './pages/ServicesPage'
 import Footer from './Footer';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfConditionsPage from './pages/TermsOfConditionsPage';
@@ -29,6 +30,7 @@ root.render(
         <Route path="terms-of-conditions" element={<TermsOfConditionsPage />} />
         <Route path="get-started" element={<GetStartedPage />} />
         <Route path="features" element={<FeaturesPage />} />
+        <Route path="services" element={<ServicesPage />} />
         <Route path="use-cases" element={<UseCasesPage />} />
         <Route path="blog" element={<BlogPage />} />
         <Route path="team" element={<TeamPage />} />
