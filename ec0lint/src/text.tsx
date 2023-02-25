@@ -129,30 +129,36 @@ export const featuresPage = {
 
 export const servicesPage = {
     text: [
-        "We are ec0hub and we have a lot to offer:",
+        "We have a lot to offer",
         "Except for ec0lint we are always happy to share our knowledge and help organisations become more environment-friendly." +
         "We will help you identify and reduce the carbon footprint of your website and learn about digital ecology.",
         "Services",
-        "Need help? Schedule a call",
+        "Need",
+        "help?",
+        "Schedule a free call",
         "Meet us:"
     ],
     services: [
-        {title: "website audits", text: "We will identify your website's ecological impact and provide you with recommendations how to improve it."},
-        {title: "website optimisation", text: "We can make your current website lighter and reduce its carbon footprint"},
-        {title: "workshops", text: "We are always eager to talk about digital ecology and how to implement its principles into daily practices of your organisation."}
+        {
+            title: "Website audits",
+            text: "We will identify your website's ecological impact and provide you with recommendations how to improve it."
+        },
+        {
+            title: "Website optimisation",
+            text: "We can make your current website lighter and reduce its carbon footprint."
+        },
+        {
+            title: "Discovery workshops",
+            text: "We are always eager to talk about digital ecology and how to implement its principles into daily practices of your organisation."
+        }
     ],
     meetUs: [
         <span>
-            <img src={ing} style={{marginBottom: '15px' }} alt="ing"/>
-            <a className="link" href={"https://spolecznosc.ing.pl/-/Blog/Startup-zakodowany-na-zielone/ba-p/39931"} target="_blank">
-                <h6>ING - Zakodowani na zielone</h6>
+            <a className="link" href={"https://spolecznosc.ing.pl/-/Blog/Startup-zakodowany-na-zielone/ba-p/39931"}
+               target="_blank">
+                <span>Startup zakodowany na zielone...</span>
             </a>
-        </span>,
-        <span>
-            <img src={youtube} style={{marginBottom: '15px' }} alt="youtube"/>
-            <a className="link" href={"https://spolecznosc.ing.pl/-/Blog/Startup-zakodowany-na-zielone/ba-p/39931"} target="_blank">
-                <h6>Co-founder and CEO of ec0lint<br /> gives advice for beginners in programming</h6>
-            </a>
+            <span> [Accessed on the 28.12.2022]</span>
         </span>
     ]
 }
