@@ -635,3 +635,22 @@ h6 {
 .helsinki-image {
   padding-right:10px;
 }
+
+.serviceSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: min(900px, 85%);
+  margin: auto;
+}
+
+.serviceItem {
+  font-size: .7em;
+  display: flex;
+  border: 1px solid #C571FF;
+  height: 160px;
+  width: 250px;
+  margin: 30px auto;
+  align-items: center;
+  justify-content: center;
+}
