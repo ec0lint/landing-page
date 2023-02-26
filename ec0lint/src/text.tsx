@@ -175,6 +175,21 @@ export const servicesPage = {
                 <span>Startup zakodowany na zielone...</span>
             </a>
             <span> [Accessed on the 28.12.2022]</span>
+        </span>,
+        <span style={{marginTop: '10px'}}>
+        <a className="link"
+           href={"https://portal.gitnation.org/contents/digital-ecology-how-can-you-mitigate-the-carbon-footprint-of-websites"}
+           target="_blank">
+            <span>ec0lint and sustainable websites in 5 minutes (React Day Berlin)</span>
+        </a>
+        <span> [Accessed on the 5.12.2022]</span>
+        </span>,
+        <span style={{marginTop: '10px'}}>
+        <a className="link" href={"https://www.youtube.com/watch?v=Hy11T_eoUHg&t=6300s"}
+           target="_blank">
+            <span>Digital ecology - How to mitigate carbon footprint of websites? (Full presentation during React India)</span>
+        </a>
+        <span> [Accessed on the 24.09.2022]</span>
         </span>
     ]
 }

@@ -46,7 +46,7 @@ export default function ServicesPage() {
             <span>
                 <h4 className="servicesSectionTitle"
                     style={{ marginBottom: '12px', marginTop: '64px' }}>{servicesPage.text[6]}</h4>
-                <div className="servicesSectionText" style={{ marginBottom: '110px' }}>
+                <div className="servicesSectionText" style={{ marginBottom: '110px', display: 'grid'}}>
                     {servicesPage.meetUs.map((x: JSX.Element) => {
                         return x
                     })}
