@@ -188,6 +188,7 @@ h6 {
   display: inline-block;
   padding: 40px 50px;
   vertical-align: text-top;
+  height: 123px;
 }
 
 .circle {
@@ -549,6 +550,7 @@ h6 {
   margin-right: auto;
 }
 
+
 .modal {
   position: fixed;
   left: 0;
@@ -617,6 +619,7 @@ h6 {
 
 .modal-main-content {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 95%
 }
@@ -687,4 +690,47 @@ h6 {
 .serviceRectText {
   font-size: 16px;
   margin: 0 15px;
+  padding-right: 10px;
+}
+
+.contributorsSection {
+  justify-content: center;
+  display: inline-block;
+  max-width: min(900px, 85%);
+}
+
+.mailBox {
+  border: 2px solid #C571FF;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 3em auto 5em;
+  width: 30%;
+  align-items: center;
+  font-family: 'Fira Code', monospace;
+}
+
+input[type=email] {
+  padding: .5em;
+  color: #C571FF;
+  font-size: 1em;
+  background-color: black;
+  border: none;
+  color-scheme: dark;
+  width: 100%;
+  font-family: 'Fira Code', monospace;
+}
+
+input[type=email]:focus {
+  outline: none;
+}
+
+.mailBoxLabel {
+  color: black;
+  background-color: #C571FF;
+  font-size: 1.1em;
+  padding: .5em 0;
+  width: 2em;
+  text-align: center;
 }

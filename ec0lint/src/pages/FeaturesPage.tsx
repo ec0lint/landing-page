@@ -55,7 +55,7 @@ export default function FeaturesPage() {
         <h6 className="sectionText" style={{ marginTop: '40px', marginBottom: '60px' }}>{featuresPage.text[1]}</h6>
         <h3 className="sectionTitle">{featuresPage.allFeaturesTitle}</h3>
         <h6 className="sectionText" style={{ marginBottom: '70px' }}><ul>
-          {features.map(x => <li style={{ paddingTop: '10px' }}>
+          {features.sort((a, b) => a.name > b.name ? 1 : -1).map(x => <li style={{ paddingTop: '10px' }}>
             <Link to={`${x.name}`} className="link">{x.name}</Link>
           </li>)}
         </ul></h6>
