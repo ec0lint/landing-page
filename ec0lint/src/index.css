@@ -454,7 +454,7 @@ h6 {
   .badge {
     float: right;
     margin-top: 50px;
-    margin-right: -100px;
+    margin-right: 0;
   }
 }
 
@@ -742,9 +742,15 @@ h6 {
   flex-direction: row;
   justify-content: flex-start;
   margin: 3em auto 5em;
-  width: 30%;
+  width: 35%;
   align-items: center;
   font-family: 'Fira Code', monospace;
+}
+
+@media only screen and (max-width: 1000px) {
+  .mailBox {
+    width: 80%;
+  }
 }
 
 input[type=email] {

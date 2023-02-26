@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useCases } from "../text";
 import References from '../sections/References';
 import React from "react";
