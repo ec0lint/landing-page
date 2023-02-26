@@ -36,7 +36,7 @@ function MainPage() {
         </div>
         <SupportSection/>
         <h4>Used by</h4>
-        <div className="circle"><h3>You?</h3></div>
+        <div className="baseCircle"><h3>You?</h3></div>
         <References data={references} />
     </div>
   );

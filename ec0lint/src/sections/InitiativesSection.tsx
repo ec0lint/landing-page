@@ -35,7 +35,7 @@ export default function InitiativesSection() {
 
   return (
       <span>
-        <h3 className="sectionTitle" style={{ color: '#8ECCEA' }}>{initiativesSection.title}</h3>1
+        <h3 className="sectionTitle" style={{ color: '#8ECCEA' }}>{initiativesSection.title}</h3>
         <div className="blueSection">
           <div className="blueSwitchInitiatives">
             {cardDisplayed !== 0 && <button onClick={onArrowClickLeft} className="arrowButton arrowButtonInititives arrowButtonInititivesLeft">

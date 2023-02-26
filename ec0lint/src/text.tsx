@@ -134,6 +134,42 @@ export const featuresPage = {
     allFeaturesTitle: "All features"
 };
 
+export const servicesPage = {
+    text: [
+        "We have a lot to offer",
+        "Except for ec0lint we are always happy to share our knowledge and help organisations become more environment-friendly. " +
+        "We will help you identify and reduce the carbon footprint of your website and learn about digital ecology. ",
+        "Services",
+        "Need",
+        "help?",
+        "Schedule a free call",
+        "Meet us:"
+    ],
+    services: [
+        {
+            title: "Website audits",
+            text: "We will identify your website's ecological impact and provide you with recommendations how to improve it."
+        },
+        {
+            title: "Website optimisation",
+            text: "We can make your current website lighter and reduce its carbon footprint."
+        },
+        {
+            title: "Discovery workshops",
+            text: "We are always eager to talk about digital ecology and how to implement its principles into daily practices of your organisation."
+        }
+    ],
+    meetUs: [
+        <span>
+            <a className="link" href={"https://spolecznosc.ing.pl/-/Blog/Startup-zakodowany-na-zielone/ba-p/39931"}
+               target="_blank">
+                <span>Startup zakodowany na zielone...</span>
+            </a>
+            <span> [Accessed on the 28.12.2022]</span>
+        </span>
+    ]
+}
+
 export const features = [
     {
         name: "avoid-lodash",
