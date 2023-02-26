@@ -56,6 +56,28 @@ function MainPage() {
       <h4>Used by</h4>
       <div className="circle"><h3>You?</h3></div>
       <References data={references} />
+        </div>
+        <h3 className="firstHeader">{whySection.title}</h3>
+        <h6 className="sectionText">{whySection.text[0]}<u>{whySection.text[1]}</u>{whySection.text[2]}</h6>
+        <h3 className="sectionTitle" style={{ marginTop: '80px' }}>{ec0lintIsSection.title}</h3>
+        <h6 className="sectionText">{ec0lintIsSection.text}</h6>
+        <img src={prototype} alt="prototype" className="prototype" />
+        <div>
+          <a href={gitHubUrl} target="_blank" rel="noreferrer">
+            <button className="mainButton">DOWNLOAD</button>
+          </a>
+        </div>
+        <ImpactSection/>
+        <h6 className="sectionText" style={{ paddingTop: '70px' }}>{donateSection}</h6>
+        <div>
+          <a href={donateUrl} target="_blank" rel="noreferrer">
+            <button className="mainButton">{"DONATE"}</button>
+          </a>
+        </div>
+        <SupportSection/>
+        <h4>Used by</h4>
+        <div className="baseCircle"><h3>You?</h3></div>
+        <References data={references} />
     </div>
   );
 }

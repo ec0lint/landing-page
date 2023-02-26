@@ -66,6 +66,7 @@ h6 {
   margin-right: auto;
   text-align: justify;
   text-justify: inter-word;
+  font-weight: 400;
 }
 
 .sectionText {
@@ -77,6 +78,7 @@ h6 {
 }
 
 .sectionTitle {
+  font-weight: 400;
   margin: 20px;
   max-width: min(900px, 85%);
   margin-left: auto;
@@ -188,6 +190,7 @@ h6 {
   display: inline-block;
   padding: 40px 50px;
   vertical-align: text-top;
+  height: 123px;
 }
 
 .circle {
@@ -215,6 +218,21 @@ h6 {
 .circleLink:hover {
   background-color: #8ECCEA;
   cursor: pointer;
+}
+
+.baseCircle {
+  border-radius: 50%;
+  background-color: #C571FF;
+  color: black;
+  padding: 20px 20px;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.baseCircle:hover {
+  background-color: #8ECCEA;
 }
 
 .blogLinks {
@@ -549,6 +567,7 @@ h6 {
   margin-right: auto;
 }
 
+
 .modal {
   position: fixed;
   left: 0;
@@ -617,6 +636,7 @@ h6 {
 
 .modal-main-content {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 95%
 }
@@ -653,4 +673,115 @@ h6 {
   margin: 30px auto;
   align-items: center;
   justify-content: center;
+)
+
+.serviceRects {
+  display: inline-grid;
+}
+
+@media only screen and (min-width: 900px) {
+  .serviceRects {
+    justify-content: center;
+    display: inline-flex;
+  }
+}
+
+.servicesSectionTitle {
+  font-weight: 400;
+  max-width: min(900px, 85%);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.servicesSectionText {
+  font-weight: 400;
+  max-width: min(900px, 85%);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.singleService {
+  border: solid 0.5px;
+  display: inline-block;
+  margin: 0 1em;
+  height: 20em;
+  width: 17em;
+}
+
+@media only screen and (max-width: 900px) {
+  .singleService {
+    margin: 1em 0;
+  }
+}
+
+.serviceRectTitle {
+  font-size: 29px;
+  margin: 40px 15px 40px 15px;
+}
+
+.serviceRectText {
+  font-size: 16px;
+  margin: 0 15px;
+  padding-right: 10px;
+}
+
+.contributorsSection {
+  justify-content: center;
+  display: inline-block;
+  max-width: min(900px, 85%);
+}
+
+.mailBox {
+  border: 2px solid #C571FF;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 3em auto 5em;
+  width: 30%;
+  align-items: center;
+  font-family: 'Fira Code', monospace;
+}
+
+input[type=email] {
+  padding: .5em;
+  color: #C571FF;
+  font-size: 1em;
+  background-color: black;
+  border: none;
+  color-scheme: dark;
+  width: 100%;
+  font-family: 'Fira Code', monospace;
+}
+
+input[type=email]:focus {
+  outline: none;
+}
+
+.mailBoxLabel {
+  color: black;
+  background-color: #C571FF;
+  font-size: 1.1em;
+  padding: .5em 0;
+  width: 4em;
+  text-align: center;
+}
+
+.sendLabel {
+  color: black;
+  background-color: #C571FF;
+  font-size: 1.1em;
+  padding: .5em 0;
+  width: 7em;
+  text-align: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.sendLabel:hover {
+  background-color: #8ECCEA;
 }
