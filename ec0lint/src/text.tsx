@@ -61,16 +61,6 @@ export const forBusinessSection = {
     subtitle: "What can we do for your organisation?"
 };
 
-// poniższy kod trzeba będzie podmienić kiedy zmergujemy kod Ani, w którym znajdują się teksty dla zakładki services
-
-export const servicesPage = {
-    services: [
-        { title: "Website audits" },
-        { title: "Website optimisation" },
-        { title: "Discovery workshops" }
-    ]
-};
-
 export const impactSection = {
     title: "Impact",
     cards: [
@@ -89,9 +79,6 @@ export const donateSection = {
     text: "We'd be thankful if you'd like to support our work by pressing the donate " +
     "button. We truly care about the environment and want to keep on developing ec0lint. Thanks!"
 };
-
-export const donateSection = "We'd be thankful if you'd like to support our work by pressing the donate " +
-    "button. We truly care about the environment and want to keep on developing ec0lint. Thanks!";
 
 export const donateUrl = "https://opencollective.com/ec0lint";
 
