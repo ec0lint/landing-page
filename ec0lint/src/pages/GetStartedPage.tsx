@@ -54,7 +54,7 @@ export default function GetStartedPage() {
         </div>
       </div>
       <div className="blueSection" style={{ marginBottom: '80px' }}>
-        <h6 className="blueSectionText">{donateSection}</h6>
+        <h6 className="blueSectionText">{donateSection.text}</h6>
         <div>
           <a href={donateUrl} target="_blank" rel="noreferrer">
             <button className="blueSectionButton">{"DONATE"}</button>
