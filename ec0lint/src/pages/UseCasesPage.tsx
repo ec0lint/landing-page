@@ -1,14 +1,8 @@
 import { useCases } from "../text";
 import References from '../sections/References';
 import React from "react";
-// import ModalForm from "../sections/ModalForm";
 
 export default function UseCasesPage() {
-
-  // const [modal, setModal] = React.useState(false);
-  // const Toggle = () => setModal(!modal);
-
-
   return (
     <div className="secondPage">
       <h3 className="sectionTitle" style={{ textAlign: 'center', color: '#8ECCEA', marginBottom: '30px' }}>
