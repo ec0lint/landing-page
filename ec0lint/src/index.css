@@ -66,6 +66,7 @@ h6 {
   margin-right: auto;
   text-align: justify;
   text-justify: inter-word;
+  font-weight: 400;
 }
 
 .sectionText {
@@ -77,6 +78,7 @@ h6 {
 }
 
 .sectionTitle {
+  font-weight: 400;
   margin: 20px;
   max-width: min(900px, 85%);
   margin-left: auto;
@@ -216,6 +218,21 @@ h6 {
 .circleLink:hover {
   background-color: #8ECCEA;
   cursor: pointer;
+}
+
+.baseCircle {
+  border-radius: 50%;
+  background-color: #C571FF;
+  color: black;
+  padding: 20px 20px;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.baseCircle:hover {
+  background-color: #8ECCEA;
 }
 
 .blogLinks {
@@ -731,6 +748,21 @@ input[type=email]:focus {
   background-color: #C571FF;
   font-size: 1.1em;
   padding: .5em 0;
-  width: 2em;
+  width: 4em;
   text-align: center;
+}
+
+.sendLabel {
+  color: black;
+  background-color: #C571FF;
+  font-size: 1.1em;
+  padding: .5em 0;
+  width: 7em;
+  text-align: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.sendLabel:hover {
+  background-color: #8ECCEA;
 }

@@ -18,7 +18,6 @@ import helsinki1 from './resources/helsinki1.webp';
 import helsinki2 from './resources/helsinki2.webp';
 import perspektywy from './resources/perspektywy.webp';
 import ing from './resources/ing.webp';
-import youtube from './resources/youtube.webp'
 import reactIndia from './resources/reactindia.webp';
 import weAreDevelopers from './resources/wearedevelopers.webp';
 import react from './resources/react.webp';
@@ -138,8 +137,8 @@ export const featuresPage = {
 export const servicesPage = {
     text: [
         "We have a lot to offer",
-        "Except for ec0lint we are always happy to share our knowledge and help organisations become more environment-friendly." +
-        "We will help you identify and reduce the carbon footprint of your website and learn about digital ecology.",
+        "Except for ec0lint we are always happy to share our knowledge and help organisations become more environment-friendly. " +
+        "We will help you identify and reduce the carbon footprint of your website and learn about digital ecology. ",
         "Services",
         "Need",
         "help?",
