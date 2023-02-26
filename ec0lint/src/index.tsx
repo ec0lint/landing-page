@@ -9,7 +9,7 @@ import FeaturesPage from './pages/FeaturesPage';
 import Footer from './Footer';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfConditionsPage from './pages/TermsOfConditionsPage';
-import UseCasesPage from './pages/UseCasesPage';
+import UseCasesPage from './pages/UseCasesPage';  
 import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage';
 import RulePage from './pages/RulePage';
