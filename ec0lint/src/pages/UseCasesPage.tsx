@@ -2,6 +2,7 @@
 import { useCases } from "../text";
 import References from '../sections/References';
 import React from "react";
+import Newsletter from "../sections/Newsletter";
 
 export default function UseCasesPage() {
   return (
@@ -10,11 +11,7 @@ export default function UseCasesPage() {
         Coming soon
       </h3>
       <h5 className="sectionText">We are working on the first use case with Perspektywy Women in Tech. If you would like us to create a greener version of your website please contact us.</h5>
-      <div className="mailBox">
-        <label className="mailBoxLabel">@</label>
-        <input id="mail" type="email" name="mail" />
-        <label className="sendLabel" onClick={() => document.getElementById('mail').value = ''}>SEND</label>  
-      </div>
+      <Newsletter />
       <h4 className="sectionTitle" style={{ marginBottom: '30px', marginTop: '30px', textAlign: 'left' }}>{useCases.title}</h4>
       <h6 className="sectionText"><ul>{useCases.bulletPoints.map((x, i) => {
         return <span>
