@@ -200,7 +200,7 @@ export const features = [
         overview: <span>{"Disallows to use lodash. \n\n"}
             {"It’s a great library, but in most cases can be replaced by plain javascript.\n"}
         </span>,
-        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.5 g per website view</u>{" after removing the redundant library. By multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of a library can be calculated."}
+        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.5 g per website view</u>{" after removing the redundant library. By multiplying the library size by the end-user traffic (0.81 kWh / 1024 MB) and by the energy emissions (442 g/kWh), the carbon footprint of a library can be calculated."}
             <table className="table">
                 <tbody>
                     <tr>
@@ -230,7 +230,7 @@ export const features = [
         overview: <span>{"Disallows to use date-fns. \n\n"}
             {"It’s a great library, but in most cases can be replaced by plain javascript.\n"}
         </span>,
-        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>2.26 g per website view</u>{" after removing the redundant library. By multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of a library can be calculated."}
+        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>2.26 g per website view</u>{" after removing the redundant library. By multiplying the library size by the end-user traffic (0.81 kWh / 1024 MB) and by the energy emissions (442 g/kWh), the carbon footprint of a library can be calculated."}
             <table className="table">
                 <tbody>
                     <tr>
@@ -277,7 +277,7 @@ export const features = [
         overview: <span>{"Disallows to use moment-js. \n\n"}
             {"It’s a great library, but in most cases can be replaced by plain javascript. If you are working on a performance sensitive web application, using moment-js might cause a huge performance overhead because of its complex APIs and large bundle size. Plain javascript is much greener than moment-js.\n"}
         </span>,
-        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>1.48 g per website view</u>{" after removing the redundant library. By multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of a library can be calculated."}
+        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>1.48 g per website view</u>{" after removing the redundant library. By multiplying the library size by the end-user traffic (0.81 kWh / 1024 MB) and by the energy emissions (442 g/kWh), the carbon footprint of a library can be calculated."}
             <table className="table">
                 <tbody>
                     <tr>
@@ -301,14 +301,15 @@ export const features = [
             "moment('12-25-1995', 'MM-DD-YYYY');\n\n" +
             "The following pattern is not considered as a problem:\n\n" +
             "/*ec0lint  no-moment-js: \"error\"*/\n\n" +
-            "const datePattern = /^(\d{2})-(\d{2})-(\d{4})$/;\n" +
+            "const datePattern = /^(\\d{2})-(\\d{2})-(\\d{4})$/;\n" +
             "const [, month, day, year] = datePattern.exec('12-25-1995');\n" +
+            // eslint-disable-next-line no-template-curly-in-string
             "new Date(`${month}, ${day} ${year}`);"
     },
     {
         name: "no-ttf-font-files",
         overview: <span>{"Disallow using TTF custom font files. \n\n"}
-            {"Fonts should be converted to WOFF or WOFF2 format. WOFF2 is now the most modern and efficient format available in browsers. It was developed by Google as an update to the original WOFF format and is considered the best format of the bunch because it offers smaller file sizes and better performance for modern browsers that support it. We can achieve almost 80% reduction of file size simply through loading a WOFF2 file over a TTF and almost 60% in case of using WOFF instead of TTF font files. \n"}
+            {"Fonts should be converted to WOFF or WOFF2 format. WOFF2 is now the most modern and efficient format available in browsers. It was developed by Google as an update to the original WOFF format and is considered the best format of the bunch because it offers smaller file sizes and better performance for modern browsers that support it. We can achieve almost 70% reduction of file size simply through loading a WOFF2 file over a TTF and almost 60% in case of using WOFF instead of TTF font files. \n"}
         </span>,
         CO2: <span>{"Convertion of only one of the most popular fonts used on websites – Helvetica Neue - from TTF to WOFF2 format can reduce the carbon footprint even up to "}
             <u>0.54 g per website view.</u>{" By converting the same file to WOFF format we achieve "}<u>0.35 g</u>{" CO2 reduction."}
@@ -401,18 +402,19 @@ export const features = [
                     </tr>
                 </tbody>
             </table>
-            {"By multiplying the library size by the end-user traffic (0.81 kWh / 1000 Mb) and by the energy emissions (442 g/kWh), the carbon footprint of the TTF file (2.49 Mb for Helvetica Neue) – sums up to 0.89 g. For WOFF2 (0.99 Mb) the carbon footprint amounts to 0.35g and for WOFF (1.51MB) to 0.54g. So, by substracting 0.35 g and 0.54g from 0.89 g we get respectively 0.54 g (61% less CO2) and 0.35g (39% less CO2) \n\n"}
+            {"By multiplying the library size by the end-user traffic (0.81 kWh / 1024 Mb) and by the energy emissions (442 g/kWh), the carbon footprint of the TTF file (2.49 MB for Helvetica Neue) – sums up to 0.89 g. For WOFF2 (0.99 MB) the carbon footprint amounts to 0.35g and for WOFF (1.51 MB) to 0.54 g. So, by substracting 0.35 g and 0.54 g from 0.89 g we get respectively 0.54 g (61% less CO2) and 0.35 g (39% less CO2). \n\n"}
             {"TTF font file sizes were checked at "}<a target="_blank" rel="noreferrer" href="https://fonts.google.com/" className="link">https://fonts.google.com/</a>{" and converted to WOFF and WOFF2 formats on "}<a target="_blank" rel="noreferrer" href="https://cloudconvert.com/" className="link">https://cloudconvert.com/</a>{". \n"}
         </span>,
         examples: "@font-face { font-family: 'foo'; src: url('/path/to/foo.ttf'); } - Unrecommended format of the file \n\n" +
             "The following patterns are considered problems: \n\n(a) \n@font-face { font-family: 'foo'; src: url('/path/to/foo.ttf'); } \n\n" +
             "(b) \n@font-face { font-family: \"MyFont\"; src: url(\"myfont.ttf\") format(\"ttf\");} \n\n" +
-            "(c) \n@font-face { \n\tfont-family: dashicons; \n\tsrc: url(data:application/font-ttf;charset=utf-8;base64, ABCDEF= =) format(\"ttf\"); \n" +
+            "(c) \n@font-face { \n\tfont-family: dashicons; \n" +
+            "\tsrc: url(data:application/font-ttf;charset=utf-8;base64, ABCDEF==) format(\"ttf\"); \n" +
             "\tfont-weight: normal; \n\tfont-style: normal; \n } \n\n\nThe following patterns are not considered problems: \n\n" +
             "(a) \n@font-face { font-family: 'foo'; src: url('/path/to/foo.woff'); } \n\n" +
             "(b) \n@font-face { font-family: \"MyFont\"; src: url(\"myfont.woff2\") format(\"woff2\"); } \n\n" +
             "(c) \n@font-face {\n\tfont-family: dashicons; \n\tsrc: url(data:application/font-woff;charset=utf-8;base64, ABCDEF==) format(\"woff\"), \n" +
-            "\turl(../fonts/dashicons.woff) format(\"truetype\"), \n\turl(../fonts/dashicons.svg#dashicons) format(\"svg\");" +
+            "\turl(../fonts/dashicons.woff) format(\"truetype\"),\n\turl(../fonts/dashicons.svg#dashicons) format(\"svg\");" +
             "\n\tfont-weight: normal; \n\tfont-style: normal;\n} "
     },
     {
@@ -420,7 +422,7 @@ export const features = [
         overview: <span>{"Disallows to use libraries like: axios, got, request, make-fetch-happen, superagent, needle, simple-get. \n\n"}
             {"Importing large sets of packages, which are doing exactly the same work as fetch, takes a large amount of disk space. Fetch API is a built-in functionality, so it's always on hand. We recommend using fetch. "}</span>,
         CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.21 g per website view</u>{" after removing a redundant library.\n\n"}
-            {"By multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of a library can be calculated. \n\n"}
+            {"By multiplying the library size by the end-user traffic (0.81 kWh / 1024 MB) and by the energy emissions (442 g/kWh), the carbon footprint of a library can be calculated. \n\n"}
             <table className="table">
                 <tbody>
                     <tr>
@@ -473,10 +475,10 @@ export const features = [
             "\n\t.then(response => response.json()) \n\t.then(data => { \n\t\tconsole.log(data) // Prints result from `response.json()` in getRequest \n\t})\n\t.catch(error => console.error(error)) "
     },
     {
-        name: "lighter-image-files",
+        name: "lighter-image-formats",
         overview: "Encourages to use WebP and SVG format of image files in CSS code. \n\n" +
-            "Image files inside web application should be in  WebP and SVG format. These formats can crunch large images down into more manageable file sizes. They are on average much smaller than GIF, JPEG, PNG, even at extremely high resolutions. We can achieve up to 82% reduction of file size using SVG instead of JPG and up to 95% in case of PNG. For WebP format we get up to 60% reduction of file size in case of converting from JPG and up to 91% for PNG.",
-        CO2: <span>Convertion of an exemplary image in 1800 x 1200 resolution from PNG to SVG format can reduce the carbon footprint by about <u>5.79 g per website view.</u>
+            "Image files inside web application should be in  WebP and SVG format. These formats can crunch large images down into more manageable file sizes. They are on average much smaller than GIF, JPEG, PNG, even at extremely high resolutions. We can achieve up to 75% reduction of file size using SVG instead of JPG and up to 94% in case of PNG. For WebP format we get up to 60% reduction of file size in case of converting from JPG and up to 91% for PNG.",
+        CO2: <span>Convertion of an exemplary image in 1800 x 1200 resolution from PNG to SVG format can reduce the carbon footprint by about <u>5.79 g CO2 per website view.</u>
             {"\n\nThe table below shows comparison between file sizes and CO2 emission for exemplary image (displayed below) in 1800 x 1200 resolution for the most popular image formats. \n"}
             <table className="table">
                 <tbody>
@@ -488,58 +490,63 @@ export const features = [
                     <tr>
                         <td className="tableCell">SVG</td>
                         <td className="tableCell">126 kB</td>
-                        <td className="tableCell">0.26 g</td>
+                        <td className="tableCell">0.04 g</td>
                     </tr>
                     <tr>
                         <td className="tableCell">WebP</td>
                         <td className="tableCell">200 kB</td>
-                        <td className="tableCell">0.57 g</td>
+                        <td className="tableCell">0.07 g</td>
+                    </tr>
+                    <tr>
+                        <td className="tableCell">AVIF</td>
+                        <td className="tableCell">231 kB</td>
+                        <td className="tableCell">0.08 g</td>
                     </tr>
                     <tr>
                         <td className="tableCell">JPG</td>
                         <td className="tableCell">503 kB</td>
-                        <td className="tableCell">1.44 g</td>
+                        <td className="tableCell">0.18 g</td>
                     </tr>
                     <tr>
                         <td className="tableCell">GIF</td>
                         <td className="tableCell">913 kB</td>
-                        <td className="tableCell">2.61 g</td>
+                        <td className="tableCell">0.33 g</td>
                     </tr>
                     <tr>
                         <td className="tableCell">PNG</td>
                         <td className="tableCell">2 111 kB</td>
-                        <td className="tableCell">6.05 g</td>
+                        <td className="tableCell">0.76 g</td>
                     </tr>
                     <tr>
                         <td className="tableCell">TIFF</td>
                         <td className="tableCell">6 329 kB</td>
-                        <td className="tableCell">18.13 g</td>
+                        <td className="tableCell">2.27 g</td>
                     </tr>
                     <tr>
                         <td className="tableCell">PSD</td>
                         <td className="tableCell">12 657 kB</td>
-                        <td className="tableCell">36.25 g</td>
+                        <td className="tableCell">4.53 g</td>
                     </tr>
                     <tr>
                         <td className="tableCell">PS</td>
                         <td className="tableCell">12 825 kB</td>
-                        <td className="tableCell">36.73 g</td>
+                        <td className="tableCell">4.59 g</td>
                     </tr>
                 </tbody>
             </table>
-            <img src={lighterImageFile} alt="lighter-image-file" className="image" />
-            {"\nBy multiplying the file size by the end-user traffic (0.81 kWh / 1000 Mb) and by the energy emissions (442 g/kWh), the carbon footprint of the exemplary PNG file (16.89 Mb) – sums up to 6.05 g. The same image in SVG format (1.01 Mb) generates 0.26g CO2.  So, by substracting 0.26 g from 6.05 g we get 5.79g. (95% less CO2). \n"}
+            <img src={lighterImageFile} alt="lighter file" className="image" />
+            {"\nBy multiplying the file size by the end-user traffic (0.81 kWh / 1024 MB) and by the energy emissions (442 g/kWh), the carbon footprint of the exemplary PNG file (2.1 MB) – sums up to 0.76 g. The same image in SVG format (126 kB) generates 0.04 g CO2. So, by substracting 0.04 g from 0.76 g we get 0.69 g. (91% less CO2). \n"}
             {"\nFor the same exemplary image in WebP (1.6 Mb) the carbon footprint amounts to 0.57g. So, by subtracting 0.57 g from 6.05 g we get 5.48 g (91% less CO2). \n"}
             {"\nExemplary image was downloaded from "}<a target="_blank" rel="noreferrer" href="https://wallpaperaccess.com/1800x1200-hd" className="link">https://wallpaperaccess.com/1800x1200-hd</a>{" and converted to different formats using "}<a target="_blank" rel="noreferrer" href="https://cloudconvert.com/" className="link">https://cloudconvert.com/</a>
         </span>,
-        examples: "background-image: url('image.png'); - Unrecommended format of the file \n\nThe following patterns are considered problems: \n\n(a)\nbackground-image: url('image.ppm'); \n\n" +
-            "(b) \nbackground-image: url('image.ps'); \n\n(c) \nbackground-image: url('image.rgb'); \n\n(d) \nbackground-image: url('image.png'); \n\n\nThe following patterns are not considered problems: \n\n" +
-            "(a) \nbackground-image: url('image.gif'); \n\n(b) \nbackground-image: url('image.jpg'); "
+        examples: "background-image: url('image.png');\nimport image from './image.png'; - Unrecommended format of the file \n\nThe following patterns are considered problems: \n\n(a)\nbackground-image: url('image.ppm');\nimport image from './image.png'; \n\n" +
+            "(b) \nbackground-image: url('image.ps');\nimport image from './image.ppm'; \n\n(c) \nbackground-image: url('image.rgb');\nimport {ReactComponent as image} from './image.ps'; \n\n(d) \nbackground-image: url('image.png');\nlet Image = require('../src/image.rgb'); \n\n\nThe following patterns are not considered problems: \n\n" +
+            "(a) \nbackground-image: url('image.webp');\nimport {ReactComponent as image} from './image.webp'; \n\n(b) \nbackground-image: url('image.svg');\nimport image from './image.svg'; \n\n(c) \nbackground-image: url('image.jpg');\nlet Image = require('../src/image.jpg'); \n\n(d) \nbackground-image: url('image.gif'); \nimport image from './image.gif'; "
     },
     {
         name: "require-font-display",
         overview: <span>{"Disallow using @font-face without font-display property. \n\n"}
-            {"The font-display property supports five different values: “auto”, “block”, “swap” , “fallback”, “optional”, each describing a different method of behaviour for different scenarios. In short, it allows fine control over whether a fallback font is used immediately, and whether or not after a period of time (and the custom font has loaded) what should happen. "}</span>,
+            {"The font-display property supports five different values: “auto”, “block”, “swap”, “fallback”, “optional”, each describing a different method of behaviour for different scenarios. In short, it allows fine control over whether a fallback font is used immediately, and what should happen after the custom font has loaded. "}</span>,
         examples: "@font-face { font-family: 'foo'; src: url('/path/to/foo.ttf'); } \n\n" +
             "The following patterns are considered problems: \n\n(a) \n@font-face { font-family: \"MyFont\"; src: url(\"myfont.ttf\") format(\"ttf\"); } \n\n" +
             "(b) \n@font-face { font-family: \"MyFont\"; src: url(\"myfont.ttf\") format(\"ttf\"); } \n\n" +
@@ -555,7 +562,7 @@ export const features = [
         name: "lazy-load",
         overview: `Encourages to use lazy loading for image and video files. \n\nLazy loading loads heavy elements of a website, like an image or a video, only when they’re needed. For example, images or videos further down on a website are only loaded if the user scrolls down. \n\nWith lazy loading, less data needs to be transferred and thus less energy is consumed.`,
         CO2: <span>{"By using lazy loading no unnecessary images and videos are transferred. For the file that isn’t displayed by a website user, we reduce CO2 emissions related to loading the file to 0 g.\n\n"}
-            {"To calculate the combined carbon footprint of all image files on an average website (1000 kB), we multiply the file sizes by the end-user traffic (0.81 kWh/1 GB) and by the energy emissions (442 g/kWh), which sums up to 0.36 g.\n\n"}
+            {"To calculate the combined carbon footprint of all image files on an average website (1000 kB), we multiply the file sizes by the end-user traffic (0.81 kWh/1024 MB) and by the energy emissions (442 g/kWh), which sums up to 0.36 g.\n\n"}
             {"So, by enabling lazy loading of these files, we could get 0.36 CO2 reduction (100% less CO2). \n\n"}
             {"In the case of video files (on average 3472 kB per website), we get 1.25 g CO2 reduction."}</span>,
         examples: "The following patterns are considered as problems: \n\n" +
@@ -570,7 +577,7 @@ export const features = [
             "(d) <video class='lazy'></video> "
     },
     {
-        name: "lighter-video-files",
+        name: "lighter-video-formats",
         overview: `Encourages to use WebM video file format in React code. \n\nVideo files inside web applications should be in WebM format. It is an open, royalty-free media file format designed specifically for the web, hence it is supported by HTML and has a good compatibility with all modern browsers. Clips in the WebM format are on average much smaller than those in MP4 or OGG (other video formats supported by HTML). We can achieve even a 66% reduction of the file size using WebM instead of the popular MP4 format which quality is only slightly better.`,
         CO2: <span>{"The table below shows the comparison between file sizes and CO2 emission for a short (23 s) exemplary video (in 1366 x 720 resolution). \n\n"}
             {"Link to the exemplary video: "} <a target="_blank" rel="noreferrer" href="www.pexels.com/video/alpaca-closeup-5795043/" className="link">https://www.pexels.com/video/alpaca-closeup-5795043/</a>
@@ -594,7 +601,7 @@ export const features = [
                 </tbody>
                 <caption style={{ captionSide: "bottom" }}>Converting the video from MP4 to WebM format can reduce the carbon footprint by 1.15 g of CO2 per website view. </caption>
             </table>
-            {"By multiplying the file size by the end-user traffic (0.81 kWh / GB) and by thy energy emissions (442 g / kWh), the carbon footprint of the exemplary video in MP4 sums up to 2.06 g. The same file in WebM format generates 0.91 g of CO2. So, by subtracting 0.91 g from 2.06 g, we get "}<u>1.15 g (56% less CO2)</u>{". \n\nExemplary video was downloaded from "}<a target="_blank" rel="noreferrer" href='www.pexels.com/search/videos/' className="link">https://www.pexels.com/search/videos/</a> {"and converted to WebM online with "}<a target="_blank" rel="noreferrer" href='www.veed.io/convert/video-converter' className="link">https://www.veed.io/convert/video-converter</a>{"."}</span>,
+            {"By multiplying the file size by the end-user traffic (0.81 kWh /1024MB) and by thy energy emissions (442 g / kWh), the carbon footprint of the exemplary video in MP4 sums up to 2.06 g. The same file in WebM format generates 0.91 g of CO2. So, by subtracting 0.91 g from 2.06 g, we get "}<u>1.15 g (56% less CO2)</u>{". \n\nExemplary video was downloaded from "}<a target="_blank" rel="noreferrer" href='www.pexels.com/search/videos/' className="link">https://www.pexels.com/search/videos/</a> {"and converted to WebM online with "}<a target="_blank" rel="noreferrer" href='www.veed.io/convert/video-converter' className="link">https://www.veed.io/convert/video-converter</a>{"."}</span>,
         examples: "The following patterns are considered problems: \n\n" +
             "(a) \nimport video from './video.ogg'; \n\n" +
             "(b) \nimport video from './video.mp4'; \n\n" +
@@ -613,7 +620,7 @@ export const features = [
         overview: <span>{"Disallows the "}<a target="_blank" rel="noreferrer" href='https://api.jquery.com/jQuery.ajax/' className="link">/$.ajax</a><a target="_blank" rel="noreferrer" href='api.jquery.com/jQuery.get/' className="link">/$.get</a><a target="_blank" rel="noreferrer" href='https://api.jquery.com/jQuery.getJSON/' className="link">/$.getJSON</a><a target="_blank" rel="noreferrer" href='https://api.jquery.com/jQuery.getScript/' className="link">/$.getScript</a><a target="_blank" rel="noreferrer" href='api.jquery.com/jQuery.post/' className="link">/$.post</a>{" utilities. We recommend using Window.fetch. \n\n"}
             {"Fetch API is the new standard to replace XMLHttpRequest to do what ajax does. It works on Chrome and Firefox, you can use polyfills to make it work on legacy browsers. \n\n"}
             {"Try github/fetch on IE9+ or fetch-ie8 on IE8+, fetch-jsonp to make JSONP requests. "}</span>,
-        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.46 g per website view</u>{" if you decide to remove the jQuery library.\n\nBy multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of this library can be calculated. "}</span>,
+        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.46 g per website view</u>{" if you decide to remove the jQuery library.\n\nBy multiplying the library size by the end-user traffic (0.81 kWh / 1024 MB) and by the energy emissions (442 g/kWh), the carbon footprint of this library can be calculated. "}</span>,
         examples: "The following patterns are considered problems: \n\n" +
             "$.ajax({ \n\ttype: 'POST',\n\turl: '/my/url',\n\tdata: data\n});\n\n " +
             "$.ajax({\n\ttype: 'GET',\n\turl: '/my/url',\n\tsuccess: function (resp) {},\n\terror: function () {}\n}); \n\n\n" +
@@ -649,7 +656,7 @@ export const features = [
     {
         name: "no-animate",
         overview: "Disallows the .animate method. Use CSS transitions instead.",
-        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.46 g per website view</u>{" if you decide to remove the jQuery library.\n\nBy multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of this library can be calculated."}</span>,
+        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.46 g per website view</u>{" if you decide to remove the jQuery library.\n\nBy multiplying the library size by the end-user traffic (0.81 kWh / 1024 MB) and by the energy emissions (442 g/kWh), the carbon footprint of this library can be calculated."}</span>,
         examples: "The following pattern is considered as a problem:\n\n" +
             "$( 'div' ).animate(); \n\n" +
             "$div.animate(); \n\n" +
@@ -668,7 +675,7 @@ export const features = [
     {
         name: "no-attr",
         overview: "Disallows the .attr/.removeAttr methods and $.attr/$.removeAttr utilies. We recommend using Element#getAttribute/setAttribute/removeAttribute.",
-        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.46 g per website view</u>{" if you decide to remove the jQuery library.\n\nBy multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of this library can be calculated. "}</span>,
+        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.46 g per website view</u>{" if you decide to remove the jQuery library.\n\nBy multiplying the library size by the end-user traffic (0.81 kWh / 1024 MB) and by the energy emissions (442 g/kWh), the carbon footprint of this library can be calculated. "}</span>,
         examples: "The following patterns is considered a problem:\n\n" +
             "$.attr(); \n\n" +
             "$( 'div' ).attr();\n\n" +
@@ -689,24 +696,17 @@ export const features = [
         overview: "Disallows the autoplay property of YouTube videos embedded in your web application.\n\n" +
             "The autoplay parameter appended to a YouTube video’s URL makes a video start automatically. This behaviour forces to download the video before the website is being loaded. On the other hand, when autoplay is not set to true, the only resource needed when the website is being loaded is the cover image of the video. The video itself is downloaded only if the user clicks on YouTube iframe element.\n\n" +
             "Autoplay property significantly increases the bandwidth needed to display a website as well as makes the page load much longer. ",
-        CO2: <span>{"By deleting the autoplay=1 part of the YouTube video URL, the video is not downloaded when entering the website. Carbon emissions can be reduced by 99% if a user does not click on the video.\n\nA sample YouTube video – "}<a target="_blank" rel="noreferrer" href='www.youtube.com/watch?v=XqZsoesa55w&ab_channel=PinkfongBabyShark-Kids%27Songs%26Stories' className="link">Baby Shark</a>{" which lasts only 2 minutes, in the resolution of 720p (HD), has the file size of 14.7 MB.\n\nTo calculate the carbon footprint of a YouTube video file, we multiply the size of the video (14.7 MB) by the end-user traffic (0.81 kWh/1 GB) and by the energy emissions (442 g/kWh), which sums up to "}<u>5.14 g of CO2</u>{". "}</span>,
-        examples: "<iframe width=”420” height=”315”\nsrc='https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1'>\n" +
-            "</iframe>\n\n" +
-            "src='https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1'>\n\n" +
-            "Autoplay property in YouTube links makes the video download upfront. Delete it from the URL.\n\n\n" +
-            "The following patterns are considered problems: \n\n" +
-            "(a) \n" +
-            "<iframe src='https://www.youtube.com/embed/tgbNymZ7mvqY?autoplay=1&mute=1'></iframe> \n\n" +
-            "(b) \n" +
-            "<iframe src='https://www.youtube.com/embed/tgbNymZ7mvqY?mute=1&autoplay=1'></iframe> \n\n\n" +
-            "The following pattern is not considered as a problem: \n\n" +
+        CO2: <span>{"By deleting the autoplay=1 part of the YouTube video URL, the video is not downloaded when entering the website. Carbon emissions can be reduced by 99% if a user does not click on the video.\n\nA sample YouTube video – "}<a target="_blank" rel="noreferrer" href='www.youtube.com/watch?v=XqZsoesa55w&ab_channel=PinkfongBabyShark-Kids%27Songs%26Stories' className="link">Baby Shark</a>{" which lasts only 2 minutes, in the resolution of 720p (HD), has the file size of 14.7 MB.\n\nTo calculate the carbon footprint of a YouTube video file, we multiply the size of the video (14.7 MB) by the end-user traffic (0.81 kWh/1024 MB) and by the energy emissions (442 g/kWh), which sums up to "}<u>5.14 g of CO2</u>{". "}</span>,
+        examples: "The following patterns are considered problems:\n\n(a)\n<iframe src='https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1'>" +
+            "</iframe>\n\n(b)\n<iframe src='https://www.youtube.com/embed/tgbNymZ7mvqY?mute=1&autoplay=1'></iframe>" +
+            "\n\nThe following patterns are not considered problems: \n\n" +
             "(a) \n" +
             "<iframe src='https://www.youtube.com/embed/tgbNymZ7mvqY'></iframe> "
     },
     {
         name: "no-bind",
         overview: "Disallows the .bind/.unbind methods. We recommend using .on/.off or EventTarget#addEventListener/removeEventListener.",
-        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.46 g per website view</u>{" if you decide to remove the jQuery library.\n\nBy multiplying the library size by the end-user traffic (0.81 kWh / 1000 MB) and by the energy emissions (442 g/kWh), the carbon footprint of this library can be calculated. "}</span>,
+        CO2: <span>{"By using this rule in your project, you can reduce the carbon footprint even up to "}<u>0.46 g per website view</u>{" if you decide to remove the jQuery library.\n\nBy multiplying the library size by the end-user traffic (0.81 kWh / 1024 MB) and by the energy emissions (442 g/kWh), the carbon footprint of this library can be calculated. "}</span>,
         examples: "The following pattern is considered as a problem:\n\n" +
             "$( 'div' ).bind(); \n\n" +
             "$div.bind(); \n\n" +
@@ -724,7 +724,7 @@ export const features = [
     {
         name: "no-web-fonts",
         overview: <span>{"Disallows importing web fonts by @import and @font-face CSS rules. We recommend using system or locally hosted fonts.\n\nSystem fonts are automatically installed in every operating system of any device, which is used to display a website. Even if you don’t like system fonts, you can add a static font file (we recommend WOFF2, see: "}<a target="_blank" rel="noreferrer" href='ec0lint.com/features/no-ttf-font-files)' className="link">https://ec0lint.com/features/no-ttf-font-files</a>{") to your website. All additional server requests and data transfer related to fonts can be saved. "}</span>,
-        CO2: <span>{"By using system fonts or fonts hosted locally, you do not import any data from an external server. If you choose Arial (system font) instead of Arimo (web font, Arial equivalent from Google Fonts) you can save up to "}<u>0.021 g CO2 per view</u>{". To calculate the carbon footprint of a web font, the size of TTF font file can be multiplied by the end-user traffic (0.81 kWh/1000 MB) and by the energy emissions (442 g/kWh). "}
+        CO2: <span>{"By using system fonts or fonts hosted locally, you do not import any data from an external server. If you choose Arial (system font) instead of Arimo (web font, Arial equivalent from Google Fonts) you can save up to "}<u>0.021 g CO2 per view</u>{". To calculate the carbon footprint of a web font, the size of TTF font file can be multiplied by the end-user traffic (0.81 kWh/1024 MB) and by the energy emissions (442 g/kWh). "}
             <table className="table">
                 <tbody>
                     <tr>
