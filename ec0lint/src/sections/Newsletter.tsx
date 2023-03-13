@@ -8,7 +8,6 @@ export default function Newsletter() {
         const form = document.querySelector("form")!;
         event.preventDefault();
         const formDatab = new FormData(form);
-        // address of app script code for sending data to google sheet: https://docs.google.com/spreadsheets/d/1sClNwvGnVzmXXYXQOBxCoAFvVEVKRVUSrGqv0qYc3Mw/edit#gid=0
         fetch("https://script.google.com/macros/s/AKfycbz9vBlfEdHYSVdabtBJEmujutTIwhJEnLo6NtJ42cde5ryLlKECRrAsLgUMtH1qD0Yj/exec",
             {
                 method: "POST",
@@ -16,7 +15,6 @@ export default function Newsletter() {
             }
         )
             .then((data) => {
-                console.log(data);
                 showInfo(successMessage);
             })
             .catch((error) => {

@@ -402,7 +402,7 @@ export const features = [
                     </tr>
                 </tbody>
             </table>
-            {"By multiplying the library size by the end-user traffic (0.81 kWh / 1024 Mb) and by the energy emissions (442 g/kWh), the carbon footprint of the TTF file (2.49 MB for Helvetica Neue) – sums up to 0.89 g. For WOFF2 (0.99 MB) the carbon footprint amounts to 0.35g and for WOFF (1.51 MB) to 0.54 g. So, by substracting 0.35 g and 0.54 g from 0.89 g we get respectively 0.54 g (61% less CO2) and 0.35 g (39% less CO2). \n\n"}
+            {"By multiplying the library size by the end-user traffic (0.81 kWh / 1024 Mb) and by the energy emissions (442 g/kWh), the carbon footprint of the TTF file (2.49 MB for Helvetica Neue) – sums up to 0.89 g. For WOFF2 (0.99 MB) the carbon footprint amounts to 0.35 g and for WOFF (1.51 MB) to 0.54 g. So, by substracting 0.35 g and 0.54 g from 0.89 g we get respectively 0.54 g (61% less CO2) and 0.35 g (39% less CO2). \n\n"}
             {"TTF font file sizes were checked at "}<a target="_blank" rel="noreferrer" href="https://fonts.google.com/" className="link">https://fonts.google.com/</a>{" and converted to WOFF and WOFF2 formats on "}<a target="_blank" rel="noreferrer" href="https://cloudconvert.com/" className="link">https://cloudconvert.com/</a>{". \n"}
         </span>,
         examples: "@font-face { font-family: 'foo'; src: url('/path/to/foo.ttf'); } - Unrecommended format of the file \n\n" +

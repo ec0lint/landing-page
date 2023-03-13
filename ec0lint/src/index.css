@@ -743,7 +743,7 @@ h6 {
   justify-content: flex-start;
   margin: 3em auto 3em;
   width: 35%;
-  align-items: center;
+  align-items: stretch;
   font-family: 'Fira Code', monospace;
 }
 
