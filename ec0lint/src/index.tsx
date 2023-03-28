@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from './NavBar';
 import MainPage from './pages/MainPage';
 import GetStartedPage from './pages/GetStartedPage';
+import DocsPage from './pages/DocsPage'
 import FeaturesPage from './pages/FeaturesPage';
 import ServicesPage from './pages/ServicesPage'
 import Footer from './Footer';
@@ -29,6 +30,7 @@ root.render(
         <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="terms-of-conditions" element={<TermsOfConditionsPage />} />
         <Route path="get-started" element={<GetStartedPage />} />
+        <Route path="docs" element={<DocsPage />} />
         <Route path="features" element={<FeaturesPage />} />
         <Route path="services" element={<ServicesPage />} />
         <Route path="use-cases" element={<UseCasesPage />} />

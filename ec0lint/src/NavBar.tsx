@@ -27,6 +27,9 @@ export default function NavBar() {
                 <Link to="/features" className={getClassName("/features")}>Features</Link>
             </h6>
             <h6 className="headerElement">
+                <Link to="/docs" className={getClassName("/docs")}>Docs</Link>
+            </h6>
+            <h6 className="headerElement">
                 <Link to="/get-started" className={getClassName("/get-started")}>Get Started</Link>
             </h6>
             <h6 className="headerElement">
