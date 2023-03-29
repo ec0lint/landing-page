@@ -30,7 +30,11 @@ root.render(
         <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="terms-of-conditions" element={<TermsOfConditionsPage />} />
         <Route path="get-started" element={<GetStartedPage />} />
-        <Route path="docs" element={<DocsPage />} />
+        <Route path="docs" element={<DocsPage />}>
+          {features.map(x =>
+            <Route path={`${x.name}`} element={<RulePage data={x} />} />)}
+        </Route>
+    
         <Route path="features" element={<FeaturesPage />} />
         <Route path="services" element={<ServicesPage />} />
         <Route path="use-cases" element={<UseCasesPage />} />
@@ -42,7 +46,7 @@ root.render(
         <Route path="blog/change-your-online-habits" element={<BlogPostPage data={blog.posts[2]}/>} />
         <Route path="blog/five-websites-we-recommend" element={<BlogPostPage data={blog.posts[3]}/>} />
 
-        {features.map(x => <Route path={`features/${x.name}`} element={<RulePage data={x}/>}/>)}
+        {/* {features.map(x => <Route path={`features/${x.name}`} element={<RulePage data={x}/>}/>)} */}
       </Routes>
       <Footer/>
     </BrowserRouter>
