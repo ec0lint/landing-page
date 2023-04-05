@@ -797,4 +797,60 @@ input[type=email]:focus {
   margin: auto;
 }
 
+#container {
+  display: flex;
+  border-bottom: 1px solid #8ECCEA;
+  margin-bottom: 50px;
+}
 
+#details {
+  width: 60%;
+  margin-top: 50px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 100px;
+  border-left: 1px solid #8ECCEA;
+  border-right: 1px solid #8ECCEA;
+  border-top: 1px solid #8ECCEA;
+}
+
+#menu {
+  width: 25%;
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: 1px solid #8ECCEA;
+}
+
+#menu ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 3em; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+#tableOfContent {
+  width: 15%;
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: 1px solid #8ECCEA;
+}
+
+.searchingBar {
+  border: 2px solid #C571FF;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 3em 3em 3em;
+  /* width: 35%; */
+  align-items: stretch;
+  font-family: 'Fira Code', monospace;
+}
+
+.searchingBarBoxLabel {
+  color: black;
+  background-color: #C571FF;
+  font-size: 1.1em;
+  padding: .7em 0;
+  width: 4em;
+  text-align: center;
+}
