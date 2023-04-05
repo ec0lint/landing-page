@@ -580,7 +580,7 @@ export const features = [
         name: "lighter-video-formats",
         overview: `Encourages to use WebM video file format in React code. \n\nVideo files inside web applications should be in WebM format. It is an open, royalty-free media file format designed specifically for the web, hence it is supported by HTML and has a good compatibility with all modern browsers. Clips in the WebM format are on average much smaller than those in MP4 or OGG (other video formats supported by HTML). We can achieve even a 66% reduction of the file size using WebM instead of the popular MP4 format which quality is only slightly better.`,
         CO2: <span>{"The table below shows the comparison between file sizes and CO2 emission for a short (23 s) exemplary video (in 1366 x 720 resolution). \n\n"}
-            {"Link to the exemplary video: "} <a target="_blank" rel="noreferrer" href="www.pexels.com/video/alpaca-closeup-5795043/" className="link">https://www.pexels.com/video/alpaca-closeup-5795043/</a>
+            {"Link to the exemplary video: "} <a target="_blank" rel="noreferrer" href="https://www.pexels.com/video/alpaca-closeup-5795043" className="link">https://www.pexels.com/video/alpaca-closeup-5795043</a>
             <table className="table">
                 <tbody>
                     <tr>
@@ -601,7 +601,7 @@ export const features = [
                 </tbody>
                 <caption style={{ captionSide: "bottom" }}>Converting the video from MP4 to WebM format can reduce the carbon footprint by 1.15 g of CO2 per website view. </caption>
             </table>
-            {"By multiplying the file size by the end-user traffic (0.81 kWh /1024MB) and by thy energy emissions (442 g / kWh), the carbon footprint of the exemplary video in MP4 sums up to 2.06 g. The same file in WebM format generates 0.91 g of CO2. So, by subtracting 0.91 g from 2.06 g, we get "}<u>1.15 g (56% less CO2)</u>{". \n\nExemplary video was downloaded from "}<a target="_blank" rel="noreferrer" href='www.pexels.com/search/videos/' className="link">https://www.pexels.com/search/videos/</a> {"and converted to WebM online with "}<a target="_blank" rel="noreferrer" href='www.veed.io/convert/video-converter' className="link">https://www.veed.io/convert/video-converter</a>{"."}</span>,
+            {"By multiplying the file size by the end-user traffic (0.81 kWh /1024MB) and by thy energy emissions (442 g / kWh), the carbon footprint of the exemplary video in MP4 sums up to 2.06 g. The same file in WebM format generates 0.91 g of CO2. So, by subtracting 0.91 g from 2.06 g, we get "}<u>1.15 g (56% less CO2)</u>{". \n\nExemplary video was downloaded from "}<a target="_blank" rel="noreferrer" href='https://www.pexels.com/search/videos' className="link">https://www.pexels.com/search/videos</a> {"and converted to WebM online with "}<a target="_blank" rel="noreferrer" href='https://www.veed.io/convert/video-converter' className="link">https://www.veed.io/convert/video-converter</a>{"."}</span>,
         examples: "The following patterns are considered problems: \n\n" +
             "(a) \nimport video from './video.ogg'; \n\n" +
             "(b) \nimport video from './video.mp4'; \n\n" +
