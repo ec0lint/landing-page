@@ -25,7 +25,8 @@ import conf42 from './resources/conf42.webp';
 import xtremejs from './resources/xtremejs.webp';
 import kdi from './resources/kdi.webp';
 import lighterImageFile from './resources/lighter-image-file.webp';
-import effiencyBackgroundFig2 from './resources/efficient-background.webp'
+import efficientBackgroundFig2 from './resources/efficient-background.webp'
+import efficientBackgroundFig1 from './resources/efficientBackgroundFigure1.webp'
 import React from "react";
 
 export const banner = {
@@ -760,11 +761,11 @@ export const features = [
     },{
         name: "efficient-background-color",
         overview: <span>{"Encourages users to use energy-efficient colors to reduce the power consumption on OLED displays.\n\nRule efficient-background-color checks background-color CSS property and, based on particular components of color’s RGB format, decides if the level of energy consumption is not too high. The boundaries of RGB components values are red – 204, green – 204 and blue – 153, as shown in Figure 1.\n"}
-            <figure><img src={lighterImageFile} alt="hexagon graph with rgb model" className="image" />
+            <figure><img src={efficientBackgroundFig1} alt="hexagon graph with rgb model" className="image" />
             <figcaption>Figure 1 - The recommended colors are inside the marked hexagon.</figcaption></figure>
             {"How OLED displays work\n\nEach pixel of an OLED display emits three channels of color - red, green and blue. The luminance of the three colors is different. The black color does not emit light, so it is the least power-consuming color, whereas the white color has the maximum luminance, so it consumes the most power. More information: "}<a target="_blank" rel="noreferrer" href="https://www.hindawi.com/journals/misy/2016/6575931/" className="link">https://www.hindawi.com/journals/misy/2016/6575931/</a>{"."}</span>,
         CO2: <span>{"According to "}<a target="_blank" rel="noreferrer" href="https://ieeexplore.ieee.org/abstract/document/5989813" className="link">link</a>{" we can calculate the power consumption of OLED displays as a sum of power consumption of each RGB color of a pixel. Figure 1 shows the energy consumption of three RGB colors of different intensities on a μOLED-32028-P1 AMOLED display. Research: "}<a target="_blank" rel="noreferrer" href="https://ieeexplore.ieee.org/abstract/document/5989813" className="link">https://ieeexplore.ieee.org/abstract/document/5989813"</a>{"\n"}
-            <figure><img src={effiencyBackgroundFig2} alt="graph of power consumption" className="image" />
+            <figure><img src={efficientBackgroundFig2} alt="graph of power consumption" className="image" />
                 <figcaption>Figure 2 - Power consumption for the R, G, and B components of a pixel of OLED screen with different intensity levels.</figcaption></figure>
             {"Based on the above figure we can see that the most power-consuming color is blue – this is why we decided to set in ec0lint a lower boundary value for blue color than for other two.\nIn order to reduce energy consumption we should use energy efficient color palettes. Examples: "}<a target="_blank" rel="noreferrer" href="https://greentheweb.com/energy-efficient-color-palette-ideas/" className="link">https://greentheweb.com/energy-efficient-color-palette-ideas/</a>{"."}</span>
         ,
