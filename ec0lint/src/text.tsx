@@ -467,7 +467,7 @@ export const features = [
                     </tr>
                 </tbody>
             </table>
-            {"The library sizes were checked at "}<a target="_blank" rel="noreferrer" href="www.npmjs.com/package" className="link">www.npmjs.com/package</a>{". For more examples how to replace axios or other http library with plain javascript go here: "}<a target="_blank" rel="noreferrer" href="https://danlevy.net/you-may-not-need-axios/" className="link">https://danlevy.net/you-may-not-need-axios/</a></span>,
+            {"The library sizes were checked at "}<a target="_blank" rel="noreferrer" href="https://www.npmjs.com/" className="link">www.npmjs.com/package/...</a>{". For more examples how to replace axios or other http library with plain javascript go here: "}<a target="_blank" rel="noreferrer" href="https://danlevy.net/you-may-not-need-axios/" className="link">https://danlevy.net/you-may-not-need-axios/</a></span>,
         examples: "The following patterns are considered problems: \n\n(a) /* ec0lint lighter-http: \"error\" */ \n\n" +
             "\tconst axios = require('axios') \n\n(b) /* ec0lint lighter-http: \"error\" */ \n\n\timport axios from 'axios'\n\n" +
             "(c) /* ec0lint lighter-http: \"error\" */ \n\n\timport * as axios from 'axios' \n\n\n" +
