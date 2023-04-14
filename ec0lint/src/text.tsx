@@ -1476,3 +1476,41 @@ export const initiativesSection = {
         }
     ]
 };
+
+export const dosc = [
+    {
+        title: "About ec0lint",
+        overview: "",
+        sections: [
+            {
+                sectionTitle: "What is ec0lint",
+                sectionText: "jak nadpisywać rule"
+            },
+            {
+                sectionTitle: "Why is it important?",
+                sectionText: "Did you know that more than 250 000 web pages are published every day? The majority of them uses too heavy fonts, too large/unnecessary images or utilizes redundant libraries. These factors, and more, generate carbon footprint. Actually, one view of an average website generates 1.8 g CO2, which amounts to 216 kg CO2 annually (10 000 monthly views on average). Unfortunately, current solutions optimize only already existing websites."
+            }
+        ],
+    },
+    {
+        title: "Rules",
+        overview: "",
+        sections: [
+            {
+                sectionTitle: "Jak nadpisywać rule?",
+                sectionText: "jak nadpisywać rule"
+            }, 
+            {
+                sectionTitle: "Włączanie i wyłączanie ruli",
+                sectionText: "włączanie i wyłączanie ruli"
+            }
+        ],
+    },
+
+    // {
+    //     doscTitle: "",
+    //     menuSectionTitle: "",
+    //     contentTitle: "",
+    //     contentText: ""
+    // }
+]

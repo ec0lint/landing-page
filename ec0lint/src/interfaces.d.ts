@@ -29,3 +29,18 @@ export interface IRule {
 export interface IRuleObj {
     data: IRule
 }
+
+export interface IDocsSection {
+    sectionTitle: string,
+    sectionText: string
+}
+
+export interface IDocs {
+    title: string,
+    overview: JSX.Element | string,
+    sections?: IDocsSection[]
+}
+
+export interface IDocsObj {
+    data: IDocs
+}

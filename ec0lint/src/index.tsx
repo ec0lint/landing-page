@@ -16,8 +16,9 @@ import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage';
 import RulePage from './pages/RulePage';
 import TeamPage from './pages/TeamPage';
-import { blog, features } from './text';
+import { blog, dosc, features } from './text';
 import ScrollToTop from './ScrollToTop';
+import DetailDocsPage from "./pages/DetailDocsPage";
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 root.render(
@@ -33,6 +34,9 @@ root.render(
         <Route path="docs" element={<DocsPage />}>
           {features.map(x =>
             <Route path={`${x.name}`} element={<RulePage data={x} />} />)}
+          {dosc.map(d => 
+            <Route path={`${d.title}`} element={<DetailDocsPage data={d} />} />
+          )}
         </Route>
     
         <Route path="features" element={<FeaturesPage />} />
