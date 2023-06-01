@@ -108,10 +108,12 @@ h6 {
   margin: 30px;
   border-radius: 5px;
   margin-bottom: 70px;
+  border: 1px solid #C571FF;
 }
 
 .mainButton:hover {
   background-color: #8ECCEA;
+  border: 1px solid #8ECCEA;
 }
 
 .blueSection {
