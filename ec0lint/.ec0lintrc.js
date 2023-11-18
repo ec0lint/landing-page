@@ -9,5 +9,7 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
+        "lighter-image-formats": "error",
+        "lighter-http": "error"
     }
 }
