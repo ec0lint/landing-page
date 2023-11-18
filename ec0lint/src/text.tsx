@@ -2449,7 +2449,7 @@ export const blog = {
 export const team = {
   title1: "Steering Commitee",
   intro:
-    'We met each other for the first time in 2018 during the scholarship program called "New Technologies for Women" organized by Intel and Perspektywy Women in Tech. In 2021, we participated in "LeaderSHEp in Tech Academy" and therefore, we were invited to take part in a hackathon about digital ecology. We won it by presenting ec0lint and here we are - developing the project further.  ',
+    "We are enthusiasts of sustainable development and digital ecology, dedicated to the idea of creating a more environmentally friendly internet. We operate with a deep commitment to digital ecology, aiming to change the way we perceive and shape our digital footprint. Join us on our digital ecological journey, where together we can make positive changes.",
   title2: "Contributors",
   title3: "Alumni",
   footer:
