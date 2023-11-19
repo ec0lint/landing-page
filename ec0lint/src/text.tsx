@@ -2449,7 +2449,7 @@ export const blog = {
 export const team = {
   title1: "Steering Commitee",
   intro:
-    "We are enthusiasts of sustainable development and digital ecology, dedicated to the idea of creating a more environmentally friendly internet. We operate with a deep commitment to digital ecology, aiming to change the way we perceive and shape our digital footprint. Join us on our digital ecological journey, where together we can make positive changes.",
+    "We are enthusiasts of sustainable development and digital ecology, dedicated to idea for creating a more environmentally friendly internet. We operate with a deep commitment to digital ecology, aiming to change in a way we perceive and shape our digital footprint. Join us on our digital ecological journey, where we can make positive changes together.",
   title2: "Contributors",
   title3: "Alumni",
   footer:
